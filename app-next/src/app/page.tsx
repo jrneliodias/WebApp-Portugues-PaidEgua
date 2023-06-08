@@ -1,18 +1,52 @@
-import Caixa from "./components/caixa";
-
+import Botao_menu from "./components/caixa";
+import { IoCaretBackCircleOutline, IoCaretForwardCircleOutline } from 'react-icons/io5';
+import { BsHouseDoor } from 'react-icons/bs';
 export default function Home() {
   return (
-    <body>
-      <div className="grid-template-rows-3">
-        <div className="bg-purple-800 flex gap-5 p-7">
-          <Caixa>Nélio</Caixa>
-          <Caixa>Dias</Caixa>
-          <Caixa>Santos</Caixa>
+    <body className="bg-purple min-h-screen">
+      <div className="flex flex-col text-lg">
+        <div className="bg-purple-800 flex flex-col gap-1 p-2 items-center">
+          <span>
+            <b> O que é o PT-BR Pai D&#39;Égua? </b>
+          </span>
+          <span>
+            <i> ¿Qué es el Portugués Pai D&#39;Égua? </i>
+          </span>
         </div>
-      <footer className="fixed bottom-0 left-0 z-20 w-[100vw] bg-neutral-200 dark:bg-neutral-600">
-        Footer
-      </footer>
+        <div className=" flex flex-col m-5 gap-5 ">
+          <div className="text-justify">
+            Oi, mano(a)! Tu estás entrando em um espaço
+            virtual bilíngue - Português-Espanhol - que foi
+            pensado pra ti, imigrante venezuelano(a), que
+            mora aqui, na Região Metropolitana de Belém
+            (RMB), Capital do Estado do Pará, Norte do Brasil,
+            e que está aprendendo a Língua Portuguesa.
+          </div>
+
+          <div className="text-gray-400 text-justify ">
+            <i>
+              ¡Hola, Pana! Tú estás entrando en un espacio
+              virtual bilingüe - Portugués-Español - que ha
+              sido pensado para ti, inmigrante venezolano
+              (a), que vive aquí, en la Región Metropolitana de
+              Belém (RMB), Capital de Estado de Pará, Norte
+              de Brasil, y que está aprendiendo el portugués.
+            </i>
+          </div>
+
+        </div>
       </div>
+      <footer className="fixed bottom-0 left-0 z-20 w-[100vw] h-[10vh] grid place-items-center">
+        <div className="border-2 rounded-full">
+          <div className="flex items-center justify-between w-[300px] h-[50px]">
+            <Botao_menu> <IoCaretBackCircleOutline size="2em" /> </Botao_menu>
+            <Botao_menu> <BsHouseDoor size="2em" /> </Botao_menu>
+            <Botao_menu> <IoCaretForwardCircleOutline size="2em" /> </Botao_menu>
+
+          </div>
+        </div>
+      </footer>
+
     </body>
 
 

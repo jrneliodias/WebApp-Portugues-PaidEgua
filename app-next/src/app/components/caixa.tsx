@@ -1,8 +1,8 @@
-export default function Caixa(props:any) {
+export default function Botao_menu(props:any) {
     return(
         <div className={`
         flex justify-center items-center
-        bg-purple-500 rounded-md p-2
+        p-2 rounded-full 
         
         `}>
             {props.children}
