@@ -1,34 +1,35 @@
 "use client"
 import { useState } from 'react';
-import { BsHouseDoor,BsHouseDoorFill } from 'react-icons/bs';
+import { BsHouseDoor, BsHouseDoorFill } from 'react-icons/bs';
+
+
+interface BtnHomeProps {
+
+}
 
 export default function BtnHome() {
-    const [isHovered, setIsHovered] = useState<boolean>(false);
+    const [clicked, setClicked] = useState(false);
 
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    };
+    const handleClick = () => {
+        setClicked(true);
 
-    const handleMouseLeave = () => {
-        setIsHovered(false);
+        setTimeout(() => {
+            setClicked(false);
+        }, 100);
     };
 
     return (
-        <div>
-            {isHovered ? (
+        <button onClick={handleClick}>
+            {clicked ? (
                 <BsHouseDoorFill
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
                     size="2em"
                 />
             ) : (
                 <BsHouseDoor
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
                     size="2em"
                 />
             )}
-        </div>
+        </button>
     );
 }
 

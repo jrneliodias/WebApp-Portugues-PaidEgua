@@ -1,7 +1,4 @@
-import Botao_menu from "@/app/components/caixa";
-import BtnProxima from "@/app/components/BtnProxima";
-import BtnHome from "@/app/components/BtnHome";
-import BtnVoltar from "@/app/components/BtnVoltar";
+import NavBar from "@/app/components/NavBar";
 
 
 export default function Pag2() {
@@ -43,9 +40,7 @@ export default function Pag2() {
             <footer className="fixed bottom-0 left-0 z-20 w-[100vw] h-[10vh] grid place-items-center">
                 <div className="border-2 rounded-full bg-[#8055bd]">
                     <div className="flex items-center justify-between  w-[300px] h-[50px]">
-                        <Botao_menu> <BtnVoltar /> </Botao_menu>
-                        <Botao_menu> <BtnHome /> </Botao_menu>
-                        <Botao_menu> <BtnProxima /> </Botao_menu>
+                        <NavBar/>
 
                     </div>
                 </div>
