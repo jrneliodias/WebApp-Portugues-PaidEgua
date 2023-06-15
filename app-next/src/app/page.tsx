@@ -28,11 +28,11 @@ export default function Home() {
   };
   
   return (
-    <html className='min-h-screen'>
-      <body className="text-white pb-[100px]">
-        <div>
+    <html className='h-full bg-gradient-radial from-[#7835bf]  to-[#58229eff]'>
+      <body className="text-white pb-[100px] ">
+       
           <CurrentText />
-        </div>
+        
         <footer className="fixed bottom-0 left-0 z-20 w-[100vw] h-[10vh] flex justify-center items-center">
           <div className="border-2 rounded-full bg-[#8055bd]">
             <div className="flex items-center  justify-between p-2 w-[300px] h-[50px]">

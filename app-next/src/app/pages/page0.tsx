@@ -1,14 +1,22 @@
-
+import Image from "next/image";
+import PersonagensPg0 from '../images/personagens-pag0.png'
 export default function Pag0() {
     return (
-        <div className="flex gap-[100px] flex-col justify-center items-center pt-[100px]">
-            <div>
-                <h1 className="text-5xl font-black ">Português <br /> <br /> Pai D&apos;Égua</h1>
-            </div>
-            <div className="w-[300px] text-center">
-            Desenvolvido pelo Laboratório de
-            Pesquisa e Experimentação em Multimídia do
-            NITAE - UFPA
+        <div className="flex flex-col mt-2 gap-5 justify-center items-center max-h-screen">
+            
+                <Image 
+                    src={PersonagensPg0}
+                    alt="personagens"
+                   height={500}
+                    
+                />
+
+            
+
+            <div className="w-[300px] text-center text-xs">
+                Desenvolvido pelo Laboratório de
+                Pesquisa e Experimentação em Multimídia do
+                NITAE - UFPA
             </div>
 
 
@@ -16,3 +24,4 @@ export default function Pag0() {
     )
 
 }
+

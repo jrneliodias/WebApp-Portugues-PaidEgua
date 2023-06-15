@@ -2,8 +2,8 @@
 export default function Pag1() {
     return (
         <div>
-           <div className="flex flex-col bg-purple-800">
-                <div className="flex flex-col flex-wrap gap-1 p-2 m-2 ml-5 mr-5 rounded-full items-center border-2 bg-[#8055bd] ">
+           <div className="flex flex-col">
+                <div className="flex flex-col flex-wrap gap-1 p-2 m-2 ml-5 mr-5 rounded-full items-center border-2 bg-[#8055bd]">
                     <span>
                         <b> O que é o PT-BR Pai D&#39;Égua? </b>
                     </span>
