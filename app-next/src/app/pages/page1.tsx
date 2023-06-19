@@ -1,39 +1,42 @@
+import Image from "next/image";
+import ballon0 from "../images/ballon1.svg"
+import acai0 from "../images/acai0.png"
 
 export default function Pag1() {
     return (
-        <div>
-           <div className="flex flex-col">
-                <div className="flex flex-col flex-wrap gap-1 p-2 m-2 ml-5 mr-5 rounded-full items-center border-2 bg-[#8055bd]">
-                    <span>
-                        <b> O que é o PT-BR Pai D&#39;Égua? </b>
-                    </span>
-                    <span>
-                        <i> ¿Qué es el Portugués Pai D&#39;Égua? </i>
-                    </span>
-                </div>
-                <div className=" flex flex-col m-5 gap-5 ">
-                    <div className="text-justify">
-                        Oi, mano(a)! Tu estás entrando em um espaço
-                        virtual bilíngue - Português-Espanhol - que foi
-                        pensado pra ti, imigrante venezuelano(a), que
-                        mora aqui, na Região Metropolitana de Belém
-                        (RMB), Capital do Estado do Pará, Norte do Brasil,
-                        e que está aprendendo a Língua Portuguesa.
-                    </div>
+        <div className="flex flex-col justify-center item-center py-2 gap-5 h-full m-10">
+            <div className="relative flex justify-center">
+                {/* <Image
+                    src={ballon0}
+                    height={250}
+                    width={250}
+                    alt="ballon"
+                    className="relative z-100"
+                /> */}
+                <div className="relative">
 
-                    <div className="text-gray-400 text-justify ">
-                        <i>
-                            ¡Hola, Pana! Tú estás entrando en un espacio
-                            virtual bilingüe - Portugués-Español - que ha
-                            sido pensado para ti, inmigrante venezolano
-                            (a), que vive aquí, en la Región Metropolitana de
-                            Belém (RMB), Capital de Estado de Pará, Norte
-                            de Brasil, y que está aprendiendo el portugués.
-                        </i>
+                    <div className=" bg-[--background-nav-app] p-5  rounded-[40px] inline-block w-[300px] border border-[--background-nav-app] drop-shadow-md z-50">
+                        Esperamos que este
+                        aprendizado colabore
+                        para as tuas relações
+                        de comunicação no
+                        cotidiano em nossa
+                        cidade.
                     </div>
-
+                    <div className="absolute w-0 h-0 border-t-[20px] border-t-transparent border-b-[--background-nav-app] border-b-[20px] border-l-[20px] border-l-transparent border-r-transparent border-r-[20px] border left-[80px] rotate-45 -bottom-[18px] drop-shadow-md ">
+                    </div>
                 </div>
+
             </div>
+            <div className="flex justify-center drop-shadow-lg">
+                <Image
+                    src={acai0}
+                    height={200}
+                    width={200}
+                    alt="personagem-acai"
+                />
+            </div>
+
         </div>
 
     )
