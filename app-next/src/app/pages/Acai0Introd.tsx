@@ -2,7 +2,7 @@ import Image from "next/image";
 import ballon0 from "../images/ballon1.svg"
 import acai0 from "../images/acai0.png"
 
-export default function Pag1() {
+export default function AcaiIntroApp() {
     return (
         <div className="flex flex-col justify-center item-center py-2 gap-5 h-full m-10">
             <div className="relative flex justify-center">

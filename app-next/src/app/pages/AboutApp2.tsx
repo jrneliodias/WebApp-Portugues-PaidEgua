@@ -1,5 +1,5 @@
 
-export default function Pag3() {
+export default function AboutApp2() {
     return (
         <div className="flex flex-col">
             <div className="flex flex-col flex-wrap gap-1 p-2 m-2 ml-5 mr-5 rounded-full items-center border-2 bg-[#8055bd]">

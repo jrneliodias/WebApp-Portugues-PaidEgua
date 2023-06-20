@@ -1,7 +1,7 @@
 import Image from "next/image";
 import PersonagensPg0 from '../images/personagens-pag0.png'
 
-export default function Pag0() {
+export default function CoverPage() {
     return (
         <div className="flex flex-col mt-5 gap-5 justify-center items-center h-full">
             

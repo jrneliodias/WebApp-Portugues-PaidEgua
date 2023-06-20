@@ -1,5 +1,5 @@
 
-export default function Pag2() {
+export default function AboutApp() {
     return (
 
         <div className="flex flex-col pb-[70px]">

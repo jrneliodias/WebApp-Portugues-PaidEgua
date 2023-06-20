@@ -4,25 +4,30 @@ import dynamic from 'next/dynamic';
 import BtnVoltar from './components/BtnVoltar';
 import BtnProxima from './components/BtnProxima';
 import BtnHome from './components/BtnHome';
+import { pagesData } from '@/app/pages/pages'
 
-const pages = Array.from({ length: 4 }, (_, index) =>
-  dynamic(() => import(`./pages/page${index}`))
-);
+const pagesComponent = Array.from({ length: pagesData.length }, (_, index) => {
+  const selectedPage = pagesData.find((page) => page.id === index);
+  if(selectedPage){
+    return dynamic(() => import(`./pages/${selectedPage.component}.tsx`))
+  }
+  return dynamic(() => import(`./pages/CoverApp`))
+});
 
 
 export default function Home() {
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const CurrentText = pages[currentTextIndex];
+  const [currentTextIndex, setCurrentComponentIndex] = useState(0);
+  const CurrentText = pagesComponent[currentTextIndex];
 
   const handlePrevious = () => {
-    setCurrentTextIndex((prevIndex) =>
-      prevIndex > 0 ? prevIndex - 1 : pages.length - 1
+    setCurrentComponentIndex((prevIndex) =>
+      prevIndex > 0 ? prevIndex - 1 : pagesComponent.length - 1
     );
   };
 
   const handleNext = () => {
-    setCurrentTextIndex((prevIndex) =>
-      prevIndex < pages.length - 1 ? prevIndex + 1 : 0
+    setCurrentComponentIndex((prevIndex) =>
+      prevIndex < pagesComponent.length - 1 ? prevIndex + 1 : 0
     );
 
   };
