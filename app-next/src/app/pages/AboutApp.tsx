@@ -21,15 +21,15 @@ export default function AboutApp() {
                     e que está aprendendo a Língua Portuguesa.
                 </div>
 
-                <div className="text-[--span-text-color] text-justify ">
-                    <i>
+                <div className=" span-text-font ">
+                    
                         ¡Hola, Pana! Tú estás entrando en un espacio
                         virtual bilingüe - Portugués-Español - que ha
                         sido pensado para ti, inmigrante venezolano
                         (a), que vive aquí, en la Región Metropolitana de
                         Belém (RMB), Capital de Estado de Pará, Norte
                         de Brasil, y que está aprendiendo el portugués.
-                    </i>
+                    
                 </div>
 
             </div>
@@ -43,8 +43,8 @@ export default function AboutApp() {
                     significar algo muito bom, excelente, legal!
                 </div>
 
-                <div className="text-[--span-text-color] text-justify ">
-                    <i>
+                <div className="span-text-font ">
+                    
                         Este es un webapp fonético-cultural donde los
                         contenidos y las actividades fueron elaboradas
                         para ayudarte en la comunicación en
@@ -52,7 +52,7 @@ export default function AboutApp() {
                         belenense. Y ha sido llamado de Portugués &ldquo;Pai
                         D&apos;Égua&ldquo; por significar algo muy bueno,
                         excelente, chévere!
-                    </i>
+                    
                 </div>
 
             </div>
@@ -65,14 +65,14 @@ export default function AboutApp() {
                     por isso, é a forma que iremos utilizar neste
                     espaço de comunicação.
                 </div>
-                <div className="text-[--span-text-color] text-justify ">
-                    <i>
+                <div className="span-text-font">
+                    
                         ¿Te das cuenta que nuestra forma de hablar es
                         diferente? Bueno, ese es un lenguaje que
                         usamos aquí en Belém en situaciones más
                         informales y, por eso, es la forma que vamos a
                         utilizar en este espacio de comunicación.
-                    </i>
+                    
                 </div>
             </div>
         </div>

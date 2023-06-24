@@ -19,8 +19,8 @@ export default function AboutApp2() {
                     E foi chamado de Português Pai D&apos;Égua por
                     significar algo muito bom, excelente, legal!
                 </div>
-                <div className="text-[--span-text-color] text-justify ">
-                    <i>
+                <div className="span-text-font">
+                    
                         Este es un webapp fonético-cultural donde los
                         contenidos y las actividades fueron elaboradas
                         para ayudarte en la comunicación en
@@ -28,7 +28,7 @@ export default function AboutApp2() {
                         belenense. Y ha sido llamado de Portugués &ldquo;Pai
                         D&apos;Égua&ldquo; por significar algo muy bueno,
                         excelente, chévere!
-                    </i>
+                    
                 </div>
             </div>
         </div>

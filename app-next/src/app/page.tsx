@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 import BtnVoltar from './components/BtnVoltar';
 import BtnProxima from './components/BtnProxima';
 import BtnHome from './components/BtnHome';
-import { pagesData } from '@/app/pages/pages'
+import { pagesData } from '@/app/pages/pagesData'
 
 const pagesComponent = Array.from({ length: pagesData.length }, (_, index) => {
   const selectedPage = pagesData.find((page) => page.id === index);
@@ -33,12 +33,11 @@ export default function Home() {
   };
 
   return (
-    <html className='h-full bg-gradient-radial from-[#7835bf]  to-[#58229eff]'>
-      <body className="text-white pb-[100px] h-full ">
+    <div className='h-full flex flex-col'>
 
         <CurrentText />
 
-        <footer className="fixed bottom-0 left-0 z-20 w-[100vw] h-[10vh] flex justify-center items-center mt-20">
+        {/* <footer className="fixed bottom-0 left-0 w-[100vw] h-[10vh] flex justify-center items-center">
           <div className="border-2 rounded-full bg-[--background-nav-app]">
             <div className="flex items-center  justify-between p-2 w-[300px] h-[50px]">
               <BtnVoltar handlePrevious={handlePrevious} />
@@ -46,9 +45,9 @@ export default function Home() {
               <BtnProxima handleNext={handleNext} />
             </div>
           </div>
-        </footer>
-      </body>
-    </html>
+        </footer> */}
+      </div>
+    
   )
 
 }

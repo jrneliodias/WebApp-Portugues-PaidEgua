@@ -3,26 +3,48 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
   --background-nav-app: #8055bd;
+  --background-app: #7835bf;
   --span-text-color: #cacaca;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  /* :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-  }
+  } */
 }
-
+html{
+  height: 100vh;
+}
 body {
+  --tw-bg-opacity: 1;
+  background-color:#58229e;
+  display: flex;
+  justify-content: center;
   padding: 0;
   margin: 0;
   color: white;
-  
+  height: 90%;
+
 }
 
+.span-text-font {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  color: var(--span-text-color);
+  text-align: justify;
+  font-style: italic;
+}
 
+.blinking-cursor:after {
+  content: "|";
+  color: var(--span-text-color);
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

@@ -3,7 +3,6 @@ import NavBar from "@/app/components/NavBar";
 
 export default function Pag1() {
     return (
-        <body className="text-white min-h-screen">
             <div className="flex flex-col bg-purple-800">
                 <div className="flex flex-col flex-wrap gap-1 p-2 m-2 ml-5 mr-5 rounded-full items-center border-2 bg-[#8055bd]">
                     <span>
@@ -36,17 +35,6 @@ export default function Pag1() {
 
                 </div>
             </div>
-            <footer className="fixed bottom-0 left-0 z-20 w-[100vw] h-[10vh] grid place-items-center">
-                <div className="border-2 rounded-full bg-[#8055bd]">
-                    <div className="flex items-center justify-between  w-[300px] h-[50px]">
-                        <NavBar />
-
-                    </div>
-                </div>
-            </footer>
-
-        </body>
-
     )
 
 }
