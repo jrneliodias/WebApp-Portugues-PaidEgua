@@ -1,8 +1,9 @@
+"use client"
 import { useState } from 'react';
 import { IoCaretForwardCircleOutline, IoCaretForwardCircleSharp } from 'react-icons/io5';
 
 interface BtnProximaProps {
-    handleNext: () => void
+    // handleNext: () => void
 }
 
 export default function BtnProxima(props:BtnProximaProps) {
@@ -10,7 +11,7 @@ export default function BtnProxima(props:BtnProximaProps) {
 
     const handleClick = () => {
         setClicked(true);
-        {props.handleNext()}
+        // {props.handleNext()}
 
         setTimeout(() => {
             setClicked(false);

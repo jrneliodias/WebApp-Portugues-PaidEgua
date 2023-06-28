@@ -3,14 +3,14 @@ import { useState } from 'react';
 import { IoCaretBackCircleOutline, IoCaretBackCircleSharp } from 'react-icons/io5';
 
 interface BtnVoltarProps {
-    handlePrevious: () => void
+    // handlePrevious: () => void
 }
 export default function BtnVoltar(props: BtnVoltarProps) {
     const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {
         setClicked(true);
-        { props.handlePrevious() }
+        // { props.handlePrevious() }
 
         setTimeout(() => {
             setClicked(false);

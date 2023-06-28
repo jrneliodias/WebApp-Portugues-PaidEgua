@@ -18,15 +18,6 @@ export default function RootLayout({
       <body className={`inter.className flex flex-col`}>
         {children}
       </body>
-      <footer className="fixed bottom-0 left-0 w-[100vw] h-[10vh] flex justify-center items-center">
-        <div className="border-2 rounded-full bg-[--background-nav-app] ">
-          <div className="flex items-center justify-between p-5 w-[300px] h-[50px] ">
-            <p>foo</p>
-            <p>foo</p>
-            <p>foo</p>
-          </div>
-        </div>
-      </footer>
     </html>
   )
 }

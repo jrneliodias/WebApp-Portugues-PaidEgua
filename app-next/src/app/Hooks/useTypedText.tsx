@@ -7,8 +7,8 @@ enum Phase {
 }
 
 const TYPING_INTERVAL = 20
-const PAUSE_INTERVAL = 2000;
-const DELETING_INTERVAL = 20;
+const PAUSE_INTERVAL = 5000;
+const DELETING_INTERVAL = 10;
 
 export const useTypedText = (textToType: string[]) => {
     const [selectedIndex,setSelectedIndex] = useState(0)
@@ -42,7 +42,9 @@ export const useTypedText = (textToType: string[]) => {
                     const nextIndex = selectedIndex + 1
                     if (textToType[nextIndex]){
                         setSelectedIndex(nextIndex)
+                       
                     }else{
+                        console.log("Fim do texto")
                         return
                     }
                     setPhase(Phase.Typing)
