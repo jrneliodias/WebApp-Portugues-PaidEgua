@@ -1,13 +1,12 @@
 
 import React, { useState } from 'react';
-import BtnHome from "@/app/components/BtnHome";
-import BtnProxima from "@/app/components/BtnProxima";
-import BtnVoltar from "@/app/components/BtnVoltar";
 import NavBar from "@/app/components/NavBar";
-import Link from "next/link";
 
 
-export default function Pag1() {
+export default function AboutApp() {
+
+    const currentRoute = "/aboutapp"; // Set the current route dynamically based on your page
+
     return (
         <div className="flex flex-col overflow-y-auto">
             <div className="flex flex-col flex-wrap gap-1 p-2 m-2 ml-5 mr-5 rounded-full items-center border-2 bg-[#8055bd]">
@@ -77,25 +76,9 @@ export default function Pag1() {
                     utilizar en este espacio de comunicación.
 
                 </div>
-
-
-
             </div>
-            <footer className="fixed bottom-0 left-0 w-[100vw] h-[10vh] flex justify-center items-center">
-                <div className="border-2 rounded-full bg-[--background-nav-app]">
-                    <div className="flex items-center  justify-between p-2 w-[300px] h-[50px]">
-                        <Link className="flex items-center" href={"/"} passHref>
-                            <BtnVoltar />
-                        </Link>
-                        <Link className="flex items-center" href={"/"} passHref>
-                            <BtnHome />
-                        </Link>
-                        <Link className="flex items-center" href={"/acai0introd"} passHref>
-                            <BtnProxima />
-                        </Link>
-                    </div>
-                </div>
-            </footer>
+            
+            <NavBar currentRoute={currentRoute}/>
         </div>
     )
 

@@ -1,15 +1,10 @@
-"use client"
-import React, { useState } from 'react';
-import dynamic from 'next/dynamic';
-import BtnVoltar from './components/BtnVoltar';
-import BtnProxima from './components/BtnProxima';
-import BtnHome from './components/BtnHome';
-import { pagesData } from '@/app/pages/pagesData'
 import Image from "next/image";
 import PersonagensPg0 from './images/personagens-pag0.png'
-import Link from 'next/link';
+import NavBar from './components/NavBar';
 
 export default function Home() {
+  const currentRoute = "/"; // Set the current route dynamically based on your page
+
   return (
       <div className="flex flex-col gap-5 justify-center items-center h-full mt-[20px] p-2">
 
@@ -29,17 +24,7 @@ export default function Home() {
                   NITAE - UFPA
               </p>
           </div>
-         <footer className="fixed bottom-0 left-0 w-[100vw] h-[10vh] flex justify-center items-center">
-           <div className="border-2 rounded-full bg-[--background-nav-app]">
-             <div className="flex items-center  justify-between p-2 w-[300px] h-[50px]">
-               <BtnVoltar  /> 
-               <BtnHome />
-               <Link  className="flex items-center" href={"/aboutapp"} passHref>
-               <BtnProxima />
-               </Link> 
-             </div>
-           </div>
-         </footer> 
+         <NavBar currentRoute ={currentRoute} />
 
       </div>
 

@@ -38,13 +38,14 @@ export const useTypedText = (textToType: string[]) => {
             }
 
             case Phase.Deleting: {
+                const nextIndex = selectedIndex + 1
+                if(!textToType[nextIndex]){return}
                 if (!typedText) {
-                    const nextIndex = selectedIndex + 1
                     if (textToType[nextIndex]){
                         setSelectedIndex(nextIndex)
                        
                     }else{
-                        console.log("Fim do texto")
+                      
                         return
                     }
                     setPhase(Phase.Typing)
