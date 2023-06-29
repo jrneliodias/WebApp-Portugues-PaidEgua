@@ -1,5 +1,4 @@
 "use client"
-import { useState } from 'react';
 import Link from 'next/link';
 import BtnVoltar from './BtnVoltar';
 import BtnHome from './BtnHome';
@@ -14,6 +13,7 @@ export default function NavBar(props:NavBarProps) {
     // Find the ID of the current route
     const currentRouteData = routeData.find((route) => route.route === props.currentRoute);
     const currentId = currentRouteData?.id;
+    // console.log(currentId)
 
     // Find the previous and next IDs
     const previousId = currentId && currentId > 0 ? currentId - 1 : 1;
@@ -21,9 +21,9 @@ export default function NavBar(props:NavBarProps) {
 
     // Find the previous and next routes based on the IDs
     const previousRoute = previousId ? routeData.find((route) => route.id === previousId)?.route : "/";
-    console.log(previousRoute)
+    // console.log(previousRoute)
     const nextRoute = nextId ? routeData.find((route) => route.id === nextId)?.route : "/";
-    console.log(nextRoute)
+    // console.log(nextRoute)
 
 
     return (

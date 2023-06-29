@@ -1,12 +1,7 @@
-"use client"
+ "use client"
 import Image from "next/image";
 import acai0 from "@/app/images/acai0.png"
-import { useState, useEffect } from "react";
 import { useTypedText } from "@/app/Hooks/useTypedText";
-import Link from "next/link";
-import BtnVoltar from "@/app/components/BtnVoltar";
-import BtnHome from "@/app/components/BtnHome";
-import BtnProxima from "@/app/components/BtnProxima";
 import NavBar from "@/app/components/NavBar";
 
 const imageSize = 150;
@@ -15,8 +10,8 @@ const textToType = [`Esperamos que este aprendizado colabore para as tuas relaç
 
 export default function AcaiIntroApp() {
     const typedText = useTypedText(textToType)
-    const currentRoute = "acai0introd"; // Set the current route dynamically based on your page
-
+    
+    const currentRoute = '/acai0introd'; // Set the current route dynamically based on your page
 
     return (
         <div className="flex flex-col justify-end item-center py-2 gap-5 h-full mb-[100px]">
@@ -25,6 +20,7 @@ export default function AcaiIntroApp() {
 
                     <div className=" bg-[--background-nav-app] p-5  rounded-[40px] inline-block w-[300px] border border-[--background-nav-app] drop-shadow-md z-50">
                         <span className="blinking-cursor">
+                        
                             {typedText}
 
                         </span>
