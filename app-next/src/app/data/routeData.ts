@@ -8,5 +8,8 @@ export const routeData: RouteData[] = [
     { id: 2, route: '/aboutapp' },
     { id: 3, route: '/acai0introd' },
     { id: 4, route: '/acaiturma' },
-    { id: 5, route: '/' },
+    { id: 5, route: '/aboutapp2' },
+    { id: 6, route: '/aboutapp3' },
+    { id: 7, route: '/acai0introd2' },
+    { id: 8, route: '/listapaidegua' },
   ];

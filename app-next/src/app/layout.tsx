@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='flex flex-col flex-1 justify-between'>
-      <body className={`inter.className flex flex-col`}>
+      <body className={`inter.className flex flex-col justify-start`}>
         {children}
       </body>
     </html>
