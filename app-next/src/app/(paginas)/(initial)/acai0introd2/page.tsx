@@ -19,8 +19,7 @@ export default function AcaiIntroApp2() {
                 <div className="relative">
 
                     <div className=" bg-[--background-nav-app] p-5  rounded-[40px] w-[300px] border border-[--background-nav-app] drop-shadow-md z-50">
-                        <span className="blinking-cursor whitespace-break-spaces text-justify">
-                        
+                        <span className="blinking-cursor whitespace-break-spaces text-justify"> 
                             {typedText}
 
                         </span>

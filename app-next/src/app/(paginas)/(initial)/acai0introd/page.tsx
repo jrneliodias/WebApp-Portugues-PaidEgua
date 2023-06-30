@@ -36,6 +36,7 @@ export default function AcaiIntroApp() {
                     fill
                     alt="personagem-acai"
                     className="object-contain"
+                    priority={true}
                 />
             </div>
             <NavBar currentRoute={currentRoute} />
