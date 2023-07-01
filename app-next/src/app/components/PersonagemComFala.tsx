@@ -5,19 +5,22 @@ interface PersonagemProps {
     imgSource: StaticImageData;
     icon: JSX.Element
     speech: string
+    addPadding:boolean
 }
 
 
 export default function PersonagemComFala(props: PersonagemProps) {
+
+    const paddingClass = props.addPadding ? 'p-2':'';
     return (
         <div className="h-full flex flex-col justify-center">
             
 
                 <div className=" flex justify-center">
 
-                    <div className="relative ">
-                        <div className=" bg-[--background-nav-app] p-3  rounded-[12px] w-full border border-[--background-nav-app] drop-shadow-md leading-none flex flex-col items-center gap-1">
-                            <span className="">
+                    <div className="relative max-w-xs ">
+                        <div className=" bg-[--background-nav-app] p-3 rounded-[12px] w-full  border border-[--background-nav-app] drop-shadow-md leading-none flex flex-col  items-center gap-1">
+                            <span className="text-center">
                                 {props.speech} {/* Texto a ser renderizado*/}
                             </span>
                             <span >
@@ -35,7 +38,7 @@ export default function PersonagemComFala(props: PersonagemProps) {
                     src={props.imgSource}
                     fill
                     alt="personagem-acai"
-                    className="object-contain p-2"
+                    className={`object-contain ${paddingClass}`}
                     priority={true}
 
                 />

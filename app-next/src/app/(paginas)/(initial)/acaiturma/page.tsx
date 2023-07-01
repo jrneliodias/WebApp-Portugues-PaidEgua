@@ -20,10 +20,10 @@ export default function AcaiTurma() {
     const book = <IconBook />
 
     const speech = {
-        pablito: `Sou Pablito e minha ação é a de repetir. Meu símbolo é o `,
-        juanito: 'Sou Juanito e represento a ação de ler. Meu símbolo é o ',
-        carlito: 'Me chamo Carlito e sou a ação de digitar. Meu símbolo é o ',
-        abelita: 'Me chamo Abelita e sou a ação de ouvir. Meu símbolo é o ',
+        pablito: `Sou Pablito e minha ação é a de repetir. Meu símbolo é: `,
+        juanito: 'Sou Juanito e represento a ação de ler. Meu símbolo é: ',
+        carlito: 'Me chamo Carlito e sou a ação de digitar. Meu símbolo é: ',
+        abelita: 'Me chamo Abelita e sou a ação de ouvir. Meu símbolo é: ',
     
     }
 
@@ -31,10 +31,10 @@ export default function AcaiTurma() {
     return (
         <div className="grid grid-cols-2 grid-rows-2 h-full gap-2  m-3">
 
-            <PersonagemComFala imgSource={acaiphone} speech = {speech.pablito} icon={refresh}  />
-            <PersonagemComFala imgSource={acaihear}  speech = {speech.abelita} icon={volume}  />
-            <PersonagemComFala imgSource={acaihat}   speech = {speech.carlito} icon={keyboard}  />
-            <PersonagemComFala imgSource={acaibook}  speech = {speech.juanito} icon={book}  />
+            <PersonagemComFala addPadding={false} imgSource={acaiphone} speech = {speech.pablito} icon={refresh}  />
+            <PersonagemComFala addPadding={true} imgSource={acaihear}  speech = {speech.abelita} icon={volume}  />
+            <PersonagemComFala addPadding={true} imgSource={acaihat}   speech = {speech.carlito} icon={keyboard}  />
+            <PersonagemComFala addPadding={true} imgSource={acaibook}  speech = {speech.juanito} icon={book}  />
 
             <NavBar currentRoute={currentRoute} />
 

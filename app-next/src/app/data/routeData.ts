@@ -15,4 +15,7 @@ export const routeData: RouteData[] = [
     { id: 9, route: '/acai0introd3' },
     { id: 10, route: '/objaprend' },
     { id: 11, route: '/acai0introd4' },
+    { id: 12, route: '/orientimport' },
+    { id: 13, route: '/acai0tema1' },
+    { id: 14, route: '/alfafonetico' },
   ];

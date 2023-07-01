@@ -18,7 +18,7 @@ export default function AcaiIntroApp() {
             <div className=" flex justify-center">
                 <div className="relative">
 
-                    <div className=" bg-[--background-nav-app] p-5  rounded-[40px] inline-block w-[300px] border border-[--background-nav-app] drop-shadow-md z-50">
+                    <div className=" bg-[--background-nav-app] p-5  rounded-[40px] inline-block w-[300px] border border-[--background-nav-app] drop-shadow-md z-50 text-center">
                         <span className="blinking-cursor text-center">
                         
                             {typedText}

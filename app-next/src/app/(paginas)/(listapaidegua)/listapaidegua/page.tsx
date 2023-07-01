@@ -36,7 +36,7 @@ export default function ListaPaidEgua() {
                         Entre varios temas, elegimos los tres que pensamos que son los más interesantes de nuestra forma de hablar:
                     </div>
                 </div>
-                <div className="bg-[#627b38] p-4 flex flex-col gap-3 rounded-md ">
+                <div className="bg-[--bg-card-color] p-4 flex flex-col gap-3 rounded-md ">
                     <div>
                         <div className="normal-text-font">
                             O primeiro, é o Alfabeto Fonético do português e
@@ -63,7 +63,7 @@ export default function ListaPaidEgua() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[#590e22] p-4 flex flex-col gap-3 rounded-md ">
+                <div className="bg-[--bg-card-color] p-4 flex flex-col gap-3 rounded-md ">
                     <div>
                         <div className="normal-text-font">
                             O segundo, são as Saudações tipicamente
@@ -90,7 +90,7 @@ export default function ListaPaidEgua() {
                     </div>
 
                 </div>
-                <div  className="bg-[#6b0c41] p-4 flex flex-col gap-3 rounded-md ">
+                <div  className="bg-[--bg-card-color] p-4 flex flex-col gap-3 rounded-md ">
 
                     <div>
                         <div className="normal-text-font">

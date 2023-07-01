@@ -21,7 +21,7 @@ export default function Home() {
               <p>
                   Desenvolvido pelo Laboratório de
                   Pesquisa e Experimentação em Multimídia do
-                  NITAE - UFPA
+                  NITAE² - UFPA
               </p>
           </div>
          <NavBar currentRoute ={currentRoute} />
