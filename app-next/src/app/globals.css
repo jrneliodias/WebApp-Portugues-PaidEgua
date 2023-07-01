@@ -37,7 +37,7 @@ body {
   }
 }
 .title-text-format {
-  @apply flex flex-col flex-wrap gap-1 p-5 m-2 ml-5 mr-5 rounded-full items-center border-2 bg-[#8055bd] text-xl;
+  @apply flex flex-col flex-wrap gap-1 p-3 m-2 ml-5 mr-5 rounded-full items-center border-2 bg-[#8055bd] text-xl;
 }
 
 .normal-text-font {
@@ -48,6 +48,12 @@ body {
   color: var(--span-text-color);
   text-align: left;
   font-style: italic;
+}
+
+.span-fonema-font {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  color: var(--span-text-color);
+  text-align: left;
 }
 
 .blinking-cursor:after {
