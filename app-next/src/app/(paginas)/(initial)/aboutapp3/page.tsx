@@ -5,6 +5,8 @@ import NavBar from "@/app/components/NavBar";
 export default function AboutApp3() {
 
     const currentRoute = "/aboutapp3"; // Set the current route dynamically based on your page
+    const gridFormat = "grid grid-cols-[1fr_6fr] p-2 gap-1"
+    const iconformat = "row-span-2 place-self-center bg-[--background-nav-app] p-2 rounded-full m-2 "
 
     return (
         <div className="flex flex-col overflow-y-auto justify-start">
@@ -17,8 +19,8 @@ export default function AboutApp3() {
                 </span>
             </div>
             <div className=" flex flex-col m-5 gap-5">
-                <div className="grid grid-cols-[1fr_6fr] p-2">
-                    <div className="row-span-2 place-self-center bg-[--background-nav-app] p-2 rounded-full m-2 ">
+                <div className={gridFormat}>
+                    <div className={iconformat}>
                         <IconBook size={30} />
                     </div>
                     <div className="normal-text-font">
@@ -32,8 +34,8 @@ export default function AboutApp3() {
                         </span>
                     </div>
                 </div>
-                <div className="grid grid-cols-[1fr_6fr] p-2">
-                    <div className="row-span-2 place-self-center bg-[--background-nav-app] p-2 rounded-full m-2 ">
+                <div className={gridFormat}>
+                    <div className={iconformat}>
                         <IconVolume size={30} />
                     </div>
 
@@ -49,8 +51,8 @@ export default function AboutApp3() {
                             </span>
                         </div>
                 </div>
-                <div className="grid grid-cols-[1fr_6fr] p-2">
-                    <div className="row-span-2 place-self-center bg-[--background-nav-app] p-2 rounded-full m-2 ">
+                <div className={gridFormat}>
+                    <div className={iconformat}>
                         <IconRefresh size={30} />
                     </div>
 
@@ -66,8 +68,8 @@ export default function AboutApp3() {
                             </span>
                         </div>
                 </div>
-                <div className="grid grid-cols-[1fr_6fr] p-2">
-                    <div className="row-span-2 place-self-center bg-[--background-nav-app] p-2 rounded-full m-2 ">
+                <div className={gridFormat}>
+                    <div className={iconformat}>
                         <IconKeyboard size={30} />
                     </div>
 
