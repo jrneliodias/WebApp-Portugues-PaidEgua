@@ -8,7 +8,7 @@ export default function AboutApp2() {
 
     return (
         <div className="flex flex-col overflow-y-auto ">
-            <div className="flex flex-col flex-wrap  p-2 m-2 ml-5 mr-5 rounded-full items-center border-2 bg-[#8055bd] ">
+            <div className="title-text-format">
                 <span>
                     <b> O que é o PT-BR Pai D&#39;Égua? </b>
                 </span>
@@ -18,7 +18,7 @@ export default function AboutApp2() {
             </div>
             <div className=" flex flex-col m-5 gap-5">
                 <div>
-                    <div className="text-justify">
+                    <div className="normal-text-font">
                         Assim, de agora em diante, tu vais perceber que
                         toda nossa conversa será feita de duas
                         maneiras:
@@ -29,7 +29,7 @@ export default function AboutApp2() {
                 </div>
 
                 <div>
-                    <div className="text-justify">
+                    <div className="normal-text-font">
                         Irás ouvir e ler em língua portuguesa os temas
                         apresentados neste Web App e
                     </div>
@@ -39,7 +39,7 @@ export default function AboutApp2() {
                     </div>
                 </div>
                 <div>
-                    <div className="text-justify">
+                    <div className="normal-text-font">
                         Poderás, em caso dúvida, ler em Espanhol o
                         significado de uma palavra e/ou expressão.
                     </div>
@@ -52,7 +52,7 @@ export default function AboutApp2() {
                 </div>
 
                 <div>
-                    <div className="text-justify">
+                    <div className="normal-text-font">
                         Agora, observa os símbolos que serão utilizados
                         neste Web App. Toda vez que um determinado
                         desenho aparece, tu terás que executar uma

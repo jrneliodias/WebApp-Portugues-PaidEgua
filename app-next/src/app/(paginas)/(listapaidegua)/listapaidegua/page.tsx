@@ -8,7 +8,7 @@ export default function ListaPaidEgua() {
 
     return (
         <div className="flex flex-col overflow-y-auto ">
-            <div className="flex flex-col flex-wrap  p-5 m-2 ml-5 mr-5 rounded-full items-center border-2 bg-[#8055bd] ">
+            <div className="title-text-format">
                 <span>
                     <b> Lista Pai D&#39;Égua? </b>
                 </span>
@@ -16,11 +16,9 @@ export default function ListaPaidEgua() {
             </div>
             <div className=" flex flex-col m-5 gap-5">
                 <div>
-                    <div className="text-justify">
-                        Fizemos uma lista de assuntos que tu vais
-                        aprender aqui neste Web App, os quais
-                        consideramos importantes para ampliar o teu
-                        conhecimento da Língua Portuguesa.
+                    <div className="normal-text-font">
+                        Fizemos uma lista de assuntos que tu vais aprender aqui neste Web App, os quais
+                        consideramos importantes para ampliar o teu conhecimento da Língua Portuguesa.
                     </div>
                     <div className="span-text-font ">
                         Hicimos una Lista de asuntos que vas a aprender aquí en el Web App, los cuales consideramos importantes para ampliar tu conocimiento de la Lengua Portuguesa.
@@ -28,7 +26,7 @@ export default function ListaPaidEgua() {
                 </div>
 
                 <div>
-                    <div className="text-justify">
+                    <div className="normal-text-font">
                         Dentre vários temas, escolhemos os três que
                         julgamos serem os mais interessantes do nosso
                         falar regional.
@@ -40,7 +38,7 @@ export default function ListaPaidEgua() {
                 </div>
                 <div className="bg-[#627b38] p-4 flex flex-col gap-3 rounded-md ">
                     <div>
-                        <div className="text-justify">
+                        <div className="normal-text-font">
                             O primeiro, é o Alfabeto Fonético do português e
                             suas particularidades em relação ao dialeto de
                             Belém.
@@ -54,7 +52,7 @@ export default function ListaPaidEgua() {
                     </div>
 
                     <div>
-                        <div className="text-justify">
+                        <div className="normal-text-font">
                             É o Alfabeto com letras e representações de sons (fonemas) que indicam através de seus símbolos, a forma como devemos pronunciar.
                         </div>
                         <div className="span-text-font">
@@ -67,7 +65,7 @@ export default function ListaPaidEgua() {
                 </div>
                 <div className="bg-[#590e22] p-4 flex flex-col gap-3 rounded-md ">
                     <div>
-                        <div className="text-justify">
+                        <div className="normal-text-font">
                             O segundo, são as Saudações tipicamente
                             paraenses chamadas de “Saudações Papa
                             Chibé”.
@@ -81,7 +79,7 @@ export default function ListaPaidEgua() {
                     <div>
 
 
-                    <div className="text-justify">
+                    <div className="normal-text-font">
                         Formas de cumprimentar as pessoas (iniciar/terminar uma
                         conversa).
                     </div>
@@ -95,7 +93,7 @@ export default function ListaPaidEgua() {
                 <div  className="bg-[#6b0c41] p-4 flex flex-col gap-3 rounded-md ">
 
                     <div>
-                        <div className="text-justify">
+                        <div className="normal-text-font">
                             E terceiro e último tema são as Expressões
                             Idiomáticas paraenses.
                         </div>
@@ -106,7 +104,7 @@ export default function ListaPaidEgua() {
                         </div>
                     </div>
                     <div>
-                        <div className="text-justify">
+                        <div className="normal-text-font">
                             Palavras e expressões utilizadas no cotidiano belenense.
                         </div>
                         <div className="span-text-font">

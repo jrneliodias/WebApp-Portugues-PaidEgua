@@ -20,7 +20,7 @@ html{
 }
 body {
   --tw-bg-opacity: 1;
-  background-color:#58229e;
+  background-color:#51338b;
   display: flex;
   justify-content: center;
   padding: 0;
@@ -30,6 +30,13 @@ body {
 
 }
 
+.title-text-format{
+  @apply flex flex-col flex-wrap gap-1 p-5 m-2 ml-5 mr-5 rounded-full items-center border-2 bg-[#8055bd] text-xl 
+}
+
+.normal-text-font{
+  @apply text-justify text-lg leading-tight
+}
 .span-text-font {
   font-family: "Arial Narrow", Arial, sans-serif;
   color: var(--span-text-color);
@@ -48,3 +55,4 @@ body {
     opacity: 0;
   }
 }
+

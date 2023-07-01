@@ -11,7 +11,7 @@ export default function AboutApp2() {
                 </span>
             </div>
             <div className=" flex flex-col m-5 gap-5 ">
-                <div className="text-justify">
+                <div className="normal-text-font">
                     Este é um webapp fonético-cultural em que os
                     conteúdos e as atividades foram elaboradas
                     para te ajudar na comunicação em português,

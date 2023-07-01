@@ -14,7 +14,7 @@ export default function AboutApp() {
 
             <div className=" flex flex-col m-5 gap-5 ">
                 <div>
-                    <div className="text-justify">
+                    <div className="normal-text-font">
                         Oi, mano(a)! Tu estás entrando em um espaço
                         virtual bilíngue - Português-Espanhol - que fosi
                         pensado pra ti, imigrante venezuelano(a), que
@@ -36,7 +36,7 @@ export default function AboutApp() {
                 </div>
 
                 <div>
-                    <div className="text-justify">
+                    <div className="normal-text-font">
                         Este é um webapp fonético-cultural em que os
                         conteúdos e as atividades foram elaboradas
                         para te ajudar na comunicação em português,
@@ -57,7 +57,7 @@ export default function AboutApp() {
                 </div>
 
                 <div>
-                    <div className="text-justify">
+                    <div className="normal-text-font">
                         Tu estás percebendo esse jeito diferente de
                         falar? Pois é, essa é a linguagem que usamos
                         aqui em Belém em situações mais informais e,

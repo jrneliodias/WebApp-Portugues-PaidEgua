@@ -12,4 +12,5 @@ export const routeData: RouteData[] = [
     { id: 6, route: '/aboutapp3' },
     { id: 7, route: '/acai0introd2' },
     { id: 8, route: '/listapaidegua' },
+    { id: 9, route: '/listapaidegua2' },
   ];

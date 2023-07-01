@@ -8,7 +8,7 @@ export default function AboutApp() {
 
     return (
         <div className="flex flex-col overflow-y-auto">
-            <div className="flex flex-col flex-wrap gap-1 p-2 m-2 ml-5 mr-5 rounded-full items-center border-2 bg-[#8055bd]">
+            <div className="title-text-format">
                 <span>
                     <b> O que é o PT-BR Pai D&#39;Égua? </b>
                 </span>
@@ -18,9 +18,9 @@ export default function AboutApp() {
             </div>
             <div className=" flex flex-col m-5 gap-5 ">
                 <div>
-                    <div className="text-justify">
+                    <div className="normal-text-font">
                         Oi, mano(a)! Tu estás entrando em um espaço
-                        virtual bilíngue - Português-Espanhol - que fosi
+                        virtual bilíngue - Português-Espanhol - que foi
                         pensado pra ti, imigrante venezuelano(a), que
                         mora aqui, na Região Metropolitana de Belém
                         (RMB), Capital do Estado do Pará, Norte do Brasil,
@@ -40,7 +40,7 @@ export default function AboutApp() {
                 </div>
 
                 <div>
-                    <div className="text-justify">
+                    <div className="normal-text-font">
                         Este é um webapp fonético-cultural em que os
                         conteúdos e as atividades foram elaboradas
                         para te ajudar na comunicação em português,
@@ -61,7 +61,7 @@ export default function AboutApp() {
                 </div>
 
                 <div>
-                    <div className="text-justify">
+                    <div className="normal-text-font">
                         Tu estás percebendo esse jeito diferente de
                         falar? Pois é, essa é a linguagem que usamos
                         aqui em Belém em situações mais informais e,

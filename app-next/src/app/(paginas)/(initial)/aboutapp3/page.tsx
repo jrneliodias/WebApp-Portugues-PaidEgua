@@ -8,7 +8,7 @@ export default function AboutApp3() {
 
     return (
         <div className="flex flex-col overflow-y-auto justify-start">
-            <div className="flex flex-col flex-wrap  p-2 m-2 ml-5 mr-5 rounded-full items-center border-2 bg-[#8055bd] ">
+            <div className="title-text-format">
                 <span>
                     <b> O que é o PT-BR Pai D&#39;Égua? </b>
                 </span>
@@ -17,70 +17,73 @@ export default function AboutApp3() {
                 </span>
             </div>
             <div className=" flex flex-col m-5 gap-5">
-                <div>
-                    <div className="flex text-justify gap-1">
-                        <span>
-                            Ao aparecer o símbolo
-                        </span>
-                        <IconBook />
-                        <span>deves LER.</span>
+                <div className="grid grid-cols-[1fr_6fr] p-2">
+                    <div className="row-span-2 place-self-center bg-[--background-nav-app] p-2 rounded-full m-2 ">
+                        <IconBook size={30} />
                     </div>
-                    <div className="span-text-font flex gap-1 ">
+                    <div className="normal-text-font">
                         <span>
-                            Cuando aparezca el ícono
+                            Ao aparecer esse símbolo deves LER.
                         </span>
-                        <IconBook />
-                        <span>debes LEER.</span>
                     </div>
-                </div>
-                <div>
-                    <div className="flex text-justify gap-1">
+                    <div className="span-text-font flex flex-wrap gap-1 ">
                         <span>
-                            Ao aparecer o símbolo
+                            Cuando aparezca el ícono debes LEER.
                         </span>
-                        <IconVolume />
-                        <span>deves OUVIR.</span>
-                    </div>
-                    <div className="span-text-font flex gap-1 ">
-                        <span>
-                            Cuando aparezca el ícono
-                        </span>
-                        <IconVolume />
-                        <span>debes ESCUCHAR.</span>
                     </div>
                 </div>
-                <div>
-                    <div className="flex text-justify gap-1">
-                        <span>
-                            Ao aparecer o símbolo
-                        </span>
-                        <IconRefresh />
-                        <span>deves REPETIR.</span>
+                <div className="grid grid-cols-[1fr_6fr] p-2">
+                    <div className="row-span-2 place-self-center bg-[--background-nav-app] p-2 rounded-full m-2 ">
+                        <IconVolume size={30} />
                     </div>
-                    <div className="span-text-font flex gap-1 ">
+
+                    <div className="flex normal-text-font gap-1">
                         <span>
-                            Cuando aparezca el ícono
+                            Ao aparecer o símbolo deves OUVIR.
                         </span>
-                        <IconRefresh />
-                        <span>debes REPETIR.</span>
+
                     </div>
+                        <div className="span-text-font ">
+                            <span>
+                                Cuando aparezca el ícono
+                            </span>
+                        </div>
                 </div>
-                <div>
-                    <div className="flex text-justify gap-1">
-                        <span>
-                            Ao aparecer o símbolo
-                        </span>
-                        <IconKeyboard />
-                        <span>deves DIGITAR.</span>
+                <div className="grid grid-cols-[1fr_6fr] p-2">
+                    <div className="row-span-2 place-self-center bg-[--background-nav-app] p-2 rounded-full m-2 ">
+                        <IconRefresh size={30} />
                     </div>
-                    <div className="span-text-font flex gap-1 ">
+
+                    <div className="flex normal-text-font gap-1">
                         <span>
-                            Cuando aparezca el ícono
+                        Ao aparecer o símbolo deves REPETIR.
                         </span>
-                        <IconKeyboard />
-                        <span>debes DIGITAR.</span>
+
                     </div>
+                        <div className="span-text-font ">
+                            <span>
+                                Cuando aparezca el ícono debes REPETIR.
+                            </span>
+                        </div>
                 </div>
+                <div className="grid grid-cols-[1fr_6fr] p-2">
+                    <div className="row-span-2 place-self-center bg-[--background-nav-app] p-2 rounded-full m-2 ">
+                        <IconKeyboard size={30} />
+                    </div>
+
+                    <div className="flex normal-text-font gap-1">
+                        <span>
+                        Ao aparecer o símbolo deves DIGITAR.
+                        </span>
+
+                    </div>
+                        <div className="span-text-font ">
+                            <span>
+                                Cuando aparezca el ícono debes DIGITAR.
+                            </span>
+                        </div>
+                </div>
+              
 
             </div>
 

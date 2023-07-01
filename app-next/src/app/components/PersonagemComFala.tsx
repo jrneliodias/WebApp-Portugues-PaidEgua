@@ -16,11 +16,13 @@ export default function PersonagemComFala(props: PersonagemProps) {
                 <div className=" flex justify-center">
 
                     <div className="relative ">
-                        <div className=" bg-[--background-nav-app] p-3  rounded-[12px] w-full border border-[--background-nav-app] drop-shadow-md leading-none flex flex-col items-center">
-                            <span className=" flex text-sm">
+                        <div className=" bg-[--background-nav-app] p-3  rounded-[12px] w-full border border-[--background-nav-app] drop-shadow-md leading-none flex flex-col items-center gap-1">
+                            <span className="">
                                 {props.speech} {/* Texto a ser renderizado*/}
                             </span>
+                            <span >
                             {props.icon}
+                            </span>
 
                         </div> {/* Balão de Fala  */}
                         <div className="absolute w-0 h-0 border-t-[20px] border-t-transparent border-b-[--background-nav-app] border-b-[20px] border-l-[20px] border-l-transparent border-r-transparent border-r-[20px] border left-5 rotate-45 -bottom-[18px] drop-shadow-md z-50">

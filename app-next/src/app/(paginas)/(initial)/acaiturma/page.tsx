@@ -20,7 +20,7 @@ export default function AcaiTurma() {
     const book = <IconBook />
 
     const speech = {
-        pablito: 'Sou Pablito e minha ação é a de repetir. Meu símbolo é o ',
+        pablito: `Sou Pablito e minha ação é a de repetir. Meu símbolo é o `,
         juanito: 'Sou Juanito e represento a ação de ler. Meu símbolo é o ',
         carlito: 'Me chamo Carlito e sou a ação de digitar. Meu símbolo é o ',
         abelita: 'Me chamo Abelita e sou a ação de ouvir. Meu símbolo é o ',
