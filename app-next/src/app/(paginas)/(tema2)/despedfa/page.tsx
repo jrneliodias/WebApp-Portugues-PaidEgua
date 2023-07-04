@@ -1,0 +1,99 @@
+import NavBar from "@/app/components/NavBar";
+import { IconBook, IconRefresh, IconVolume } from "@tabler/icons-react";
+
+export default function ListaPaidEgua() {
+  const currentRoute = "/despedfa"; // Set the current route dynamically based on your page
+
+  return (
+    <div className="flex flex-col overflow-y-auto ">
+      <div className="title-text-format ">
+        <span>
+          <b> O Belenense que se Preza... </b>
+        </span>
+        <div className="flex gap-4">
+          <IconBook />
+          <IconVolume />
+          <IconRefresh />
+        </div>
+      </div>
+      <div className=" flex flex-col m-5 gap-5 ">
+        <div>
+          <div className="normal-text-font">
+          Despede-se falando:{" "}
+          </div>
+          <div className="span-text-font">
+          Responde diciendo:
+          </div>
+        </div>
+
+        <div className="bg-[#8e7fbb] p-4 flex flex-col gap-3 rounded-[20px] ">
+          <div>
+            <div className="flex gap-2">
+              <div className="normal-text-font">Já mé vu</div>
+              <IconVolume />
+            </div>
+
+            <div className="span-fonema-font">[ʻʒa ʻme ʻvu]</div>
+
+            <div className="span-text-font">Ya me voy</div>
+          </div>
+        </div>
+
+        <div className="bg-[#8e7fbb] p-4 flex flex-col gap-3 rounded-[20px] ">
+          <div>
+            <div className="flex gap-2">
+              <div className="normal-text-font">Já tô indo</div>
+              <IconVolume />
+            </div>
+
+            <div className="span-fonema-font">[ʻʒa ʻto ʻĩdʊ]</div>
+
+            <div className="span-text-font">Ya me voy</div>
+          </div>
+        </div>
+
+        <div className="bg-[#8e7fbb] p-4 flex flex-col gap-3 rounded-[20px] ">
+          <div>
+            <div className="flex gap-2">
+              <div className="normal-text-font">Bora logo</div>
+              <IconVolume />
+            </div>
+
+            <div className="span-fonema-font">[ʻbɔɾa ʻlɔgʊ]</div>
+
+            <div className="span-text-font">Vamos</div>
+          </div>
+        </div>
+
+        <div className="bg-[#8e7fbb] p-4 flex flex-col gap-3 rounded-[20px] ">
+          <div>
+            <div className="flex gap-2">
+              <div className="normal-text-font">Borimbora</div>
+              <IconVolume />
+            </div>
+
+            <div className="span-fonema-font">[bɔɾĩʻbɔɾa] </div>
+
+            <div className="span-text-font">Vamos</div>
+          </div>
+        </div>
+
+        <div className="bg-[#8e7fbb] p-4 flex flex-col gap-3 rounded-[20px] ">
+          <div>
+            <div className="flex gap-2">
+              <div className="normal-text-font">Fui!</div>
+              <IconVolume />
+            </div>
+
+            <div className="span-fonema-font">[fwi]</div>
+
+            <div className="span-text-font">Me voy</div>
+          </div>
+        </div>
+
+      </div>
+
+      <NavBar currentRoute={currentRoute} />
+    </div>
+  );
+}

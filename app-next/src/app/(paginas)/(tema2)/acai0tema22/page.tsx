@@ -6,13 +6,12 @@ import NavBar from "@/app/components/NavBar";
 
 const imageSize = 150;
 
-const textToType = [`Mano (a), para que tu consigas iniciar uma
-conversa em português, é necessário que conheças algumas formas de cumprimento.`]
+const textToType = [`Agora que conheceste algumas saudações da Língua Portuguesa, iremos te apresentar a forma particular que o belenense utiliza para cumprimentar as pessoas, denominadas aqui, neste Web App, de “Saudações Papa Chibé”.`]
 
 export default function AcaiIntroApp() {
     const typedText = useTypedText(textToType)
     
-    const currentRoute = '/acai0tema21'; // Set the current route dynamically based on your page
+    const currentRoute = '/acai0tema22'; // Set the current route dynamically based on your page
 
     return (
         <div className="flex flex-col justify-end item-center py-2 gap-5 h-full mb-[100px]">
