@@ -28,6 +28,7 @@ body {
   margin: 0;
   color: white;
   height: 90%;
+  width: 100%;
 }
 
 @media (min-width: 600px) {
@@ -37,11 +38,11 @@ body {
   }
 }
 .title-text-format {
-  @apply flex flex-col flex-wrap gap-1 p-2 m-1 ml-5 mr-5 rounded-[50px] items-center border-2 bg-[#8055bd] text-xl text-center leading-tight;
+  @apply flex flex-col flex-wrap gap-1 p-2 m-3 ml-5 mr-5 rounded-[50px] items-center border-2 bg-[#8055bd] text-xl text-center leading-tight;
 }
 
 .normal-text-font {
-  @apply text-lg leading-tight;
+  @apply text-lg leading-tight ;
 }
 .span-text-font {
   font-family: "Arial Narrow", Arial, sans-serif;
