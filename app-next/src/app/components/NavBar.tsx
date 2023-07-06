@@ -33,7 +33,7 @@ export default function NavBar(props:NavBarProps) {
                     <Link className="flex items-center" href={`${previousRoute}`} passHref>
                         <BtnVoltar />
                     </Link>
-                    <Link className="flex items-center" href={"/"} passHref>
+                    <Link className="flex items-center" href={"/menuroutes"} passHref>
                         <BtnHome />
                     </Link>
                     <Link className="flex items-center" href={`${nextRoute}`} passHref>
