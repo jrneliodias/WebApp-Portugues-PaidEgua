@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(components.css);
+
 
 :root {
   --background-nav-app: #8055bd;
@@ -38,7 +40,8 @@ body {
   }
 }
 .title-text-format {
-  @apply flex flex-col flex-wrap gap-1 p-2 m-3 ml-5 mr-5 rounded-[50px] items-center border-2 bg-[#8055bd] text-xl text-center leading-tight;
+  @apply flex flex-col flex-wrap gap-1 p-2 m-3 ml-5 mr-5 rounded-[50px] items-center border-2;
+  @apply bg-[#8055bd] text-xl text-center leading-tight;
 }
 
 .normal-text-font {
@@ -49,6 +52,12 @@ body {
   color: var(--span-text-color);
   text-align: left;
   font-style: italic;
+  line-height: 1.25;
+}
+.phoneme-text-font {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  color: var(--span-text-color);
+  text-align: left;
   line-height: 1.25;
 }
 
@@ -64,6 +73,4 @@ body {
   }
 }
 
-.border-collapse {
-  border-collapse: collapse;
-}
+
