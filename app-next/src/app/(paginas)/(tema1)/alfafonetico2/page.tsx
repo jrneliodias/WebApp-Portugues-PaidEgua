@@ -50,26 +50,26 @@ export default function AlfaFoneticoPort2() {
                 </div>
                 <div>
                     <div className="normal-text-font">
-                    A cor <span className="bg-blue-400 p-1 rounded-md">AZUL</span> destaca as vogais que possuem duas formas de pronúncia em português.
+                    A cor <span className="bg-blue-700 p-1 rounded-md">AZUL</span> destaca as vogais que possuem duas formas de pronúncia em português.
                     </div>
                     <div className="span-text-font">
-                    El color <span className="bg-blue-400 p-1 rounded-md">AZUL</span> destaca las vocales que tienen dos formas de pronunciación en portugués.
+                    El color <span className="bg-blue-700 p-1 rounded-md">AZUL</span> destaca las vocales que tienen dos formas de pronunciación en portugués.
                     </div>
                 </div>
                 <div>
                     <div className="normal-text-font">
-                    A cor <span className="bg-red-400 p-1 rounded-md">VERMELHA</span> destaca as consoantes que possuem pronúncias diferentes do espanhol.
+                    A cor <span className="bg-red-700 p-1 rounded-md">VERMELHA</span> destaca as consoantes que possuem pronúncias diferentes do espanhol.
                     </div>
                     <div className="span-text-font">
-                    El color <span className="bg-red-400 p-1 rounded-md">ROJO</span> destaca las consonantes que son pronunciadas de forma diferente del español.
+                    El color <span className="bg-red-700 p-1 rounded-md">ROJO</span> destaca las consonantes que son pronunciadas de forma diferente del español.
                     </div>
                 </div>
                 <div>
                     <div className="normal-text-font">
-                    A cor <span className="bg-green-400 p-1 rounded-md">VERDE</span>  destaca a consoante que só existe no espanhol.
+                    A cor <span className="bg-green-700 p-1 rounded-md">VERDE</span>  destaca a consoante que só existe no espanhol.
                     </div>
                     <div className="span-text-font">
-                    El color <span className="bg-green-400 p-1 rounded-md">VERDE</span>  destaca la consonante que solo existe en el español.
+                    El color <span className="bg-green-700 p-1 rounded-md">VERDE</span>  destaca la consonante que solo existe en el español.
                     </div>
                 </div>
 
