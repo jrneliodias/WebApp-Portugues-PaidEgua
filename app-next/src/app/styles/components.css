@@ -1,23 +1,23 @@
 
 .col-center{
-@apply flex flex-col items-center;
+@apply flex flex-col items-center p-2;
 }
 .top-left-cell{
-@apply col-center border border-t-2 border-l-2 rounded-tl-xl overflow-hidden bg-cardcolor;
+@apply col-center border border-t-2 border-l-2 rounded-tl-xl overflow-hidden bg-cardcolor  p-2;
 }
 .top-mid-cell{
-@apply col-center border border-t-2 bg-cardcolor;
+@apply col-center border border-t-2 bg-cardcolor  p-2;
 }
 .top-right-cell{
-@apply col-center border border-t-2 border-r-2 rounded-tr-xl overflow-hidden bg-cardcolor;
+@apply col-center border border-t-2 border-r-2 rounded-tr-xl overflow-hidden bg-cardcolor p-2; 
 }
 .bottom-left-cell{
-@apply col-center border border-b-2 border-l-2 rounded-bl-xl overflow-hidden bg-cardcolor;
+@apply col-center border border-b-2 border-l-2 rounded-bl-xl overflow-hidden bg-cardcolor  p-2;
 }
 .bottom-mid-cell{
-@apply col-center border border-b-2 bg-cardcolor;
+@apply col-center border border-b-2 bg-cardcolor  p-2;
 }
 .bottom-right-cell{
-@apply col-center border border-b-2 border-r-2 rounded-br-xl overflow-hidden bg-cardcolor;
+@apply col-center border border-b-2 border-r-2 rounded-br-xl overflow-hidden bg-cardcolor  p-2;
 }
 
