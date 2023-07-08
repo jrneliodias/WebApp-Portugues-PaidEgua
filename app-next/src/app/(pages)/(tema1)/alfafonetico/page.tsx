@@ -14,7 +14,7 @@ export default function ListaPaidEgua() {
                 </span>
 
             </div>
-            <div className=" flex flex-col m-5 gap-5 mb-20 ">
+            <div className="body-text-layout ">
                 <div>
                     <div className="normal-text-font">
                         Para aprenderes o Português falado na Região Metropolitana de Belém (RMB), tu terás que compreender os sons (fonemas) que existem no Português e não existem no Espanhol. E virce-versa. Dessa forma, será mais fácil aprenderes a pronúncia da nossa língua

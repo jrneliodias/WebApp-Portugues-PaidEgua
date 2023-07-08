@@ -15,7 +15,7 @@ export default function AlfaFoneticaCuriosity() {
                 </span>
 
             </div>
-            <div className=" flex flex-col  gap-5  max-w-3xl">
+            <div className="body-text-layout">
                 <div>
                     <div className="normal-text-font">
                         Particularidades que estão relacionadas às letras: D; L; N; T; S e Z.
