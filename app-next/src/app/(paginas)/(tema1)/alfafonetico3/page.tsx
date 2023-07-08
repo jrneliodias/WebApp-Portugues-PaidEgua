@@ -8,14 +8,14 @@ export default function ListaPaidEgua() {
     const currentroute = "/alfafonetico3"; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col overflow-y-auto ">
-            <div className="title-text-format ">
+        <div className="flex flex-col overflow-y-auto items-center">
+            <div className="title-text-format">
                 <span>
                     <b> Tema I - Alfabeto Fonético do Português </b>
                 </span>
 
             </div>
-            <div className=" flex flex-col m-5 gap-5 ">
+            <div className=" flex flex-col m-5 gap-5 max-w-3xl">
                 <div>
                     <div className="normal-text-font">
                         Essas diferenças acontecem com relação às Consoantes: J/G; L; R, V; Z/S e X.
@@ -50,7 +50,7 @@ export default function ListaPaidEgua() {
                             Pronunciamos, por ejemplo:
                         </div>
                     </div>
-                    <div className="p-5  ">
+                    <div className="p-5 max-w-lg  mx-auto">
                         <div className="grid grid-rows-2 grid-cols-3 grid-flow-row">
                             <div className="top-left-cell">
                                 <div className="normal-text-font">
@@ -120,7 +120,7 @@ export default function ListaPaidEgua() {
                             Mientras en Español se pronuncia:
                         </div>
                     </div>
-                    <div className="p-5  ">
+                    <div className="p-5 max-w-lg mx-auto ">
                         <div className="grid grid-rows-2 grid-cols-3 grid-flow-row">
                             <div className="top-left-cell">
                                 <div className="normal-text-font">
