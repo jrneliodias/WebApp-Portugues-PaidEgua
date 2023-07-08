@@ -16,7 +16,7 @@ export default function AboutApp() {
                     <i> ¿Qué es el Portugués Pai D&#39;Égua? </i>
                 </span>
             </div>
-            <div className=" flex flex-col m-5 gap-5 ">
+            <div className=" flex flex-col m-5 gap-5  max-w-3xl mb-20">
                 <div>
                     <div className="normal-text-font">
                         Oi, mano(a)! Tu estás entrando em um espaço

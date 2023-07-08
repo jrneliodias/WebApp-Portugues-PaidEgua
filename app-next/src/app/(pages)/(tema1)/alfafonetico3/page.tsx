@@ -8,14 +8,14 @@ export default function ListaPaidEgua() {
     const currentroute = "/alfafonetico3"; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col overflow-y-auto items-center">
-            <div className="title-text-format">
+        <div className="flex flex-col items-center px-6">
+            <div className="title-text-format lg:mx-0 w-full">
                 <span>
                     <b> Tema I - Alfabeto Fonético do Português </b>
                 </span>
 
             </div>
-            <div className=" flex flex-col m-5 gap-5 max-w-3xl">
+            <div className=" flex flex-col gap-5 max-w-3xl mb-20">
                 <div>
                     <div className="normal-text-font">
                         Essas diferenças acontecem com relação às Consoantes: J/G; L; R, V; Z/S e X.

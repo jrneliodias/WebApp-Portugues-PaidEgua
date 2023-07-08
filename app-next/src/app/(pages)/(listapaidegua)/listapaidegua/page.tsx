@@ -7,14 +7,14 @@ export default function ListaPaidEgua() {
     const currentRoute = "/listapaidegua"; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col overflow-y-auto ">
+        <div className="flex flex-col ">
             <div className="title-text-format">
                 <span>
                     <b> Lista Pai D&#39;Égua? </b>
                 </span>
 
             </div>
-            <div className=" flex flex-col m-5 gap-5">
+            <div className=" flex flex-col m-5 gap-5 mb-20">
                 <div>
                     <div className="normal-text-font">
                         Fizemos uma lista de assuntos que tu vais aprender aqui neste Web App, os quais

@@ -7,14 +7,14 @@ export default function ListaPaidEgua() {
     const currentRoute = "/objaprend"; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col overflow-y-auto ">
+        <div className="flex flex-col ">
             <div className="title-text-format ">
                 <span>
                     <b> Objetivos de Aprendizagem </b>
                 </span>
 
             </div>
-            <div className=" flex flex-col m-5 gap-5 ">
+            <div className=" flex flex-col m-5 gap-5  max-w-3xl mb-20">
                 <div>
                     <div className="normal-text-font">
                         Por meio de todo este contexto fonético-cultural, tu terás a oportunidade de desenvolver:

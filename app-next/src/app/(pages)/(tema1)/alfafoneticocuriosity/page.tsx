@@ -8,14 +8,15 @@ export default function AlfaFoneticaCuriosity() {
     const currentroute = "/alfafoneticocuriosity"; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col overflow-y-auto ">
-            <div className="title-text-format ">
+        <div className="px-6 flex flex-col gap-50 ">
+            <div className="flex flex-col items-center mb-20">
+            <div className="title-text-format  w-full lg:mx-0 ">
                 <span>
                     <b> Tema I - Alfabeto Fonético do Português </b>
                 </span>
 
             </div>
-            <div className=" flex flex-col m-5 gap-5 ">
+            <div className=" flex flex-col  gap-5  max-w-3xl">
                 <div>
                     <div className="normal-text-font">
                         Particularidades que estão relacionadas às letras: D; L; N; T; S e Z.
@@ -44,8 +45,8 @@ export default function AlfaFoneticaCuriosity() {
                             Pronunciamos, por ejemplo:
                         </div>
                     </div>
-                    <div className="p-5 flex justify-center">
-                        <div className="grid grid-rows-2 grid-cols-2 grid-flow-row w-1/2">
+                    <div className="p-5 flex justify-center w-full">
+                        <div className="grid grid-rows-2 grid-cols-2 grid-flow-row w-full lg:w-1/2">
                             <div className="top-left-cell">
                                 <div className="normal-text-font">
                                     D
@@ -88,7 +89,7 @@ export default function AlfaFoneticaCuriosity() {
                         </div>
                     </div>
                     <div className="p-5 flex justify-center">
-                        <div className="grid grid-rows-2 grid-cols-2 grid-flow-row w-1/2">
+                        <div className="grid grid-rows-2 grid-cols-2 grid-flow-row w-full lg:w-1/2">
                             <div className="top-left-cell">
                                 <div className="normal-text-font">
                                     diferente
@@ -142,13 +143,13 @@ export default function AlfaFoneticaCuriosity() {
                         </div>
                     </div>
                     <div className="p-5 flex justify-center">
-                        <div className="grid grid-rows-2 grid-cols-2 grid-flow-row w-1/2">
+                        <div className="grid grid-rows-2 grid-cols-2 grid-flow-row w-full lg:w-1/2">
                             <div className="top-left-cell">
                                 <div className="normal-text-font">
                                     D
                                 </div>
                                 <div className="phoneme-text-font">
-                                'di ['di]
+                                    'di ['di]
                                 </div>
                                 <IconVolume />
                             </div>
@@ -158,7 +159,7 @@ export default function AlfaFoneticaCuriosity() {
                                     L
                                 </div>
                                 <div className="phoneme-text-font">
-                                'li ['li]
+                                    'li ['li]
                                 </div>
                                 <IconVolume />
                             </div>
@@ -167,7 +168,7 @@ export default function AlfaFoneticaCuriosity() {
                                     N
                                 </div>
                                 <div className="phoneme-text-font">
-                                'ni ['ni]
+                                    'ni ['ni]
                                 </div>
                                 <IconVolume />
                             </div>
@@ -177,7 +178,7 @@ export default function AlfaFoneticaCuriosity() {
                                     T
                                 </div>
                                 <div className="phoneme-text-font">
-                                'ti ['ti]
+                                    'ti ['ti]
                                 </div>
                                 <IconVolume />
                             </div>
@@ -185,13 +186,13 @@ export default function AlfaFoneticaCuriosity() {
                         </div>
                     </div>
                     <div className="p-5 flex justify-center">
-                        <div className="grid grid-rows-2 grid-cols-2 grid-flow-row w-1/2">
+                        <div className="grid grid-rows-2 grid-cols-2 grid-flow-row w-full lg:w-1/2">
                             <div className="top-left-cell">
                                 <div className="normal-text-font">
                                     diferente
                                 </div>
                                 <div className="phoneme-text-font">
-                                [dife'ɾẽnte]
+                                    [dife'ɾẽnte]
                                 </div>
                                 <IconVolume />
                             </div>
@@ -201,7 +202,7 @@ export default function AlfaFoneticaCuriosity() {
                                     livro
                                 </div>
                                 <div className="phoneme-text-font">
-                                ['liβɾo]
+                                    ['liβɾo]
                                 </div>
                                 <IconVolume />
                             </div>
@@ -210,7 +211,7 @@ export default function AlfaFoneticaCuriosity() {
                                     nível
                                 </div>
                                 <div className="phoneme-text-font">
-                                [ni'bel]
+                                    [ni'bel]
                                 </div>
                                 <IconVolume />
                             </div>
@@ -220,17 +221,124 @@ export default function AlfaFoneticaCuriosity() {
                                     tigre
                                 </div>
                                 <div className="phoneme-text-font">
-                                ['tiɣɾe]
+                                    ['tiɣɾe]
                                 </div>
                                 <IconVolume />
                             </div>
 
                         </div>
                     </div>
+
+
                 </div>
 
+                <div>
+                    <div className="normal-text-font">
+                        Outra particularidade do português falado na RMB está relacionada às letras &lt;S&gt; e &lt;Z&gt;, finalizando sílaba e palavras. Diferente do espanhol, as letras adquirem um som característico do falar belenense.
+                    </div>
+                    <div className="span-text-font">
+                        Otra particularidad del portugués hablado en la RMB está relacionada a las letras &lt;S&gt; y &lt;Z&gt;, finalizando sílaba y palabra. Diferente del español, las letras adquiere un sonido característico del dialecto belenense.
+                    </div>
+                </div>
 
+                <div className="flex gap-2">
+                    <div className="normal-text-font">
+                        Exemplo
+                    </div>
+                    <div className="span-text-font">
+                        (Ejemplo)
+                    </div>
+                </div>
 
+                <div className="p-5 flex justify-center">
+                    <div className="grid grid-rows-2 grid-cols-2 grid-flow-row w-full lg:w-1/2">
+                        <div className="top-left-cell">
+                            <div className="normal-text-font">
+                                Escola
+                            </div>
+                            <div className="phoneme-text-font">
+                                [Iʃ'kɔla]
+                            </div>
+                            <IconVolume />
+                        </div>
+
+                        <div className="top-right-cell">
+                            <div className="normal-text-font">
+                                três
+                            </div>
+                            <div className="phoneme-text-font">
+                                ['tɾejʃ]
+                            </div>
+                            <IconVolume />
+                        </div>
+                        <div className="bottom-left-cell">
+                            <div className="normal-text-font">
+                                vez
+                            </div>
+                            <div className="phoneme-text-font">
+                                ['vejʃ]
+                            </div>
+                            <IconVolume />
+                        </div>
+
+                        <div className="bottom-right-cell">
+                            <div className="normal-text-font">
+                                raiz
+                            </div>
+                            <div className="phoneme-text-font">
+                                [xa'iʃ]
+                            </div>
+                            <IconVolume />
+                        </div>
+
+                    </div>
+                </div>
+                <div className="p-5 flex justify-center">
+                    <div className="grid grid-rows-2 grid-cols-2 grid-flow-row  w-full lg:w-1/2">
+                        <div className="top-left-cell">
+                            <div className="normal-text-font">
+                                Escuela
+                            </div>
+                            <div className="phoneme-text-font">
+                                [es'kwela]
+                            </div>
+                            <IconVolume />
+                        </div>
+
+                        <div className="top-right-cell">
+                            <div className="normal-text-font">
+                                tres
+                            </div>
+                            <div className="phoneme-text-font">
+                                ['tɾes]
+                            </div>
+                            <IconVolume />
+                        </div>
+                        <div className="bottom-left-cell">
+                            <div className="normal-text-font">
+                                vez
+                            </div>
+                            <div className="phoneme-text-font">
+                                ['bes]
+                            </div>
+                            <IconVolume />
+                        </div>
+
+                        <div className="bottom-right-cell">
+                            <div className="normal-text-font">
+                                raiz
+                            </div>
+                            <div className="phoneme-text-font">
+                                [ȓa'is]
+                            </div>
+                            <IconVolume />
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            
 
             </div>
 

@@ -7,7 +7,7 @@ export default function AboutApp2() {
     const currentRoute = "/aboutapp2"; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col overflow-y-auto ">
+        <div className="flex flex-col ">
             <div className="title-text-format">
                 <span>
                     <b> O que é o PT-BR Pai D&#39;Égua? </b>
@@ -16,7 +16,7 @@ export default function AboutApp2() {
                     <i> ¿Qué es el Portugués Pai D&#39;Égua? </i>
                 </span>
             </div>
-            <div className=" flex flex-col m-5 gap-5">
+            <div className=" flex flex-col m-5 gap-5 mb-20">
                 <div>
                     <div className="normal-text-font">
                         Assim, de agora em diante, tu vais perceber que
