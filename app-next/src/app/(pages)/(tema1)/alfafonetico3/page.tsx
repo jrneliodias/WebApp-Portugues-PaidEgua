@@ -1,5 +1,5 @@
 
-import NavBar from "@/app/components/NavBar";
+import NavBar from "@/app/components/navigation/NavBar";
 import { IconVolume } from "@tabler/icons-react";
 
 
@@ -15,7 +15,7 @@ export default function ListaPaidEgua() {
                 </span>
 
             </div>
-            <div className=" flex flex-col gap-5 max-w-3xl mb-20">
+            <div className="body-text-layout">
                 <div>
                     <div className="normal-text-font">
                         Essas diferenças acontecem com relação às Consoantes: J/G; L; R, V; Z/S e X.

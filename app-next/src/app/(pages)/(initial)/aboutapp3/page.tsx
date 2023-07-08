@@ -1,5 +1,5 @@
 import { IconKeyboard, IconBook, IconVolume, IconRefresh } from "@tabler/icons-react"
-import NavBar from "@/app/components/NavBar";
+import NavBar from "@/app/components/navigation/NavBar";
 
 
 export default function AboutApp3() {

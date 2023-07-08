@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='flex flex-col items-center h-full'>
-      <body className={`inter.className h-5/6`}>
+      <body className={`inter.className`}>
         {children}
       </body>
     </html>

@@ -71,11 +71,10 @@ body {
   }
 }
 
-@layer components {
+
   .main-layout {
     @apply flex flex-col items-center px-3 max-w-3xl;
   }
   .body-text-layout {
-    @apply flex flex-col lg:m-5 gap-5 mb-20;
+    @apply flex flex-col gap-5 pb-20 lg:m-5 ;
   }
-}

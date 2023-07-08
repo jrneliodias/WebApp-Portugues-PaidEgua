@@ -3,7 +3,7 @@ import acaiphone from "@/app/images/acaiphone.png"
 import acaihear from "@/app/images/acaihear.png"
 import acaihat from "@/app/images/acaihat.png"
 import acaibook from "@/app/images/acaibook.png"
-import NavBar from "@/app/components/NavBar";
+import NavBar from "@/app/components/navigation/NavBar";
 import { IconKeyboard,IconBook, IconVolume, IconRefresh} from "@tabler/icons-react"
 import SecondaryCharacters from "@/app/components/characters/SecondaryCharacters"
 

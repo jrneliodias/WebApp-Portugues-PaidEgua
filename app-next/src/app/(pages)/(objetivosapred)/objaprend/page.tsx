@@ -1,5 +1,5 @@
 
-import NavBar from "@/app/components/NavBar";
+import NavBar from "@/app/components/navigation/NavBar";
 
 
 export default function ListaPaidEgua() {
@@ -14,7 +14,7 @@ export default function ListaPaidEgua() {
                 </span>
 
             </div>
-            <div className=" flex flex-col m-5 gap-5  max-w-3xl mb-50">
+            <div className="body-text-layout">
                 <div>
                     <div className="normal-text-font">
                         Por meio de todo este contexto fonético-cultural, tu terás a oportunidade de desenvolver:

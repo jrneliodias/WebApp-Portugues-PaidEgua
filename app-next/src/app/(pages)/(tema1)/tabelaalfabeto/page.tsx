@@ -10,7 +10,7 @@ export default function ListaPaidEgua() {
     const currentRoute = "/tabelaalfabeto"; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col w-full max-w-3xl items-center  px-6">
+        <div className="main-layout">
             <div className="title-text-format ">
                 <span>
                     <b>Alfabeto Fonético do Português </b>
@@ -24,7 +24,7 @@ export default function ListaPaidEgua() {
             </div>
 
 
-            <div className="m-5 flex flex-col gap-3 w-full pb-20">
+            <div className="body-text-layout">
 
                 {alphabeticPhonema.map((item, index) => (
 

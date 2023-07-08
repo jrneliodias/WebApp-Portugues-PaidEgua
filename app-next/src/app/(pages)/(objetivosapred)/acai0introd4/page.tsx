@@ -2,7 +2,7 @@
 import Image from "next/image";
 import acai0 from "@/app/images/acai0.png"
 import { useTypedText } from "@/app/Hooks/useTypedText";
-import NavBar from "@/app/components/NavBar";
+import NavBar from "@/app/components/navigation/NavBar";
 
 const imageSize = 150;
 

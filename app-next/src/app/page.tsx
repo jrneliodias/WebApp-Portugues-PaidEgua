@@ -1,6 +1,6 @@
 import Image from "next/image";
 import PersonagensPg0 from './images/personagens-pag0.png'
-import NavBar from './components/NavBar';
+import NavBar from './components/navigation/NavBar';
 
 export default function Home() {
     const currentRoute = "/"; // Set the current route dynamically based on your page

@@ -1,5 +1,5 @@
 
-import NavBar from "@/app/components/NavBar";
+import NavBar from "@/app/components/navigation/NavBar";
 import { IconVolume } from "@tabler/icons-react";
 
 

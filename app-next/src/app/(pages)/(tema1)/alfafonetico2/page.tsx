@@ -1,5 +1,5 @@
 
-import NavBar from "@/app/components/NavBar";
+import NavBar from "@/app/components/navigation/NavBar";
 
 
 export default function AlfaFoneticoPort2() {
@@ -7,14 +7,14 @@ export default function AlfaFoneticoPort2() {
     const currentRoute = "/alfafonetico2"; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col ">
+        <div className="main-layout ">
             <div className="title-text-format ">
                 <span>
                     <b> Tema I - Alfabeto Fonético do Português </b>
                 </span>
 
             </div>
-            <div className=" flex flex-col m-5 gap-5  max-w-3xl mb-20">
+            <div className="body-text-layout">
                 <div>
                     <div className="normal-text-font">
                         Em barras inclinadas <span className="font-['Times_New_Roman'] bg-zinc-900 px-2 py-1 rounded-md">/ /</span> é o som da letra (FONEMA);

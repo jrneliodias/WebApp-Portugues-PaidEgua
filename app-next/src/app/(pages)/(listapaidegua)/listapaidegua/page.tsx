@@ -1,5 +1,5 @@
 
-import NavBar from "@/app/components/NavBar";
+import NavBar from "@/app/components/navigation/NavBar";
 
 
 export default function ListaPaidEgua() {
@@ -14,7 +14,7 @@ export default function ListaPaidEgua() {
                 </span>
 
             </div>
-            <div className=" flex flex-col m-5 gap-5 mb-20">
+            <div className="body-text-layout ">
                 <div>
                     <div className="normal-text-font">
                         Fizemos uma lista de assuntos que tu vais aprender aqui neste Web App, os quais
