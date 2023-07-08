@@ -40,7 +40,7 @@ body {
   }
 }
 .title-text-format {
-  @apply flex flex-col flex-wrap gap-1 p-2 m-3 ml-5 mr-5 rounded-[50px] items-center border-2;
+  @apply flex flex-col flex-wrap gap-1 p-3 m-3 ml-5 mr-5 rounded-[50px] items-center border-2;
   @apply bg-[#8055bd] text-xl text-center leading-tight;
 }
 
@@ -55,7 +55,7 @@ body {
   line-height: 1.25;
 }
 .phoneme-text-font {
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: "Times New Roman", Arial, sans-serif;
   color: var(--span-text-color);
   text-align: left;
   line-height: 1.25;
