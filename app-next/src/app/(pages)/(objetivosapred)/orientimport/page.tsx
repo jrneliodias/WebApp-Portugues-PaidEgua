@@ -9,7 +9,7 @@ export default function AboutApp3() {
     const iconformat = "row-span-2 place-self-center bg-[--background-nav-app] p-2 rounded-full m-2 "
 
     return (
-        <div className="flex flex-col justify-start">
+        <div className="main-layout">
             <div className="title-text-format">
                 <span>
                     <b> Orientações Importantes </b>

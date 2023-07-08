@@ -15,7 +15,7 @@ export default function AcaiIntroApp() {
     const currentRoute = '/acai0tema1'; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col justify-end item-center py-2 gap-5 h-full mb-[100px]">
+        <div className="flex flex-col justify-end item-center py-2 gap-5 h-full ">
             <div className=" flex justify-center">
                 <div className="relative">
 

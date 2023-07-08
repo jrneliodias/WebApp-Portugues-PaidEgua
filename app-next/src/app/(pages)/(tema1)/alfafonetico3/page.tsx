@@ -8,8 +8,8 @@ export default function ListaPaidEgua() {
     const currentroute = "/alfafonetico3"; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col items-center px-6">
-            <div className="title-text-format lg:mx-0 w-full">
+        <div className="main-layout">
+            <div className="title-text-format">
                 <span>
                     <b> Tema I - Alfabeto Fonético do Português </b>
                 </span>

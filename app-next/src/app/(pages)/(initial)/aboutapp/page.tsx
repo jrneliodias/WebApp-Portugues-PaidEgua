@@ -7,7 +7,7 @@ export default function AboutApp() {
     const currentRoute = "/aboutapp"; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col overflow-y-auto">
+        <div className="main-layout">
             <div className="title-text-format">
                 <span>
                     <b> O que é o PT-BR Pai D&#39;Égua? </b>
@@ -16,7 +16,7 @@ export default function AboutApp() {
                     <i> ¿Qué es el Portugués Pai D&#39;Égua? </i>
                 </span>
             </div>
-            <div className=" flex flex-col m-5 gap-5  max-w-3xl mb-20">
+            <div className=" body-text-layout">
                 <div>
                     <div className="normal-text-font">
                         Oi, mano(a)! Tu estás entrando em um espaço

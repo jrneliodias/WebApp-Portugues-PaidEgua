@@ -10,8 +10,8 @@ export default function ListaPaidEgua() {
     const currentRoute = "/tabelaalfabeto"; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col w-full max-w-3xl items-center px-6">
-            <div className="title-text-format w-full m-2 ">
+        <div className="flex flex-col w-full max-w-3xl items-center  px-6">
+            <div className="title-text-format ">
                 <span>
                     <b>Alfabeto Fonético do Português </b>
                 </span>
@@ -24,7 +24,7 @@ export default function ListaPaidEgua() {
             </div>
 
 
-            <div className="m-5 flex flex-col gap-3 w-full mb-20">
+            <div className="m-5 flex flex-col gap-3 w-full pb-20">
 
                 {alphabeticPhonema.map((item, index) => (
 
@@ -42,43 +42,3 @@ export default function ListaPaidEgua() {
     )
 
 }
-
-{/* <div className="grid grid-cols-2  gap-1">
-                    <div className="flex flex-col w-1/2">
-                        <div className=" bg-[#6548a0]  p-2 z-2 rounded-tl-3xl">
-                            Letra do Espanhol
-                        </div>
-                        <div className="bg-blue-500  text-[50px] flex justify-center">
-                            A
-                        </div>
-                        <div className="bg-[#6548a0]  p-2 w-full flex flex-col flex-1">
-                            <div>
-                                Fonema do Espanhol
-                            </div>
-                            <span>
-                                /a/ → [a]
-                            </span>
-
-                        </div>
-                    </div>
-
-                    <div className="w-1/2">
-                        <div className="bg-[#6548a0]  p-2">
-                            Letra do Português
-                        </div>
-                        <div className="bg-blue-500  text-[50px] flex justify-center">
-                            A
-                        </div>
-                        <div className="bg-[#6548a0]  p-2 text-center flex justify-center flex-col">
-                            <IconVolume />
-                            <div>
-                                Pronúncia do Português
-                            </div>
-                            <span>
-                                /a/ → [a]
-                            </span>
-                        </div>
-                    </div>
-                </div> */}
-
-// &apos; apostrófe (')

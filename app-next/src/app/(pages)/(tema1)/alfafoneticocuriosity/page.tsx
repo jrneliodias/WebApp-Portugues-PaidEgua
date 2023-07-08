@@ -8,9 +8,8 @@ export default function AlfaFoneticaCuriosity() {
     const currentroute = "/alfafoneticocuriosity"; // Set the current route dynamically based on your page
 
     return (
-        <div className="px-6 flex flex-col gap-50 ">
-            <div className="flex flex-col items-center mb-20">
-            <div className="title-text-format  w-full lg:mx-0 ">
+        <div className="main-layout">
+            <div className="title-text-format">
                 <span>
                     <b> Tema I - Alfabeto Fonético do Português </b>
                 </span>
@@ -338,11 +337,9 @@ export default function AlfaFoneticaCuriosity() {
                 </div>
 
             </div>
+
             
-
-            </div>
-
-            <NavBar currentRoute={currentroute} />
+           <NavBar currentRoute={currentroute} />
         </div>
     )
 

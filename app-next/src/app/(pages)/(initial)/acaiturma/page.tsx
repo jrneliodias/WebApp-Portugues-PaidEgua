@@ -1,12 +1,11 @@
 
-import acai0 from "@/app/images/acai0.png"
 import acaiphone from "@/app/images/acaiphone.png"
 import acaihear from "@/app/images/acaihear.png"
 import acaihat from "@/app/images/acaihat.png"
 import acaibook from "@/app/images/acaibook.png"
 import NavBar from "@/app/components/NavBar";
-import PersonagemComFala from "@/app/components/PersonagemComFala";
 import { IconKeyboard,IconBook, IconVolume, IconRefresh} from "@tabler/icons-react"
+import SecondaryCharacters from "@/app/components/characters/SecondaryCharacters"
 
 const imageSize = 150;
 
@@ -31,11 +30,11 @@ export default function AcaiTurma() {
     return (
         <div className="grid grid-cols-2 grid-rows-2 h-full gap-2  m-3">
 
-            <PersonagemComFala addPadding={false} imgSource={acaiphone} speech = {speech.pablito} icon={refresh}  />
-            <PersonagemComFala addPadding={true} imgSource={acaihear}  speech = {speech.abelita} icon={volume}  />
-            <PersonagemComFala addPadding={true} imgSource={acaihat}   speech = {speech.carlito} icon={keyboard}  />
-            <PersonagemComFala addPadding={true} imgSource={acaibook}  speech = {speech.juanito} icon={book}  />
-
+            <SecondaryCharacters addPadding={false} imgSource={acaiphone} speech = {speech.pablito} icon={refresh}  />
+            <SecondaryCharacters addPadding={true} imgSource={acaihear}  speech = {speech.abelita} icon={volume}  />
+            <SecondaryCharacters addPadding={true} imgSource={acaihat}   speech = {speech.carlito} icon={keyboard}  />
+            <SecondaryCharacters addPadding={true} imgSource={acaibook}  speech = {speech.juanito} icon={book}  />
+SecondaryCharacters
             <NavBar currentRoute={currentRoute} />
 
         </div>
