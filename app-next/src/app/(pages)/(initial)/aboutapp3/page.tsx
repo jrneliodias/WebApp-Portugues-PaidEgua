@@ -5,7 +5,7 @@ import NavBar from "@/app/components/navigation/NavBar";
 export default function AboutApp3() {
 
     const currentRoute = "/aboutapp3"; // Set the current route dynamically based on your page
-    const gridFormat = "grid grid-cols-[1fr_6fr] p-2 gap-1"
+    const gridFormat = "grid grid-cols-[1fr_5fr] p-1 gap-1"
     const iconformat = "row-span-2 place-self-center bg-[--background-nav-app] p-2 rounded-full m-2 "
 
     return (
@@ -18,7 +18,7 @@ export default function AboutApp3() {
                     <i> ¿Qué es el Portugués Pai D&#39;Égua? </i>
                 </span>
             </div>
-            <div className="grid m-5 gap-5 justify-center">
+            <div className="grid m-1 gap-5 justify-center">
                 <div className={gridFormat}>
                     <div className={iconformat}>
                         <IconBook size={30} />

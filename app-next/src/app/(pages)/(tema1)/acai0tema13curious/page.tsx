@@ -14,9 +14,8 @@ export default function AcaiTema1CuriousApp() {
     const currentRoute = '/acai0tema13curious'; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col justify-end item-center py-2 gap-5 h-full ">
-            <div>
-
+        <div className="flex flex-col justify-end item-center h-full">
+            <div className="flex flex-col h-3/4 w-full gap-4 justify-end my-auto">
                 <div className=" flex justify-center">
                     <div className="relative">
                         <div className=" bg-[--background-nav-app] p-5  rounded-[40px] inline-block w-[300px] border border-[--background-nav-app] drop-shadow-md z-50 text-center">
@@ -31,12 +30,13 @@ export default function AcaiTema1CuriousApp() {
                     </div>
 
                 </div>
-                <div className="flex justify-center drop-shadow-lg relative w-full h-1/2">
+
+                <div className="drop-shadow-lg h-[40%] w-full mx-auto">
                     <Image
                         src={acai0}
                         fill
                         alt="personagem-acai"
-                        className="object-contain"
+                        className="object-contain flex justify-center items-center"
                         priority={true}
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />

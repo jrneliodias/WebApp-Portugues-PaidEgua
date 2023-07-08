@@ -37,7 +37,7 @@ body {
   }
 }
 .title-text-format {
-  @apply flex flex-col flex-wrap gap-1 p-3 m-3 ml-5 mr-5 rounded-[50px] items-center border-2;
+  @apply flex flex-col flex-wrap gap-1 p-3 m-3 rounded-[50px] items-center border-2;
   @apply bg-[#8055bd] text-xl text-center leading-tight;
   @apply lg:mx-0 w-full max-w-3xl;
 }
@@ -73,7 +73,7 @@ body {
 
 
   .main-layout {
-    @apply flex flex-col items-center px-3 max-w-3xl;
+    @apply flex flex-col items-center px-4 py-2 max-w-3xl;
   }
   .body-text-layout {
     @apply flex flex-col gap-5 pb-20 lg:m-5 ;

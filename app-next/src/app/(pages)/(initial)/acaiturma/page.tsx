@@ -34,7 +34,6 @@ export default function AcaiTurma() {
             <SecondaryCharacters addPadding={true} imgSource={acaihear}  speech = {speech.abelita} icon={volume}  />
             <SecondaryCharacters addPadding={true} imgSource={acaihat}   speech = {speech.carlito} icon={keyboard}  />
             <SecondaryCharacters addPadding={true} imgSource={acaibook}  speech = {speech.juanito} icon={book}  />
-SecondaryCharacters
             <NavBar currentRoute={currentRoute} />
 
         </div>
