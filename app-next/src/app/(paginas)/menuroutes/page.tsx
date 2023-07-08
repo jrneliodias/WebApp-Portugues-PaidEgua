@@ -1,5 +1,5 @@
 
-import { menuRoute } from "@/app/data/routeData"
+import { routeData } from "@/app/data/routeData"
 import Link from "next/link"
 
 
@@ -16,10 +16,10 @@ export default function MenuRoutes() {
             </div>
             <div className=" flex flex-col m-5 gap-2 ">
 
-                {menuRoute.map((item, index) => (
-                    <Link key={index} href={item.route} className="rounded-lg p-2 bg-cardcolor hover:bg-navApp">
-                        {item.page}
-                    </Link>
+                { routeData.map((item, index) => (
+                   item.page && (<Link key={index} href={item.route} className="rounded-lg p-2 bg-cardcolor hover:bg-navApp">
+                        {item?.page}
+                    </Link>)
                 ))}
 
             </div>
