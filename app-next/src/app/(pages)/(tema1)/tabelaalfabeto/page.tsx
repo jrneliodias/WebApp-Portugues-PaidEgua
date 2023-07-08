@@ -1,5 +1,5 @@
 
-import NavBar from "@/app/components/NavBar";
+import NavBar from "@/app/components/navigation/NavBar";
 import TableLetter from "@/app/components/tableComponent/tablecell";
 import { IconBook, IconRefresh, IconVolume } from "@tabler/icons-react";
 import { alphabetData } from "@/app/data/alphabeticLettersData"
