@@ -5,7 +5,7 @@ import { IoCaretBackCircleOutline, IoCaretBackCircleSharp } from 'react-icons/io
 interface BtnVoltarProps {
     // handlePrevious: () => void
 }
-export default function BtnVoltar(props: BtnVoltarProps) {
+export default function BackBtn(props: BtnVoltarProps) {
     const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {

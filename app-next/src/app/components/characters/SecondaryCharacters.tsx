@@ -9,7 +9,7 @@ interface PersonagemProps {
 }
 
 
-export default function PersonagemComFala(props: PersonagemProps) {
+export default function SecondaryCharacters(props: PersonagemProps) {
 
     const paddingClass = props.addPadding ? 'p-2':'';
     return (

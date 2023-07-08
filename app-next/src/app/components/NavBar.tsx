@@ -1,8 +1,8 @@
 "use client"
 import Link from 'next/link';
-import BtnVoltar from './BtnVoltar';
+import BtnVoltar from './BackBtn';
 import BtnHome from './BtnHome';
-import BtnProxima from './BtnProxima';
+import BtnProxima from './NextBtn';
 import { routeData } from '@/app/data/routeData';
 
 interface NavBarProps {
@@ -27,7 +27,7 @@ export default function NavBar(props:NavBarProps) {
 
 
     return (
-        <footer className=" bg-[--background-app] fixed bottom-0 left-0 w-[100vw] h-[10vh] flex justify-center items-center">
+        <footer className=" bg-[--background-app] fixed bottom-0 left-0 right-0 h-20 w-full flex justify-center items-center">
             <div className="border-2 rounded-full bg-[--background-nav-app]">
                 <div className="flex items-center  justify-between p-2 w-[300px] h-[50px]">
                     <Link className="flex items-center" href={`${previousRoute}`} passHref>

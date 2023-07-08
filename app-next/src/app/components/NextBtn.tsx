@@ -6,7 +6,7 @@ interface BtnProximaProps {
     // handleNext: () => void
 }
 
-export default function BtnProxima(props:BtnProximaProps) {
+export default function NextBtn(props:BtnProximaProps) {
     const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {

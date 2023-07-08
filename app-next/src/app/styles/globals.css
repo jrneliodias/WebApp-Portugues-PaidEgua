@@ -3,7 +3,6 @@
 @tailwind utilities;
 @import url(components.css);
 
-
 :root {
   --background-nav-app: #8055bd;
   --background-app: #51338b;
@@ -18,9 +17,7 @@
     --background-end-rgb: 0, 0, 0;
   } */
 }
-html {
-  height: 100vh;
-}
+
 body {
   --tw-bg-opacity: 1;
   background-color: var(--background-app);
@@ -42,10 +39,11 @@ body {
 .title-text-format {
   @apply flex flex-col flex-wrap gap-1 p-3 m-3 ml-5 mr-5 rounded-[50px] items-center border-2;
   @apply bg-[#8055bd] text-xl text-center leading-tight;
+  @apply lg:mx-0 w-full max-w-3xl;
 }
 
 .normal-text-font {
-  @apply text-lg leading-tight ;
+  @apply text-lg leading-tight;
 }
 .span-text-font {
   font-family: "Arial Narrow", Arial, sans-serif;
@@ -73,4 +71,11 @@ body {
   }
 }
 
-
+@layer components {
+  .main-layout {
+    @apply flex flex-col items-center px-3 max-w-3xl;
+  }
+  .body-text-layout {
+    @apply flex flex-col lg:m-5 gap-5 mb-20;
+  }
+}
