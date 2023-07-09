@@ -1,8 +1,8 @@
 "use client"
-import Image from "next/image";
 import acai0 from "@/app/images/acai0.png"
 import { useTypedText } from "@/app/Hooks/useTypedText";
 import NavBar from "@/app/components/navigation/NavBar";
+import PrimaryCharacter from "@/app/components/characters/PrimaryCharacter";
 
 const imageSize = 150;
 
@@ -15,33 +15,7 @@ export default function AcaiTema1CuriousApp() {
 
     return (
         <div className="flex flex-col justify-end item-center h-full">
-            <div className="flex flex-col h-3/4 w-full gap-4 justify-end my-auto">
-                <div className=" flex justify-center">
-                    <div className="relative">
-                        <div className=" bg-[--background-nav-app] p-5  rounded-[40px] inline-block w-[300px] border border-[--background-nav-app] drop-shadow-md z-50 text-center">
-                            <span className="blinking-cursor text-center whitespace-pre-line ">
-
-                                {typedText}
-
-                            </span>
-                        </div>
-                        <div className="absolute w-0 h-0 border-t-[20px] border-t-transparent border-b-[--background-nav-app] border-b-[20px] border-l-[20px] border-l-transparent border-r-transparent border-r-[20px] border left-[80px] rotate-45 -bottom-[18px] drop-shadow-md ">
-                        </div>
-                    </div>
-
-                </div>
-
-                <div className="drop-shadow-lg h-[40%] w-full mx-auto">
-                    <Image
-                        src={acai0}
-                        fill
-                        alt="personagem-acai"
-                        className="object-contain flex justify-center items-center"
-                        priority={true}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    />
-                </div>
-            </div>
+            <PrimaryCharacter imgSource={acai0} speech={typedText} />
 
             <NavBar currentRoute={currentRoute} />
 

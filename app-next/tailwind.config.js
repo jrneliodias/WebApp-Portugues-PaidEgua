@@ -14,7 +14,10 @@ module.exports = {
       },
       colors:{
         'cardcolor': '#6548a0',
-        'navApp':'#8055bd'
+        'navApp':'#8055bd',
+        'secondaryColor':'#F7B801',
+        'alternativeColor':'#3D348B',
+        'alternativeSecColor':'#7678ED',
       }
     },
   },
