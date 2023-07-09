@@ -1,18 +1,18 @@
 
 import NavBar from "@/app/components/navigation/NavBar";
-import { actVowelData } from "@/app/data/actVowelData ";
+import { actVowelData2 } from "@/app/data/actVowelData ";
 import { IconBook, IconRefresh, IconVolume } from "@tabler/icons-react";
 
 
-export default function Actv1Vowel() {
+export default function Actv2Vowel() {
 
-    const currentroute = "/actv1vowel"; // Set the current route dynamically based on your page
+    const currentroute = "/actv2vowel"; // Set the current route dynamically based on your page
 
     return (
         <div className="main-layout">
             <div className="title-text-format">
                 <span>
-                    <b> Atividade 1 - Vogais</b>
+                    <b> Atividade 2 - Vogais</b>
                 </span>
                 <div className="flex gap-4">
                     <IconBook />
@@ -40,9 +40,9 @@ export default function Actv1Vowel() {
                     </div>
                 </div>
                 <div className="flex flex-col">
-                    <div className="grid grid-cols-3 gap-5 p-5 flex-1 content-around">
+                    <div className="grid grid-cols-3 gap-y-2  p-2 sm:p-5 sm:gap-5">
 
-                        {actVowelData.map((item, index) => (
+                        {actVowelData2.map((item, index) => (
                             <div key={index} className=" flex flex-col bg-[--bg-card-color] items-center p-2 rounded-3xl  min-w-[7rem] sm:w-full place-self-center">
                                 <span className="font-black">
                                     {item.portWord}
