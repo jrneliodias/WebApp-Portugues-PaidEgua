@@ -106,4 +106,9 @@ export const routeData: RouteData[] = [
     id: 22,
     route: "/acai0tema14dialeto",
   },
+  {
+    id: 23,
+    route: "/actv1vowel",
+    page: "Atividade 1 - Vogais",
+  },
 ];
