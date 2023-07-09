@@ -68,4 +68,78 @@ export const actVowelData: actVowelData[] = [
     portWord: "Futebol",
     spanWord: "(fútbol)",
   },
+  {
+    portWord: "Toalha",
+    spanWord: "(toalla)",
+  },
+
+  {
+    portWord: "Oferecer",
+    spanWord: "(ofrecer)",
+  },
+
+  {
+    portWord: "Ouvir",
+    spanWord: "(oír)",
+  },
+
+  {
+    portWord: "Omitir",
+    spanWord: "(omitir)",
+  },
+
+  {
+    portWord: "Potência",
+    spanWord: "(potencia)",
+  },
+
+  {
+    portWord: "Amado",
+    spanWord: "(amado)",
+  },
+
+  {
+    portWord: "Orla",
+    spanWord: "(orilla)",
+  },
+
+  {
+    portWord: "Navio",
+    spanWord: "(navío)",
+  },
+
+  {
+    portWord: "Oração",
+    spanWord: "(oración)",
+  },
+
+  {
+    portWord: "Dado",
+    spanWord: "(dado)",
+  },
+
+  {
+    portWord: "Avô",
+    spanWord: "(abuelo)",
+  },
+
+  {
+    portWord: "Mágoa",
+    spanWord: "(rencor)",
+  },
+
+  {
+    portWord: "Prato",
+    spanWord: "(plato)",
+  },
+
+  {
+    portWord: "Biologia",
+    spanWord: "(bilogia)",
+  },
+
+  {
+    portWord: "Obra",
+    spanWord: "(obra)",
+  },
 ];
