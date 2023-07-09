@@ -33,7 +33,7 @@ export default function SecondaryCharacters(props: PersonagemProps) {
                     </div>
                 </div>
         
-            <div className="flex justify-center drop-shadow-lg relative w-full h-1/2">
+            <div className="flex justify-center drop-shadow-lg relative w-5/6 h-1/2 mx-auto sm:w-full">
                 <Image
                     src={props.imgSource}
                     fill
