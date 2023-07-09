@@ -9,15 +9,11 @@ export const actVowelData: actVowelData[] = [
     spanWord: "(pié)",
   },
   {
-    portWord: "Pé",
-    spanWord: "(pié)",
-  },
-  {
     portWord: "Medo",
     spanWord: "(miedo)",
   },
   {
-    portWord: "a Cadeado",
+    portWord: "Cadeado",
     spanWord: "(cerradura)",
   },
   {
@@ -54,7 +50,7 @@ export const actVowelData: actVowelData[] = [
   },
   {
     portWord: "Antemão",
-    spanWord: "(antamno)",
+    spanWord: "(antemano)",
   },
   {
     portWord: "Céu",
@@ -68,11 +64,13 @@ export const actVowelData: actVowelData[] = [
     portWord: "Futebol",
     spanWord: "(fútbol)",
   },
+];
+
+export const actVowelData2: actVowelData[] = [
   {
     portWord: "Toalha",
     spanWord: "(toalla)",
   },
-
   {
     portWord: "Oferecer",
     spanWord: "(ofrecer)",
