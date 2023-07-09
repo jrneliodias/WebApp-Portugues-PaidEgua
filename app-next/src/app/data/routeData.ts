@@ -102,4 +102,8 @@ export const routeData: RouteData[] = [
     route: "/alfafoneticocuriosity",
     page: "Curiosidades do Dialeto Paraense",
   },
+  {
+    id: 22,
+    route: "/acai0tema14dialeto",
+  },
 ];
