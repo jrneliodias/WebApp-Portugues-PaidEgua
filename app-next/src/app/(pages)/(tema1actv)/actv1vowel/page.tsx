@@ -40,7 +40,7 @@ export default function Actv1Vowel() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-3 gap-5 p-5 mx-auto">
+                <div className="grid grid-cols-3 gap-5 p-5">
 
                     {actVowelData.map((item, index) => (
                         <div className=" flex flex-col bg-[--bg-card-color] items-center p-2 rounded-3xl max-w-[120px]">
