@@ -16,7 +16,6 @@ export default function AcaiTema1DialetoApp() {
     return (
         <div className="flex flex-col justify-end item-center h-full">
             <PrimaryCharacter imgSource={acai0} speech={typedText} />
-
             <NavBar currentRoute={currentRoute} />
 
         </div>
