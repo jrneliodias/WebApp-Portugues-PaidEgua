@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link';
 import { routeData } from '@/app/data/routeData';
-import { BsHouse, BsHouseDoor, } from 'react-icons/bs'
+import {BsHouseDoor} from 'react-icons/bs'
 import { motion } from "framer-motion"
 import { IoCaretBackCircleOutline, IoCaretForwardCircleOutline } from 'react-icons/io5';
 interface NavBarProps {
