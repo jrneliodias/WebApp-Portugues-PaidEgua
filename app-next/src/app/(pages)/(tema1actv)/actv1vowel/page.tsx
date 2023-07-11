@@ -43,7 +43,7 @@ export default function Actv1Vowel() {
                     <div className="grid grid-cols-3 gap-5 p-5 flex-1 content-around">
 
                         {actVowelData.map((item, index) => (
-                            <div key={index} className=" flex flex-col bg-[--bg-card-color] items-center p-2 rounded-3xl  min-w-[7rem] sm:w-full place-self-center">
+                            <div key={index} className=" flex flex-col bg-[--bg-card-color] items-center p-2 rounded-3xl  min-w-[6rem] sm:w-full place-self-center">
                                 <span className="font-black">
                                     {item.portWord}
                                 </span>
