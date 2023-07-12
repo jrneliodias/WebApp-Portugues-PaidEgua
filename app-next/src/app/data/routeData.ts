@@ -39,4 +39,6 @@ export const routeData: RouteData[] = [
     { id: 33, route: '/acai0tema26' },
     { id: 34, route: '/atv2' },
     { id: 35, route: '/acai0tema27' },
+    { id: 36, route: '/atv3' },
+    { id: 37, route: '/atv4' },
   ];
