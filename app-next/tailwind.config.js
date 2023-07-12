@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens:{
+        'moto-g4':'360px',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

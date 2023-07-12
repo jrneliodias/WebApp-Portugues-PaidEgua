@@ -19,7 +19,7 @@ export default function SecondaryCharacters(props: PersonagemProps) {
         setIsImageLoaded(true);
     }
     return (
-        <div className="h-full flex flex-col justify-center">
+        <div className="w-[150pxs] h-full flex flex-col justify-center">
 
             <div className=" flex justify-center">
 
@@ -37,7 +37,7 @@ export default function SecondaryCharacters(props: PersonagemProps) {
                 </div>) : null}
             </div>
 
-            <div className="flex justify-center drop-shadow-lg relative w-5/6 h-1/2 mx-auto sm:w-full">
+            <div className="relative flex justify-center drop-shadow-lg w-full h-[100px] moto-g4:h-[150px] mx-auto ">
                 <Image
                     src={props.imgSource}
                     fill

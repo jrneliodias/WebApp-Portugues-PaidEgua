@@ -6,9 +6,9 @@ enum Phase {
     Deleting
 }
 
-const TYPING_INTERVAL = 20
+const TYPING_INTERVAL = 30
 const PAUSE_INTERVAL = 5000;
-const DELETING_INTERVAL = 10;
+const DELETING_INTERVAL = 20;
 
 export const useTypedText = (textToType: string[]) => {
     const [selectedIndex,setSelectedIndex] = useState(0)
