@@ -36,13 +36,13 @@ export default function AlfaFoneticaCuriosity() {
                         Pueden ser pronunciadas con un sonido más cerrado [e] / [o], como en las palabras: “Ele”; “bolo”.
                     </div>
                 </div>
-                <div className="border flex justify-around">
+                <div className="flex justify-around">
                     <div className="flex flex-col  w-full p-3 gap-3 ">
-                        <div className=" border flex justify-center flex-col items-center rounded-lg p-3 px-6 mx-auto">
+                        <div className=" border-2 bg-[--bg-card-color] flex justify-center flex-col items-center rounded-lg p-3 px-6 mx-auto">
                             <IconVolume />
                             <p>Ele</p>
-                            <p>['eʎI]</p>
-                            <p>Él</p>
+                            <p className="phoneme-text-font">['eʎI]</p>
+                            <p className="span-text-font">Él</p>
                         </div>
                         <div className="relative h-[10rem] ">
 
@@ -56,10 +56,11 @@ export default function AlfaFoneticaCuriosity() {
                         </div>
                     </div>
                     <div className="flex flex-col h-80 w-full p-3 gap-3">
-                        <div className="border">
-                            Bolo
-                            ['bolʊ]
-                            Torta
+                    <div className=" border-2 bg-[--bg-card-color] flex justify-center flex-col items-center rounded-lg p-3 px-6 mx-auto">
+                            <IconVolume />
+                            <p>Ele</p>
+                            <p className="phoneme-text-font">[ʻbolʊ]</p>
+                            <p className="span-text-font">Torta</p>
                         </div>
                         <div className="relative h-[10rem] w-auto">
                             <Image
