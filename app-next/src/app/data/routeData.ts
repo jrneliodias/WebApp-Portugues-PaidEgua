@@ -104,20 +104,24 @@ export const routeData: RouteData[] = [
   },
   {
     id: 22,
+    route: "/acai0tema14curious",
+  },
+  {
+    id: 23,
     route: "/alfafoneticocuriosity2",
     page: "Curiosidades do Dialeto Paraense 2",
   },
   {
-    id: 23,
+    id: 24,
     route: "/acai0tema14dialeto",
   },
   {
-    id: 24,
+    id: 25,
     route: "/actv1vowel",
     page: "Atividade 1 - Vogais",
   },
   {
-    id: 25,
+    id: 26,
     route: "/actv2vowel",
     page: "Atividade 2 - Vogais",
   },
