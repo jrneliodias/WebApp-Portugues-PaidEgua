@@ -125,4 +125,9 @@ export const routeData: RouteData[] = [
     route: "/actv2vowel",
     page: "Atividade 2 - Vogais",
   },
+  {
+    id: 27,
+    route: "/actv3vowel",
+    page: "Atividade 3 - Vogais",
+  },
 ];
