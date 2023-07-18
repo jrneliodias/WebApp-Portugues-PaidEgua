@@ -1,7 +1,17 @@
 
 import NavBar from "@/app/components/navigation/NavBar";
+import { actVowelSpellLetterData } from "@/app/data/actVowel2Data";
 import { actVowelData2 } from "@/app/data/actVowelData ";
 import { IconBook, IconRefresh, IconVolume } from "@tabler/icons-react";
+
+// const word = 'avó'
+
+const shuffleString = (string: string) => {
+    const characters = string.split("");
+    const shuffledCharacters = characters.sort(() => Math.random() - 0.5);
+    return shuffledCharacters.join("");
+}
+
 
 
 export default function Actv3Vowel() {
@@ -27,19 +37,45 @@ export default function Actv3Vowel() {
                         Escuta o áudio com atenção e organiza a sequência das letras que formam a palavra indicada. Ao clicar em cada letra, tu poderás ouvir sua respectiva pronúncia.
                     </div>
                 </div>
-                <div className="grid gap-4">
-                    <div className="flex gap-2">
-                        <IconVolume />
-                        <p className="phoneme-text-font">[a'vɔ]</p>
-                        <div className="border-b-2 min-w-[1rem]"></div>
-                        <div className="border-b-2 min-w-[1rem]"></div>
-                        <div className="border-b-2 min-w-[1rem]"></div>
+                <div className="grid gap-5">
+
+
+                    <div className="flex flex-col gap-4">
+                        <div className="flex gap-2">
+                            <IconVolume />
+
+                            <p className="phoneme-text-font text-xl mr-5">[a'vɔ]</p>
+
+                            {(Array.from(
+                                { length: 3 },
+                                (_, index) => (
+                                    <div key={index} className="border-b-2 min-w-[1rem]"></div>
+                                )))}
+                        </div>
+
+                        <div className="flex flex-col gap-3">
+                            {actVowelSpellLetterData.map((item, wordIndex) => {
+                                return (
+                                    <div className="flex gap-2" key={wordIndex}>
+                                        {shuffleString(item.portWord).split("").map((letter, letterIndex) =>
+                                        (
+                                            <div key={letterIndex} className=" bg-cardcolor uppercase p-3 rounded-md">
+                                                {letter}
+                                            </div>
+                                        ))}
+                                    </div>
+                                )
+                            })}
+                        </div>
                     </div>
-                    <div className="flex gap-3">
-                        <div className="bg-cardcolor uppercase p-3 rounded-md"> ó</div>
-                        <div className="bg-cardcolor uppercase p-3 rounded-md"> a</div>
-                        <div className="bg-cardcolor uppercase p-3 rounded-md"> v</div>
-                    </div>
+
+                    {/* 
+                            <div className="bg-cardcolor uppercase p-3 rounded-md"> ó</div>
+                            <div className="bg-cardcolor uppercase p-3 rounded-md"> a</div>
+                            <div className="bg-cardcolor uppercase p-3 rounded-md"> v</div> */}
+
+
+
                 </div>
 
 
@@ -63,14 +99,11 @@ export default function Actv3Vowel() {
                 </div> */}
 
 
-
-
-
             </div>
 
 
             <NavBar currentRoute={currentroute} />
-        </div>
+        </div >
     )
 
 }
