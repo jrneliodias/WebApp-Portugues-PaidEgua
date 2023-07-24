@@ -49,7 +49,7 @@ body {
   @apply flex flex-col items-center px-4 py-2 max-w-3xl;
 }
 .body-text-layout {
-  @apply flex flex-col gap-5 pb-[6rem] sm:px-5 lg:m-5;
+  @apply flex flex-col gap-5 pb-[6rem] mt-5 sm:px-5 lg:m-5;
 }
 
 .span-text-font {
