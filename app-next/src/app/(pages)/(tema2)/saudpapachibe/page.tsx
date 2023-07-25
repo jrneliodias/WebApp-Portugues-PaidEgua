@@ -4,7 +4,7 @@ import NavBar from "@/app/components/navigation/NavBar";
 
 export default function Saudpapachibe() {
 
-    const currentRoute = "/alfafonetico2"; // Set the current route dynamically based on your page
+    const currentRoute = "/saudpapachibe"; // Set the current route dynamically based on your page
 
     return (
         <div className="main-layout ">
