@@ -7,3 +7,11 @@ export default function LightColorCard(props:any) {
         </div>
     );
 }
+
+export function WordCard(props:any) {
+    return (
+        <div className="bg-[#8e7fbb] p-4 flex gap-3 rounded-[1.5rem] ">
+            {props.children}
+        </div>
+    );
+}
