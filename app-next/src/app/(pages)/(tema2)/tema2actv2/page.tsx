@@ -1,14 +1,9 @@
 
 import ActTextInput from "@/app/components/activities/actinput";
-import LineCards from "@/app/components/activities/linecards";
 import NormalText from "@/app/components/basics/normaltext";
-import SpanishText from "@/app/components/basics/spanishtext";
 import TextDiv from "@/app/components/basics/text";
-import LightColorCard, { WordCard } from "@/app/components/cards/card";
 import NavBar from "@/app/components/navigation/NavBar";
 import { IconBook, IconKeyboard, IconRefresh, IconVolume } from "@tabler/icons-react";
-
-
 
 
 const phrases = ["¿EN QUÉ ANDAS?",
