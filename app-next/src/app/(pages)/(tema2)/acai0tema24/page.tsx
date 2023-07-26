@@ -6,12 +6,12 @@ import PrimaryCharacter from "@/app/components/characters/PrimaryCharacter";
 
 const imageSize = 150;
 
-const textToType = [`Mano (a), para que tu consigas iniciar uma conversa em português, é necessário que conheças algumas formas de cumprimento.`]
+const textToType = [`Se familiarizando com as Formas de Cumprimento.`]
 
-export default function AcaiIntroApp20() {
+export default function AcaiIntroApp24() {
     const typedText = useTypedText(textToType)
 
-    const currentRoute = '/acai0tema21'; // Set the current route dynamically based on your page
+    const currentRoute = '/acai0tema24'; // Set the current route dynamically based on your page
 
     return (
         <div className="flex flex-col justify-end item-center py-2 gap-5 h-full ">
