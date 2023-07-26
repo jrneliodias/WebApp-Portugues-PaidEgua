@@ -1,10 +1,30 @@
 
+import ActTextInput from "@/app/components/activities/actinput";
 import LineCards from "@/app/components/activities/linecards";
 import NormalText from "@/app/components/basics/normaltext";
 import SpanishText from "@/app/components/basics/spanishtext";
 import TextDiv from "@/app/components/basics/text";
+import LightColorCard, { WordCard } from "@/app/components/cards/card";
 import NavBar from "@/app/components/navigation/NavBar";
-import { IconBook, IconRefresh, IconVolume } from "@tabler/icons-react";
+import { IconBook, IconKeyboard, IconRefresh, IconVolume } from "@tabler/icons-react";
+
+
+
+
+const phrases = ["¿EN QUÉ ANDAS?",
+    "ESTOY BIEN",
+    "¿Y AHÍ, MI PANA?",
+    "MUCHO GUSTO",
+    "ME LLAMO…",
+    "¡BUENOS DÍAS!",
+    "¡HASTA LUEGO!",
+    "¿DÓNDE VIVES?",
+    "MI NOMBRE ES...",
+    "YA ME VOY",
+    "¡HOLA!",
+    "¿CUÁL ES TU NOMBRE?",
+    "¡BUENAS NOCHES!",
+    "MUCHAS GRACIAS"];
 
 
 export default function Tema2Actv2() {
@@ -30,33 +50,15 @@ export default function Tema2Actv2() {
                     </NormalText>
 
                 </TextDiv>
-                <LineCards text={["¿EN QUÉ ANDAS?"]} />
 
-                <LineCards text={["ESTOY BIEN"]} />
+                {phrases.map((phrase,index) => {
+                    return(
+                        <ActTextInput key = {index} > {phrase}</ActTextInput>
+                    )
+                })}
 
-                <LineCards text={["¿Y AHÍ, MI PANA?"]} />
 
-                <LineCards text={["MUCHO GUSTO"]} />
 
-                <LineCards text={["ME LLAMO…"]} />
-
-                <LineCards text={["¡BUENOS DÍAS!"]} />
-
-                <LineCards text={["¡HASTA LUEGO!"]} />
-
-                <LineCards text={["¿DÓNDE VIVES?"]} />
-
-                <LineCards text={["MI NOMBRE ES..."]} />
-
-                <LineCards text={["YA ME VOY"]} />
-
-                <LineCards text={["¡HOLA!"]} />
-
-                <LineCards text={["¿CUÁL ES TU NOMBRE?"]} />
-
-                <LineCards text={["¡BUENAS NOCHES!"]} />
-
-                <LineCards text={["MUCHAS GRACIAS"]} />
 
 
 
