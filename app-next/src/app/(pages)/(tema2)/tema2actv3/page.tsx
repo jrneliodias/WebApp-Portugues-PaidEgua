@@ -6,12 +6,14 @@ import NavBar from "@/app/components/navigation/NavBar";
 import { IconBook, IconKeyboard, IconRefresh, IconVolume } from "@tabler/icons-react";
 import imgSource from "@/app/images/acaiTigela.png"
 import Image from "next/image";
+import { WordCard } from "@/app/components/cards/card";
 
 
-const figures = Array(7).fill(imgSource);
+
+const greetings  = ["(Qual é o teu nome?)", "(Boa noite!)", "(Muito prazer)", "(Até logo)", "(Bom dia!)", "(Como estás?)", "(Obrigado (a))"];
 
 const phrases =
-        ["A - A primeira pergunta que fazemos quando queremos identificar uma pessoa que não conhecemos.",
+    ["A - A primeira pergunta que fazemos quando queremos identificar uma pessoa que não conhecemos.",
         "B - O cumprimento que utilizamos quando vamos dormir",
         "C - A expressão que geralmente usamos quando nos apresentamos a alguém.",
         "D - A expressão de agradecimento a alguém.",
@@ -43,12 +45,12 @@ export default function Tema2Actv3() {
 
                 </TextDiv>
 
-                <div className="relative w-full grid grid-cols-2 gap-5">
+                <div className="relative w-full grid grid-cols-2 gap-5 my-4">
 
-                    {figures.map((figure, index) =>
-                        <div key={index} className="flex justify-center">
+                    {greetings.map((greeting, index) =>
+                        <div key={index} className="flex flex-col items-center">
                             <Image
-                                src={figure}
+                                src={imgSource}
                                 width={80}
                                 height={80}
                                 alt={'Cuias de Açaí'}
@@ -56,6 +58,7 @@ export default function Tema2Actv3() {
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 
                             />
+                            <WordCard> {greeting} </WordCard>
                         </div>
                     )}
 
