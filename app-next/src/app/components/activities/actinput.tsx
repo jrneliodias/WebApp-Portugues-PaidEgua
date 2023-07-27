@@ -5,7 +5,7 @@ import SpanishText from "../basics/spanishtext";
 export default function ActTextInput(props: any) {
     return (
         <div className="flex flex-col gap-3">
-            <WordCard className="justify-center italic font-bold">
+            <WordCard className={props.className}>
                 {props.children}
             </WordCard>
             <div className="flex gap-3 p-2">
