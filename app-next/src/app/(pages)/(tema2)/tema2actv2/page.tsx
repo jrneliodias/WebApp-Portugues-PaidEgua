@@ -46,17 +46,11 @@ export default function Tema2Actv2() {
 
                 </TextDiv>
 
-                {phrases.map((phrase,index) => {
-                    return(
-                        <ActTextInput key = {index} > {phrase}</ActTextInput>
+                {phrases.map((phrase, index) => {
+                    return (
+                        <ActTextInput key={index} className={"justify-center italic font-bold"} > {phrase}</ActTextInput>
                     )
                 })}
-
-
-
-
-
-
             </div>
             <NavBar currentRoute={currentRoute} />
         </div>
