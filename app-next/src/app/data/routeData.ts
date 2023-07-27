@@ -179,6 +179,11 @@ export const routeData: RouteData[] = [
   },
   {
     id: 39,
-    route: "/acai0tema27",
+    route: "/acai0tema25",
+  },
+  {
+    id: 40,
+    route: "/tema2actv3",
+    page: "Tema 2 - Atividade 3",
   },
 ];
