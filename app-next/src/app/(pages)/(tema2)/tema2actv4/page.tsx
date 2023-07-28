@@ -66,77 +66,175 @@ export default function Tema2Actv4() {
 
                 </div>
 
-                <TextDiv>
+                <TextDiv className="flex flex-col gap-3">
                     <NormalText>
                         Texto II: Gilberto apresenta Pilar a Rogério.
                     </NormalText>
                     <NormalText>
-                        Gilberto:
+                        <div>
+                            Gilberto:
+                        </div>
                         __, Rogério. Vou te apresentar minha amiga Pilar.
+                        <PhonemeFont>
+                            [ oj, xo'ʒeɾjʊ. 'vow 'tʃI apɾɛzẽtaɾ 'mĩɲa a'miga pi'laɾ]
+                        </PhonemeFont>
                     </NormalText>
-                    <PhonemeFont>
-                        [ oj, xo'ʒeɾjʊ. 'vow 'tʃI apɾɛzẽtaɾ 'mĩɲa a'miga pi'laɾ]
-                    </PhonemeFont>
                     <NormalText>
-                        Rogerio:
+                        <div>
+                            Rogério:
+                        </div>
                         ___, Pilar, _____________?
+                        <PhonemeFont>
+                            [oj, pi'laɾ , 'kõmʊ Iʃ'tajʃ?]
+                        </PhonemeFont>
                     </NormalText>
-                    <PhonemeFont>
-                        [oj, pi'laɾ , 'kõmʊ Iʃ'tajʃ?]
-                    </PhonemeFont>
                     <SpanishText>
-                        Pilar:
+                        <div className="font-sans text-white not-italic text-lg">
+                            Pilar:
+                        </div>
                         Muy bien, gracias. ¿Me entiendes?
                     </SpanishText>
                     <NormalText>
-                        Rogerio:
+                        <div>
+                            Rogério:
+                        </div>
                         ___, Pilar, _____________?
                     </NormalText>
-                    Rogério:
-                    Sim. E tu, consegues compreende o que
-                    falo?
-                    [sĩ. ' I 'tu, k õ'sɛguIʃ k õpɾiẽdeɾ ' ʊ 'kI
-                    'falʊ?]
-                    Pilar: Sí, ya convivo con los brasileños hace tiempo.
-                    ¿Tú también eres parense, como Gilberto?
-                    Rogério:
-                    Sim, nasci em Santa Izabel, mas moro
-                    aqui em Belém.
-                    ['sĩ, na'si 'ẽj 'sãta iza'bɛw, 'majʃ 'moɾʊ
-                    a'kI 'ẽj be'lẽj]
-                    Gilberto:
-                    Pilar, eu e o Rogério trabalhamos juntos
-                    na mesma escola.
-                    [pilaɾ, 'ew 'I 'ʊ xo'ʒɛɾjʊ tɾaba'ʎamʊʃ 'ʒũtʊʃ
-                    ' na 'mẽjʃma Iʃkɔla].
-                    Pilar:
-                    ¡Qué bueno!
-                    Rogério:
-                    _________________, Pilar? ['dʒI 'õdʒI 'tu 'ɛjʃ , pi'laɾ?]
-                    Pilar:
-                    Soy de Venezuela.
-                    Rogério:
-                    _________! Quanto tempo tu estás
-                    em Belém?
-                    [ 'kI 'bõ! ! 'kwãtʊ 'tẽpʊ 'tu Iʃ'tajʃ 'ẽj
-                    bɛ'lẽj?]
-                    Pilar:
-                    Llegué hace poco tiempo, algunas semanas.
-                    Rogério:
-                    Então, ______________ à cidade
-                    das Mangueiras.
-                    [ẽ'tãw, ' seʒa b ẽj ' vĩda ' a si'dadʒI
-                    'dajʃ mã'gejɾaʃ]
-                    Pilar:
-                    Muchas gracias.
-                    Gilberto:
-                    Bem, Temos que ir, Pilar.
-                    ['bẽj, 'tẽmʊʃ 'kI 'iɾ, pi'laɾ]
-                    Pilar:
-                    Sí, Gilberto
-                    ¡Hasta luego, Rogerio!
-                    Rogério:
-                    E u também __________. ['ew tã'bẽj 'ʒa 'tõ 'ĩdʊ]
+                    <NormalText>
+                        <div>
+                            Rogério:
+                        </div>
+                        Sim. E tu, consegues compreende o que falo?
+                        <PhonemeFont>
+                            [sĩ. ' I 'tu, k õ'sɛguIʃ k õpɾiẽdeɾ ' ʊ 'kI
+                            'falʊ?]
+                        </PhonemeFont>
+                    </NormalText>
+
+                    <SpanishText>
+                        <div className="font-sans text-white not-italic text-lg">
+                            Pilar:
+                        </div>
+                        Muchas gracias.
+                        ¿Tú también eres parense, como Gilberto?
+                    </SpanishText>
+                    <TextDiv>
+                        <div>
+                            Rogério:
+                        </div>
+                        Sim, nasci em Santa Izabel, mas moro
+                        aqui em Belém.
+                        <PhonemeFont>
+                            ['sĩ, na'si 'ẽj 'sãta iza'bɛw, 'majʃ 'moɾʊ
+                            a'kI 'ẽj be'lẽj]
+                        </PhonemeFont>
+                    </TextDiv>
+                    <TextDiv>
+                        <div>
+                            Gilberto:
+                        </div>
+                        Pilar, eu e o Rogério trabalhamos juntos na mesma escola.
+
+                        <PhonemeFont>
+                            [pilaɾ, 'ew 'I 'ʊ xo'ʒɛɾjʊ tɾaba'ʎamʊʃ 'ʒũtʊʃ ' na 'mẽjʃma Iʃkɔla].
+                        </PhonemeFont>
+                    </TextDiv>
+                    <SpanishText>
+                        <div className="font-sans text-white not-italic text-lg">
+                            Pilar:
+                        </div>
+                        ¡Qué bueno!
+
+                    </SpanishText>
+                    <TextDiv>
+                        <div>
+                            Rogério:
+                        </div>
+                        _________________, Pilar?
+                        <PhonemeFont>
+                            ['dʒI 'õdʒI 'tu 'ɛjʃ , pi'laɾ?]
+                        </PhonemeFont>
+                    </TextDiv>
+                    <SpanishText>
+                        <div className="font-sans text-white not-italic text-lg">
+                            Pilar:
+                        </div>
+                        Soy de Venezuela.
+                    </SpanishText>
+
+                    <TextDiv>
+                        <div>
+                            Rogério:
+                        </div>
+                        _________! Quanto tempo tu estás em Belém?
+                        <PhonemeFont>
+                            [ 'kI 'bõ! ! 'kwãtʊ 'tẽpʊ 'tu Iʃ'tajʃ 'ẽj bɛ'lẽj?]
+                        </PhonemeFont>
+                    </TextDiv>
+
+
+                    <SpanishText>
+                        <div className="font-sans text-white not-italic text-lg">
+                            Pilar:
+                        </div>
+                        Muchas gracias.
+                    </SpanishText>
+                    <TextDiv>
+                        <div>
+                            Rogério:
+                        </div>
+                        Então, ______________ à cidade das Mangueiras.
+
+                        <PhonemeFont>
+                            [ẽ'tãw, ' seʒa b ẽj ' vĩda ' a si'dadʒI
+                            'dajʃ mã'gejɾaʃ]
+
+                        </PhonemeFont>
+                    </TextDiv>
+
+                    <SpanishText>
+                        <div className="font-sans text-white not-italic text-lg">
+                            Pilar:
+                        </div>
+                        Muchas gracias.
+                    </SpanishText>
+
+                    <TextDiv>
+                        <div>
+                            Gilberto:
+                        </div>
+                        Bem, Temos que ir, Pilar.
+
+                        <PhonemeFont>
+                            ['bẽj, 'tẽmʊʃ 'kI 'iɾ, pi'laɾ]
+
+                        </PhonemeFont>
+                    </TextDiv>
+
+
+                    <SpanishText>
+                        <div className="font-sans text-white not-italic text-lg">
+                            Pilar:
+                        </div>
+                        Sí, Gilberto
+                        ¡Hasta luego, Rogério!
+                    </SpanishText>
+
+
+                    <TextDiv>
+                        <div>
+                            Rogério:
+                        </div>
+                        E u também __________.
+
+                        <PhonemeFont>
+                            ['ew tã'bẽj 'ʒa 'tõ 'ĩdʊ]
+
+                        </PhonemeFont>
+                    </TextDiv>
+
+
+
                 </TextDiv>
 
 

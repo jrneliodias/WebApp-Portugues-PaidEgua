@@ -8,7 +8,7 @@ export default function SpanishText(props:any) {
 
 export function PhonemeFont(props:any) {
     return (
-        <div className="span-fonema-font">
+        <div className="phoneme-text-font">
             {props.children}
         </div>
     );
