@@ -7,189 +7,195 @@ interface RouteData {
 export const routeData: RouteData[] = [
   {
     id: 1,
-    route: "/",
+    route: '/',
     page: "Capa",
-  },
-  {
+    },
+    {
     id: 2,
-    route: "/aboutapp",
+    route: '/aboutapp',
     page: "Apresentação",
-  },
-  {
+    },
+    {
     id: 3,
-    route: "/acai0introd",
-  },
-  {
+    route: '/acai0introd',
+    },
+    {
     id: 4,
-    route: "/acaiturma",
+    route: '/acaiturma',
     page: "Personagens",
-  },
-  {
+    },
+    {
     id: 5,
-    route: "/aboutapp2",
+    route: '/aboutapp2',
     page: "Sobre o App ",
-  },
-  {
+    },
+    {
     id: 6,
-    route: "/aboutapp3",
+    route: '/aboutapp3',
     page: "Explicações dos Icons",
-  },
-  {
+    },
+    {
     id: 7,
-    route: "/acai0introd2",
-  },
-  {
+    route: '/acai0introd2',
+    },
+    {
     id: 8,
-    route: "/listapaidegua",
+    route: '/listapaidegua',
     page: "Lista Pai D'Égua",
-  },
-  {
+    },
+    {
     id: 9,
-    route: "/acai0introd3",
-  },
-  {
+    route: '/acai0introd3',
+    },
+    {
     id: 10,
-    route: "/objaprend",
+    route: '/objaprend',
     page: "Objetivos de Aprendizagem",
-  },
-  {
+    },
+    {
     id: 11,
-    route: "/acai0introd4",
-  },
-  {
+    route: '/acai0introd4',
+    },
+    {
     id: 12,
-    route: "/orientimport",
+    route: '/orientimport',
     page: "Orientações Importantes",
-  },
-  {
+    },
+    {
     id: 13,
-    route: "/acai0tema1",
-  },
-  {
+    route: '/acai0tema1',
+    },
+    {
     id: 14,
-    route: "/alfafonetico",
+    route: '/alfafonetico',
     page: "Tema I - Alfabeto Fonético",
-  },
-  {
+    },
+    {
     id: 15,
-    route: "/acai0tema2",
-  },
-  {
+    route: '/acai0tema2',
+    },
+    {
     id: 16,
-    route: "/alfafonetico2",
+    route: '/alfafonetico2',
     page: "Alfabeto Fonético 2",
-  },
-  {
+    },
+    {
     id: 17,
-    route: "/tabelaalfabeto",
+    route: '/tabelaalfabeto',
     page: "Tabela do Alfabeto Fonético",
-  },
-  {
+    },
+    {
     id: 18,
-    route: "/acai0tema12",
-  },
-  {
+    route: '/acai0tema12',
+    },
+    {
     id: 19,
-    route: "/alfafonetico3",
+    route: '/alfafonetico3',
     page: "Explicação Alfabeto fonético",
-  },
-  { id: 20, 
-    route: "/acai0tema13curious" 
-  },
-  {
+    },
+    {
+    id: 20,
+    route: '/acai0tema13curious',
+    },
+    {
     id: 21,
-    route: "/alfafoneticocuriosity",
+    route: '/alfafoneticocuriosity',
     page: "Curiosidades do Dialeto Paraense",
-  },
-  { id: 22, 
-    route: "/acai0tema14curious" 
-  },
-  {
+    },
+    {
+    id: 22,
+    route: '/acai0tema14curious',
+    },
+    {
     id: 23,
-    route: "/alfafoneticocuriosity2",
+    route: '/alfafoneticocuriosity2',
     page: "Curiosidades do Dialeto Paraense 2",
-  },
-  {
+    },
+    {
     id: 24,
-    route: "/acai0tema14dialeto",
-  },
-  {
+    route: '/acai0tema14dialeto',
+    },
+    {
     id: 25,
-    route: "/actv1vowel",
+    route: '/actv1vowel',
     page: "Tema 1 - Atividade 1 - Vogais",
-  },
-  {
+    },
+    {
     id: 26,
-    route: "/actv2vowel",
+    route: '/actv2vowel',
     page: "Tema 1 - Atividade 2 - Vogais",
-  },
-  {
+    },
+    {
     id: 27,
-    route: "/actv3vowel",
+    route: '/actv3vowel',
     page: "Tema 1 - Atividade 3 - Vogais",
-  },
-  {
+    },
+    {
     id: 28,
-    route: "/acai0tema20",
-  },
-  {
+    route: '/actv4vowel',
+    page: "Tema 1 - Atividade 4 - Enumerar pala",
+    },
+    {
     id: 29,
-    route: "/acai0tema21",
-  },
-  {
+    route: '/acai0tema20',
+    },
+    {
     id: 30,
-    route: "/saudpapachibe",
-    page: "Saudações em português",
-  },
-  {
+    route: '/acai0tema21',
+    },
+    {
     id: 31,
-    route: "/acai0tema22",
-  },
-  {
+    route: '/saudpapachibe',
+    page: "Saudações em português",
+    },
+    {
     id: 32,
-    route: "/saudpapachibe2",
-    page: "Saudações Papa Chibé",
-  },
-  {
+    route: '/acai0tema22',
+    },
+    {
     id: 33,
-    route: "/acai0tema23",
-  },
-  {
+    route: '/saudpapachibe2',
+    page: "Saudações Papa Chibé",
+    },
+    {
     id: 34,
-    route: "/interjeicoes",
-    page: "Interjeições Paraenses",
-  },
-  {
+    route: '/acai0tema23',
+    },
+    {
     id: 35,
-    route: "/acai0tema24",
-  },
-  {
+    route: '/interjeicoes',
+    page: "Interjeições Paraenses",
+    },
+    {
     id: 36,
-    route: "/tema2actv1",
-    page: "Tema 2 - Atividade 1",
-  },
-  {
+    route: '/acai0tema24',
+    },
+    {
     id: 37,
-    route: "/tema2actv2",
-    page: "Tema 2 - Atividade 2",
-  },
-  {
+    route: '/tema2actv1',
+    page: "Tema 2 - Atividade 1",
+    },
+    {
     id: 38,
-    route: "/acai0tema25",
-  },
-  {
+    route: '/tema2actv2',
+    page: "Tema 2 - Atividade 2",
+    },
+    {
     id: 39,
-    route: "/tema2actv3",
-    page: "Tema 2 - Atividade 3",
-  },
-  {
+    route: '/acai0tema25',
+    },
+    {
     id: 40,
-    route: "/tema2actv4",
-    page: "Tema 2 - Atividade 4",
-  },
-  {
+    route: '/tema2actv3',
+    page: "Tema 2 - Atividade 3",
+    },
+    {
     id: 41,
-    route: "/acai0tema30",
-    
-  },
-];
+    route: '/tema2actv4',
+    page: "Tema 2 - Atividade 4",
+    },
+    {
+    id: 42,
+    route: '/acai0tema30',
+    },
+]
