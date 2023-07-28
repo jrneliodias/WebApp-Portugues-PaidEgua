@@ -70,4 +70,59 @@ export const actWordsData: actVowelData[] = [
     spanishWord: "(abuela)",
     phonemeWord: "[a'vɔ]",
   },
+  {
+    portWord: "Arroz",
+    spanishWord: "(arroz)",
+    phonemeWord: "[a'xojʃ]",
+  },
+  {
+    portWord: "Tia",
+    spanishWord: "(tía)",
+    phonemeWord: "['tʃja]",
+  },
+  {
+    portWord: "Dívida",
+    spanishWord: "(deuda)",
+    phonemeWord: "['dʒivida]",
+  },
+  {
+    portWord: "Limão",
+    spanishWord: "(limón)",
+    phonemeWord: "['ʎimãw]",
+  },
+  {
+    portWord: "Vez",
+    spanishWord: "(vez)",
+    phonemeWord: "['vejʃ]",
+  },
+  {
+    portWord: "Exato",
+    spanishWord: "(exato)",
+    phonemeWord: "[e'zatʊ]",
+  },
+  {
+    portWord: "Dia",
+    spanishWord: "(día)",
+    phonemeWord: "['dʒja]",
+  },
+  {
+    portWord: "Zebra",
+    spanishWord: "(cebra)",
+    phonemeWord: "['zebɾa]",
+  },
+  {
+    portWord: "Tigre",
+    spanishWord: "(tigre)",
+    phonemeWord: "['tʃigɾI]",
+  },
+  {
+    portWord: "Ninho",
+    spanishWord: "(nido)",
+    phonemeWord: "['ɲĩɲʊ]",
+  },
+  {
+    portWord: "Ela",
+    spanishWord: "(ella)",
+    phonemeWord: "['ɛla]",
+  },
 ];
