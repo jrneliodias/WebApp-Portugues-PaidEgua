@@ -4,10 +4,9 @@ import NormalText from "@/app/components/basics/normaltext";
 import TextDiv from "@/app/components/basics/text";
 import NavBar from "@/app/components/navigation/NavBar";
 import { IconBook, IconKeyboard, IconRefresh, IconVolume } from "@tabler/icons-react";
-import imgSource from "@/app/images/treeboy1.png"
-import Image from "next/image";
 import { WordCard } from "@/app/components/cards/card";
 import SpanishText, { PhonemeFont } from "@/app/components/basics/spanishtext";
+import ImageCarousel from "@/app/components/activities/actimage";
 
 
 
@@ -43,21 +42,13 @@ export default function Tema2Actv4() {
                     <NormalText>
                         Jogar pedra, pau ou galho na mangueira para comer manga com sal é um costume muito paraense. Pensando nessa traquinagem, clica no menino e a cada manga que cair no chão irá aparecer uma forma de cumprimento, com a qual tu vais completar o diálogo, de acordo com a situação comunicativa.
                     </NormalText>
-
                 </TextDiv>
 
-                <div className="relative w-full grid grid-cols-2 gap-5 my-4">
-
-                    <Image
-                        src={imgSource}
-                        width={200}
-                        height={200}
-                        alt={'Cuias de Açaí'}
-                        priority={true}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        className="col-span-2 object-fit place-self-center"
-
-                    />
+                <div className="w-full grid grid-cols-2 gap-5 my-4">
+                    <div className="flex col-span-2">
+                    <ImageCarousel  />
+                  
+                    </div>
                     {greetings.map((greeting, index) =>
 
                         <WordCard key={index} className="flex justify-center"> {greeting} </WordCard>
