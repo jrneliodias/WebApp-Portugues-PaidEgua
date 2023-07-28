@@ -14,9 +14,10 @@ export default function SaudPapaChibe2() {
     return (
         <div className="main-layout ">
             <div className="title-text-format ">
-                <span>
-                    <b>  O Belenense que se Preza... </b>
-                </span>
+                <b> Tema II - Saudações Papa Chibé </b>
+                <div>
+                    O Belenense que se Preza...
+                </div>
                 <div className="flex gap-4">
                     <IconBook />
                     <IconVolume />
@@ -341,7 +342,7 @@ export default function SaudPapaChibe2() {
                     </div>
                 </LightColorCard>
 
-              
+
 
 
             </div>

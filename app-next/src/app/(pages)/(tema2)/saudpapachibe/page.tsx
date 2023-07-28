@@ -27,7 +27,7 @@ export default function CumpSaud() {
                 </div>
             </div>
             <div className="body-text-layout">
-                <TextDiv>
+                <TextDiv className = "border p-3 rounded-md">
                     <NormalText>
                         Observa que além de traduzirmos essas expressões para o espanhol, também fizemos as transcrições fonéticas para que tu possas acompanhar a pronúncia.
                     </NormalText>
