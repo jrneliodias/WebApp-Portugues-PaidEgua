@@ -18,7 +18,7 @@ export default function PrimaryCharacter({ imgSource, speech, textStyle = '' }: 
     }
 
     return (
-        <div className="h-full flex flex-col min-h-[80vh] w-full gap-2 justify-end pb-10">
+        <div className="h-full flex flex-col w-full gap-2 justify-end pb-10">
             <div className=" flex justify-center">
                 {isImageLoaded ? (<div className="relative max-w-xs ">
                     <div className=" bg-[--background-nav-app] p-5 rounded-3xl w-full  border border-[--background-nav-app] drop-shadow-md  flex flex-col gap-1 min-w-[300px] min-h-[42px]">

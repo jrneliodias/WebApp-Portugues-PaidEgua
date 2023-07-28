@@ -139,56 +139,57 @@ export const routeData: RouteData[] = [
   {
     id: 30,
     route: "/saudpapachibe",
-  },
-  {
-    id: 31,
-    route: "/cumpsaud",
     page: "Saudações em português",
   },
   {
-    id: 32,
+    id: 31,
     route: "/acai0tema22",
   },
   {
-    id: 33,
+    id: 32,
     route: "/saudpapachibe2",
     page: "Saudações Papa Chibé",
   },
   {
-    id: 34,
+    id: 33,
     route: "/acai0tema23",
   },
   {
-    id: 35,
+    id: 34,
     route: "/interjeicoes",
     page: "Interjeições Paraenses",
   },
   {
-    id: 36,
+    id: 35,
     route: "/acai0tema24",
   },
   {
-    id: 37,
+    id: 36,
     route: "/tema2actv1",
     page: "Tema 2 - Atividade 1",
   },
   {
-    id: 38,
+    id: 37,
     route: "/tema2actv2",
     page: "Tema 2 - Atividade 2",
   },
   {
-    id: 39,
+    id: 38,
     route: "/acai0tema25",
   },
   {
-    id: 40,
+    id: 39,
     route: "/tema2actv3",
     page: "Tema 2 - Atividade 3",
   },
   {
-    id: 41,
+    id: 40,
     route: "/tema2actv4",
     page: "Tema 2 - Atividade 4",
+  },
+  {
+    id: 41,
+    route: "/acai0tema30",
+    
   },
 ];
