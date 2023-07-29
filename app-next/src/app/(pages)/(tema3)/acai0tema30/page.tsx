@@ -16,7 +16,7 @@ export default function AcaiTema30App() {
     const currentRoute = '/acai0tema30'; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col place-self-center justify-end py-5 h-full">
+        <div className="flex flex-col place-self-end justify-end py-5 h-full mb-20">
             <PrimaryCharacter
                 imgSource={acai0}
                 speech={typedText}
