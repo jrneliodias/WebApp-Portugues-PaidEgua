@@ -128,7 +128,7 @@ export const idiomaticExpression: idiomaticExpressionProps[] =
     },
     {
       expressIdiom: "Mano (a)/ Maninho(a)",
-      transFonetic: "['mãnʊ/'mãna]",
+      transFonetic: "['mãnʊ/ 'mãna]",
       sentPort:
         "Forma de tratamento entre os paraenses / é vocativo",
       sentSpanish:
@@ -136,7 +136,7 @@ export const idiomaticExpression: idiomaticExpressionProps[] =
     },
     {
       expressIdiom: "Mofino",
-      transFonetic: "[mã'ɲĩɲʊ/mã'ɲĩɲa] ",
+      transFonetic: "[mã'ɲĩɲʊ/ mã'ɲĩɲa] ",
       sentPort:
         "Pessoa que se sente mal / adoentado ",
       sentSpanish: "Estoy con malestar",

@@ -58,21 +58,22 @@ export default function TableLetter(props: alphabeticTableProps) {
     );
 }
 
-interface tableDataProps extends HTMLAttributes<HTMLTableCellElement> {
-}
-interface TableHeadProps extends HTMLAttributes<HTMLTableHeaderCellElement> {
-    // Add any additional custom properties or behavior you need
-}
-export function TableCell({ children }: tableDataProps) {
+export function TableCell({children,className=""}:any) {
     return (
-        <td className="border-2 p-2 text-sm text-center">
+        <div className={`border p-2 text-xs flex items-center justify-center text-center break-words ${className}`}>
             {children}
-        </td>
+        </div>
         )
 };
 
-export function TableHead({ children, className }: TableHeadProps) {
-    return <th className={`border-2 p-2 text-center bg-cardcolor ${className}`}>
+export function TableHead({children,className =""}:any) {
+    return <div className={`border  text-center text-sm border-t-2 bg-cardcolor ${className}`}>
         {children}
-    </th>;
+    </div>;
+};
+
+export function TableRow({children,className=""}:any) {
+    return <div className={` p-2 text-center ${className}`}>
+        {children}
+    </div>;
 };
