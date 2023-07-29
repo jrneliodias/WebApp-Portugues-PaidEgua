@@ -14,7 +14,7 @@ export default function AcaiTema1DialetoApp() {
     const currentRoute = '/acai0tema14dialeto'; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col justify-end item-center h-full">
+        <div className="flex flex-col place-self-end item-center h-full mb-32">
             <PrimaryCharacter imgSource={acai0} speech={typedText} />
             <NavBar currentRoute={currentRoute} />
 
