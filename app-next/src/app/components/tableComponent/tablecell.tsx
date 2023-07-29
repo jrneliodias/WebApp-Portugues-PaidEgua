@@ -1,4 +1,5 @@
 import { IconVolume } from "@tabler/icons-react";
+import { HTMLAttributes } from "react";
 interface alphabeticTableProps {
     letter: string,
     phonemeSpan: string,
@@ -8,8 +9,6 @@ interface alphabeticTableProps {
 }
 
 export default function TableLetter(props: alphabeticTableProps) {
-
-
     return (
         <div className="flex flex-col">
             <div className="flex">
@@ -28,14 +27,14 @@ export default function TableLetter(props: alphabeticTableProps) {
                 </div>
 
                 <div className={`border-2 flex-1 bg-[#8564b4]  text-[50px] flex justify-center items-center border-l border-y font-black ${props.color}`}>
-                    {props.letter ==="Ñ" ? "-": props.letter}
+                    {props.letter === "Ñ" ? "-" : props.letter}
                 </div>
 
 
             </div>
             <div className="flex border-collapse">
                 <div className="border-2 flex-1 bg-[#6548a0]  p-2 flex flex-col justify-end items-center rounded-bl-[16px] border-r border-t ">
-                    
+
                     <div className="font-bold flex text-center">
                         Fonema do <br /> Espanhol
                     </div>
@@ -58,3 +57,22 @@ export default function TableLetter(props: alphabeticTableProps) {
         </div>
     );
 }
+
+interface tableDataProps extends HTMLAttributes<HTMLTableCellElement> {
+}
+interface TableHeadProps extends HTMLAttributes<HTMLTableHeaderCellElement> {
+    // Add any additional custom properties or behavior you need
+}
+export function TableCell({ children }: tableDataProps) {
+    return (
+        <td className="border-2 p-2 text-sm text-center">
+            {children}
+        </td>
+        )
+};
+
+export function TableHead({ children, className }: TableHeadProps) {
+    return <th className={`border-2 p-2 text-center bg-cardcolor ${className}`}>
+        {children}
+    </th>;
+};
