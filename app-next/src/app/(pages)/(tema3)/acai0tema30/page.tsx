@@ -4,6 +4,7 @@ import { useTypedText } from "@/app/Hooks/useTypedText";
 import NavBar from "@/app/components/navigation/NavBar";
 import PrimaryCharacter from "@/app/components/characters/PrimaryCharacter";
 import SpanishText from "@/app/components/basics/spanishtext";
+import { AcaiLayout } from "@/app/components/layout/acailayout";
 
 const imageSize = 150;
 
@@ -16,7 +17,7 @@ export default function AcaiTema30App() {
     const currentRoute = '/acai0tema30'; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col place-self-end justify-end py-5 h-full mb-20">
+        <AcaiLayout>
             <PrimaryCharacter
                 imgSource={acai0}
                 speech={typedText}
@@ -31,7 +32,7 @@ export default function AcaiTema30App() {
             </div>
             <NavBar currentRoute={currentRoute} />
 
-        </div>
+        </AcaiLayout>
 
     )
 

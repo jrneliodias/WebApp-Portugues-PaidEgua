@@ -9,7 +9,7 @@ import Image from "next/image";
 import roleta from "@/app/images/roleta.svg"
 
 
-export default function Tema3Act2() {
+export default function Tema3Act3() {
 
     const currentRoute = "/tema3actv3"; // Set the current route dynamically based on your page
 
