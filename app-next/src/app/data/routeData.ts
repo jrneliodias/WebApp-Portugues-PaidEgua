@@ -208,4 +208,23 @@ export const routeData: RouteData[] = [
     route: "/tema3express",
     page: "Tema 3 - Expressões Idiomáticas Paraenses",
   },
+  {
+    id: 45,
+    route: "/acai0tema31",
+  },
+  {
+    id: 46,
+    route: "/tema3actv1",
+    page: "Tema 3 - Atividade 1",
+  },
+  {
+    id: 47,
+    route: "/tema3actv2",
+    page: "Tema 3 - Atividade 2",
+  },
+  {
+    id: 48,
+    route: "/tema3actv3",
+    page: "Tema 3 - Atividade 3",
+  },
 ];
