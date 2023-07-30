@@ -8,10 +8,10 @@ export default function LightColorCard(props:any) {
     );
 }
 
-export function WordCard(props:any) {
+export function WordCard({children,className=""}:any) {
     return (
-        <div className={`bg-[#8e7fbb] px-3 py-2 flex gap-3 rounded-[1.5rem] ${props.className}`}>
-            {props.children}
+        <div className={`bg-[#8e7fbb] px-3 py-2 flex rounded-[1.5rem] ${className}`}>
+            {children}
         </div>
     );
 }
