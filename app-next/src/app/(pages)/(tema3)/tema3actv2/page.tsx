@@ -146,8 +146,6 @@ export default function Tema3Act2() {
                         <LightColorCard>Muito bom</LightColorCard>
                     </div>
                 </div>
-
-
             </div>
             <NavBar currentRoute={currentRoute} />
         </div>
