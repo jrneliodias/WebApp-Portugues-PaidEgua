@@ -9,7 +9,7 @@ import Image from "next/image";
 import cacapalavras from "@/app/images/caca-palavras.jpg"
 
 
-export default function Tema3Act2() {
+export default function Tema3Act4() {
 
     const currentRoute = "/tema3actv4"; // Set the current route dynamically based on your page
 
