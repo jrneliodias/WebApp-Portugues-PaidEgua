@@ -106,13 +106,13 @@ export default function Tema3Act2() {
                         </WordCard>
                     </div>
 
-                    
-                  
-                    
-                    
-                   
-                    
-                    
+
+
+
+
+
+
+
                 </div>
 
 
