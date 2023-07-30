@@ -60,7 +60,7 @@ export default function TableLetter(props: alphabeticTableProps) {
 
 export function TableCell({children,className=""}:any) {
     return (
-        <div className={`border p-2 text-xs flex items-center justify-center text-center break-words ${className}`}>
+        <div className={`border p-2 flex items-center justify-center text-center break-words ${className}`}>
             {children}
         </div>
         )
