@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import acai0 from "@/app/images/acai0.png"
+
 import { useTypedText } from "@/app/Hooks/useTypedText";
 import NavBar from "@/app/components/navigation/NavBar";
 import PrimaryCharacter from "@/app/components/characters/PrimaryCharacter";
@@ -15,12 +15,13 @@ export default function AcaiIntroApp() {
     const currentRoute = '/acai0tema2'; // Set the current route dynamically based on your page
 
     return (
-        <div className="flex flex-col place-self-end item-center py-2 gap-5 h-3/4 mb-[4rem] ">
-           <PrimaryCharacter imgSource={acai0} speech={typedText} />
-            <NavBar currentRoute={currentRoute} />
+        <AcaiLayout>
+            
+        <PrimaryCharacter   speech={typedText}/>
 
-        </div>
+        <NavBar currentRoute={currentRoute} />
 
+    </AcaiLayoutv>
     )
 
 }
