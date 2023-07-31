@@ -3,6 +3,7 @@
 import { useTypedText } from "@/app/Hooks/useTypedText";
 import NavBar from "@/app/components/navigation/NavBar";
 import PrimaryCharacter from "@/app/components/characters/PrimaryCharacter";
+import { AcaiLayout } from "@/app/components/layout/acailayout";
 
 const imageSize = 150;
 
@@ -21,7 +22,7 @@ export default function AcaiIntroApp() {
 
             <NavBar currentRoute={currentRoute} />
 
-        </AcaiLayoutv>
+        </AcaiLayout>
 
     )
 

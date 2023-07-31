@@ -1,5 +1,5 @@
 "use client"
-import acai0 from "@/app/images/acai0.png"
+
 import { useTypedText } from "@/app/Hooks/useTypedText";
 import NavBar from "@/app/components/navigation/NavBar";
 import PrimaryCharacter from "@/app/components/characters/PrimaryCharacter";
@@ -17,7 +17,7 @@ export default function AcaiTema31App() {
     return (
         <AcaiLayout>
             <PrimaryCharacter
-                imgSource={acai0}
+                
                 speech={typedText}
                 textStyle=""
             />

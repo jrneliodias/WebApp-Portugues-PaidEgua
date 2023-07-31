@@ -1,16 +1,18 @@
 "use client"
 import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
+import acai0 from "@/app/images/acai_character/acai0.png"
+
 
 
 interface PersonagemProps {
-    imgSource: StaticImageData;
+
     speech: string;
     textStyle?: string;
 }
 
 
-export default function PrimaryCharacter({ imgSource, speech, textStyle = '' }: PersonagemProps) {
+export default function PrimaryCharacter({speech, textStyle = '' }: PersonagemProps) {
 
     const [isImageLoaded, setIsImageLoaded] = useState(false);
     const handleImageLoad = () => {
@@ -33,7 +35,7 @@ export default function PrimaryCharacter({ imgSource, speech, textStyle = '' }: 
 
             <div className="flex justify-center drop-shadow-lg relative w-full min-h-[250px]">
                 <Image
-                    src={imgSource}
+                    src={acai0}
                     fill
                     alt="personagem-acai"
                     className={`object-contain`}
