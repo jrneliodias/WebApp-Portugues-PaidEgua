@@ -246,4 +246,8 @@ export const routeData: RouteData[] = [
     route: "/treforcoactv2",
     page: "Reforço - Atividade 2",
   },
+  {
+    id: 53,
+    route: "/acai0treforco1",
+  },
 ];
