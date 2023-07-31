@@ -15,3 +15,11 @@ export function WordCard({children,className=""}:any) {
         </div>
     );
 }
+
+export function TextLightColorCard(props:any) {
+    return (
+        <div className={`bg-cardcolor p-3 flex items-center justify-center rounded-[20px] 3 ${props.className} leading-none font-light min-h-[120px]`}>
+            {props.children}
+        </div>
+    );
+}
