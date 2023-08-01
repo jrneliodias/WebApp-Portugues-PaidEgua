@@ -8,7 +8,6 @@ interface PersonagemProps {
   imgSource: StaticImageData;
   className?: string
 }
-
 export default function FoodImage(props: PersonagemProps) {
   return (
     <div className={`flex  ${props.className}`}>
@@ -26,6 +25,21 @@ export default function FoodImage(props: PersonagemProps) {
 
         />
       </div>
+    </div>
+  )
+}
+
+export function ChargeImage(props: PersonagemProps) {
+  return (
+    <div className={`flex relative w-full max-w-[546px] max-h-[280px] ${props.className}`}>
+      <Image
+        src={props.imgSource}
+        alt='charge picture'
+        height={418}
+        width={823}
+        className='object-contain rounded-xl border-2 '
+
+      />
     </div>
   )
 }
