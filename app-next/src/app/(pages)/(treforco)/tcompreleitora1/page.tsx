@@ -14,7 +14,7 @@ export default function TcompreTextual1() {
         <div className="main-layout ">
             <div className="title-text-format ">
                 <span>
-                    <b> COMPREENSÃO LEiTORA - ATIVIDADE 1 </b>
+                    <b> COMPREENSÃO LEITORA - ATIVIDADE 1 </b>
                 </span>
                 <div className="flex gap-4">
                     <IconBook />
@@ -35,7 +35,7 @@ export default function TcompreTextual1() {
                     </NormalText>
                 </TextDiv>
 
-                <TextDiv className="flex flex-col gap-3">
+                <TextDiv className="flex flex-col gap-5">
                     <Javier>
                         ¡Buenos días! ¿Aquí es la Secretaria de Justicia y Derechos Humanos?
                     </Javier>
@@ -154,7 +154,7 @@ export default function TcompreTextual1() {
 
                         phoneme={
                             ["['ʊ   'ũɲikʊ       doku'mẽtʊ       'kI         kõse'gimʊʃ       'tʃI      ẽtɾɛ'gaɾ        a'ĩda     'oʒI     'ɛ    'a     kaɾ'tejɾa    'dʒI      tɾaba'ʎʊ     dʒiʒi'taw] ",
-                                "['esI      'ɛ     'ũ       doku'mẽtʊ       'kI     'tʃI    da'ɾa      peɾmi'sãw      'paɾa ", "tɾaba'ʎaɾ        lɛgaw'mẽtʃI     'ẽj      'nɔsʊ      pa'iʃ]   ",
+                                "['esI      'ɛ     'ũ       doku'mẽtʊ       'kI     'tʃI    da'ɾa      peɾmi'sãw      'paɾa  tɾaba'ʎaɾ        lɛgaw'mẽtʃI     'ẽj      'nɔsʊ      pa'iʃ]   ",
                                 "['Kwaw    'ɛ   'a     'twa      pɾofi'sãw?] ",]}
 
                     />
@@ -172,7 +172,7 @@ export default function TcompreTextual1() {
                         Inglés. ¿Es difícil dar clase de inglés aquí en Belém?
                     </Javier>
                     <AssistenteSocial
-                        text={["É   difícil     dar   aula   de   qualquer   disciplina   neste   país.   Infelizmente   os   professores    não   são   valorizados   aqui "]}
+                        text={["É   difícil     dar   aula   de   qualquer   disciplina   neste   país.   Infelizmente   os   professores    não   são   valorizados   aqui. "]}
                         phoneme={["['ɛ   dʒi'fisiw    'daɾ    'awla  'dʒI     kwaw'kɛɾ     dʒisi'plina     'nejʃtʃI    pa'iʃ.       ĩfeʎiʃ'mẽtʃI       'ʊʃ       pɾofe'soɾIʃ       'nãw    'sãw      valoɾi'zadʊʃ      a'ki] "]}
                     />
 
@@ -212,7 +212,8 @@ export default function TcompreTextual1() {
                             "Então,     mas    uma    vez      seja     bem-vindo     ao    nosso     país,    à    nossa    cidade.",]}
 
                         phoneme={["['kI      'bõ,      xa'vjeɾ! ",
-                            "'ew        tã'bẽj         'tẽɲʊ      'muĩtʊʃ      a'migʊʃ       vẽnezwɛ'lãnʊʃ", "po'ɾisʊ        cõ'sigʊ     'tʃI         kõpɾẽ'deɾ         'bẽj]", "[ẽ'tãw,       'majʃ      'ũma     'vejʃ       'seʒabẽj'vĩdʊ         'aw      'nɔsʊ         pa'iʃ", "     'a       'nɔsa       si'dadʒI]"]}
+                            "'ew        tã'bẽj         'tẽɲʊ      'muĩtʊʃ      a'migʊʃ       vẽnezwɛ'lãnʊʃ  po'ɾisʊ        cõ'sigʊ     'tʃI         kõpɾẽ'deɾ         'bẽj]", 
+                            "[ẽ'tãw,       'majʃ      'ũma     'vejʃ       'seʒabẽj'vĩdʊ         'aw      'nɔsʊ         pa'iʃ    'a       'nɔsa       si'dadʒI]"]}
                     />
 
                     <Javier>
