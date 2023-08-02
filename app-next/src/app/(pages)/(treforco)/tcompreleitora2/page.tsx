@@ -1,6 +1,6 @@
 
 import NormalText from "@/app/components/basics/normaltext";
-import TextDiv, {Escrituario, Juan } from "@/app/components/basics/text";
+import TextDiv, { Escrituario, Juan } from "@/app/components/basics/text";
 import NavBar from "@/app/components/navigation/NavBar";
 import { IconBook, IconRefresh, IconVolume } from "@tabler/icons-react";
 
@@ -12,7 +12,7 @@ export default function TcompreTextual1() {
 
     return (
         <div className="main-layout ">
-            <div className="title-text-format ">
+            <div className="title-text-format">
                 <span>
                     <b> COMPREENSÃO LEITORA - ATIVIDADE 2 </b>
                 </span>
@@ -25,210 +25,163 @@ export default function TcompreTextual1() {
             <div className="body-text-layout">
                 <TextDiv>
                     <NormalText className="text-center">
-                        Diálogos relacionados ao contexto Migratório
+                        Texto II: A filha de um casal venezuelano nasce em Belém.
                     </NormalText>
                 </TextDiv>
-                <TextDiv>
-                    <NormalText className="text-center">
-                        Texto I - Juan, um imigrante venezuelano, chega à Secretaria de Justiça e Direitos
-                        Humanos.
-                    </NormalText>
-                </TextDiv>
+
 
                 <TextDiv className="flex flex-col gap-5">
-                    <Juan>
-                        ¡Buenos días! ¿Aquí es la Secretaria de Justicia y Derechos Humanos?
-                    </Juan>
                     <Escrituario
-                        text={["Sim. Bom dia! Tu consegues me entender?"]}
-                        phoneme={["['sĩ     'bõ     'dʒja!     'tu     kõ'segiʃ     'mI     ẽtẽ'deɾ?]"]}
+                        text={["Bom   dia,  como   posso   ajudá-lo?"]}
+                        phoneme={["['bõ     'dʒja,  'kõmʊ     'pɔsʊ      aʒu'dalʊ?]"]}
                     />
 
                     <Juan>
-                        No hablo portugués, pero consigo entenderla bien.
+                        ¡Buenos días! Necesito de una información.
                     </Juan>
+
                     <Escrituario
-                        text={["Sou    uma    das   Assistentes   Sociais   daqui   da   SEJUDH.", "Qual     é   teu   nome?   Como   posso   te   ajudar?"]}
-                        phoneme={["['sow    'ũma    'dajʃ        asiʃ'tẽtʃi          sosi'ajʃ      da'ki   'da     seʒudea'ga.", "'kwaw   'ɛ   'tew   'nõmI?      'kõmʊ    'pɔsʊ    'tʃI   aʒu'daɾ?]"]}
+                        text={["Sim!   Pois    não! "]}
+                        phoneme={["['Sĩ!     'pojʃ     'nãw!] "]}
                     />
 
                     <Juan>
-                        Mi nombre es Juan Martínez.
-                        Necesito de información sobre cómo puedo regularizar mi documentación para quedarme en Brasil.
-
+                        Mi hija nació aquí en Belém hace dos días. Y me gustaría saber cómo puedo sacar su Partida de Nacimiento.
                     </Juan>
+
                     <Escrituario
-                        text={["Muito prazer, Juan.", "Seja bem-vindo ao nosso país.", "Essa é a primeira vez que vens ao Brasil? Já conhecias Belém?"]}
-                        phoneme={["['muĩtʊ pɾa'zeɾ, xa'vjɛɾ].", "['seʒa 'bẽjvĩdʊ 'aw 'nɔsʊ pa'iʃ]", "['ɛsa    'ɛ   'a    pɾi'mejɾa     'vejʃ      'kI      'vẽjʃ     'aw    bɾa'ziw,     'ʒa        koɲe'siajʃ      bɛ'lẽj?] "]}
+                        text={["Tu    consegues    me   entender?"]}
+                        phoneme={["['tu        kõse'geʃ         'mI      ẽtẽ'deɾ?]"]}
                     />
 
                     <Juan>
-                        No, no conocía Belém. Esta es la primera vez que salgo de mi país.
+                        Sí, comprendo el portugués, pero no hablo todavía.
                     </Juan>
+
                     <Escrituario
-                        text={[" E    qual    é    teu   país?"]}
-                        phoneme={["['I    'kwaw   'ɛ    'tew    pa'iʃ?]"]}
+                        text={["Qual     a    tua    nacionalidade? "]}
+                        phoneme={["['kawaw    'a    'twa      nasjõnaʎi'dadʒI?] "]}
                     />
 
                     <Juan>
-                        Venezuela.
+                        Yo y mi mujer somos venezolanos. Tengo una duda.
                     </Juan>
 
+
+
                     <Escrituario
-                        text={["Não    sei    se   tu    sabes,   mas     desde               2017,   ", "o   Brasil    aprovou   uma   lei   que  regulamenta  a  migração   em  nosso  país,  a   Lei     13.445.  ", "Isso   dá    direito     de   Refúgio   a   todo   e   qualquer   venezuelano   que   decide    fixar    residência    em   nosso   país."]}
-                        phoneme={["['nãw    'sej    'sI    'tu      'sabIʃ,    'majʃ      'deʃdʒI     'dojʃ  'miw  'I   dʒIze'setʃI]  ", "['ʊ   bɾa'ziw    apɾo'vow   'ũma   'lej    'kI       xegula'mẽta    'a  migɾa'sãw     'ẽj    'nɔsʊ     pa'iʃ,  'a   'lej   'tɾezI  'miw  kwatɾo'sẽtʊʃ  'I  kwa'ɾẽta  'I  'sĩkʊ]  ", "[ 'isʊ   'da     dʒi'ɾejtʊ    'dʒI    xe'fuʒiʊ   'a   'todʊ   'I     kwaw'kɛɾ     venezwe'lãnʊ     'kI     de'sidʒI    fi'kisaɾ     xesi'dẽsja       'ẽj     'nɔsʊ      pa'iʃ] "]}
+                        text={["Diga."]}
+                        phoneme={["['dʒiga] "]}
                     />
 
                     <Juan>
-                        Sí, ya lo sabía, por eso decidí cruzar la frontera.
+                        ¿Mi hija será venezolana, como yo o será brasileña?
                     </Juan>
 
+
                     <Escrituario
-                        text={["Então,   nesse   caso,   eu   presumo   que   tu   ainda   não   tens   o   Protocolo   de   Refúgio,   né?"]}
-                        phoneme={["[ẽ'taw,      'nesI     'kazʊ,   'ew     pɾe'zũmʊ     'kI    'tu     a'ĩda    'nãw    'tejʃ   'ʊ     pɾɔtɔ'kɔlʊ    'dʒI   xe'fuʒiʊ,   'nɛ?]"]}
+                        text={["Segundo  o   artigo   12,    da    Constituição   Federal,   é  brasileiro   nato   os  nascidos  na   República   Federativa    do  Brasil,",
+                            "ainda  que   de   pais   estrangeiros, desde  que  estes   não   estejam   a   serviço   de   seu   país”. "]}
+
+                        phoneme={["[ se'gũdʊ     'ʊ   aɾ'tʃigʊ  'dozI,   'da      kõjʃtʃitwi'sãw       fɛdɛ'ɾaw,   'ɛ    bɾazi'lejɾʊ    'natʊ   'ʊʃ     na'sidʊʃ     'na     xe'publika       fɛdɛɾa'tʃiva      'dʊ   bɾa'ziw]",
+                            "[a'ĩda     'kI     'dʒI   pa'iʃ       Iʃtɾã'ʒejɾʊʃ,       'deʃdʒI    'kI    'eʃtʃIʃ     'nãw      Iʃ'teʒãw   ' a     seɾ'visʊ   'dʒI   'sew   pa'iʃ]   "]}
                     />
+
                     <Juan>
-                        No, aún no lo tengo.
+                        ¿Qué eso quiere decir?
                     </Juan>
 
                     <Escrituario
-                        text={["Muito    Bem!  Nós   precisaremos   fazer   algumas    perguntas  pessoais",
-                            "para    saber   qual     é   a   tua     situação   e   quais    são   as      tuas    necessidades. ",
-                            "Mas   não   te   preocupas,   porque   tudo   que   conversarmos   aqui,    ficará     sob   sigilo    absoluto, ", "as   informações   não   serão   repassadas   a   nenhum   outro   órgão   do   governo."]}
-
-                        phoneme={["['muĩtʊ     'bẽj!    'nɔjʃ       pɾesi'zamʊʃ        fa'zeɾ    aw'gumajʃ    peɾ'gũtajʃ     pesʊ'ajʃ]",
-                            " 'paɾa       sa'beɾ   'kwaw   'ɛ   'a   'twa      sitwa'sãw   'I   'kwajʃ    'sãw   'ajʃ      'twajʃ      nesesi'dadʒIʃ] ",
-                            "['majʃ    'nãw  'tʃI    pɾeʊ'kupajʃ,      poɾ'ke    'tudʊ     'kI         kõvɛɾ'saɾmʊʃ       a'ki,     fika'ɾa     'sobI   si'ʒilʊ    abIso'lutʊ] ",
-                            "['ajʃ       ĩfɔɾma'sõjʃ     'nãw    se'ɾãw     ɾepa'sadajʃ      'a       nẽj'ũ      'owtɾʊ   'ɔɾgãw   'dʊ   gov'eɾnʊ] "]}
+                        text={["Vocês    estão   aqui   de   forma    oficial    a   serviço   da   Venezuela?"]}
+                        phoneme={["[vo'sejʃ     Iʃ'tãw      a'kI    'dʒI    'fɔɾma     ofisi'aw   'a     seɾ'visʊ    'da     vẽnẽ'zwɛla?]  "]}
                     />
 
-
-
-                    <Escrituario
-                        text={["Vamos   começar   preenchendo   a   ficha   de   atendimento   ao   migrante, ",
-                            "mas   antes   precisamos    tirar     cópia     de    todos   os    teus   documentos. ",
-                            "Essas   cópias   ficarão   arquivadas   apenas   nesta   Secretaria, ",
-                            "nós   também   não    iremos    repassá-las   a   nenhuma   outra   Secretaria.  ",]}
-
-                        phoneme={["['vãmʊʃ     kõme'saɾ        pɾɛẽ'ʃẽdʊ        'a    'fiʃa    'dʒI     atẽdʒi'mẽtʊ     'aw     mi'gɾãtʃI] ",
-                            "['majʃ    'ãtʃIʃ       pɾesi'zamʊʃ     tʃi'ɾaɾ    'kɔpiayʃ    'dʒI    to'dʊʃ    'ʊʃ    'tewʃ      dokũ'mẽtʊʃ ] ",
-                            "['ɛsajʃ     'kɔpiajʃ    fika'ɾãw     aɾki'vadajʃ      a'pẽnajʃ    'nɛʃta     sekɾɛta'ɾia]",
-                            "['nɔjʃ       tã'bẽj      'nãw     i'ɾẽmʊʃ        ɾepa'salajʃ     'a       nẽj'ũma     'owtɾa     sekɾɛta'ɾia]  ",]}
-                    />
-
-                    <Escrituario
-                        text={["Tu     és    casado    ou    solteiro?"]}
-                        phoneme={["['tu     'ɛjʃ      ka'zadʊ    'ow     sow'tejɾʊ?]"]}
-                    />
-
-                    <Juan>Soy casado, pero mi mujer y mi hijo se quedaron en Venezuela hasta que yo pueda buscarlos.
+                    <Juan>
+                        No. Somos refugiados.
                     </Juan>
 
                     <Escrituario
-                        text={["Entendi!"]}
-                        phoneme={["[ẽtẽ'dʒi!] "]}
+                        text={[" Muito  bem!   Então,  nesse   caso,   a   tua   filha   é   brasileira   pelo    critério    de   nacionalidade,",
+                            "  o    qual   leva   em  consideração   o   local     de   nascimento,  logo,   poderá   ser   registrada,   sem  nenhum  problema."
+                        ]}
+                        phoneme={["['muĩtʊ   'bẽj!       ẽ'tãw,     'nesI       'kasʊ,    'a   'twa    'fiʎa    'ɛ     bɾazi'lejɾa    'pelʊ     kɾi'tɛɾiw    'dʒI     nasjõnaʎi'dadʒI]",
+                            "['ʊ    'kwaw    lɛva     'ẽj       kõsidɛɾa'sãw      'ʊ   lɔ'kaw    'dʒI       nasi'mẽtʊ,       'lɔgʊ,     pode'ɾa    'seɾ       xeʒiʃ'tɾada,      'sẽj       nẽj'ũ       pɾɔ'blema]"
+                        ]}
+
                     />
+
+                    <Juan>
+                        ¡Ah, qué bien! Gracias. Pero, ¿qué es necesario para eso?
+                    </Juan>
 
 
                     <Escrituario
-                        text={["Bem,   com   teus   documentos   iremos   fazer   a   Solicitação   do   Protocolo   de   Refúgio ",
-                            "e   solicitar   a   Carteira   de   Registro   Nacional   de   Migrante. ",
-                            "Esses    documentos   tu   poderás   receber   na   Polícia   Federal.  ",
-                            "Iremos   também   solicitar   o       CPF      –   que   é   o   Cadastro   de   Pessoa  Física, ",
-                            "esse    é    um    documento   obrigatório    no   Brasil",
-                            "que,  qualquer   pessoa   pode   tirar,    independentemente    de     sua   nacionalidade. ",
-                            "Tu    irás     recebê-lo    na   Receita   Federal.  ",]}
+                        text={[" Preciso,   primeiro,   da   Declaração   de   nascido   vivo,   é   a   folha  amarela   fornecida   pela  maternidade. ",
+                            "Em   que   hospital   tua   filha   nasceu?"]}
 
-                        phoneme={["['bẽj,      'kõ      'tewʃ      dokũ'mẽtʊʃ        i'ɾẽmʊʃ     fa'zeɾ   'a      soʎisita'sãw    'dʊ     pɾɔtɔ'kɔlʊ    'dʒI    xe'fuʒiʊ]      ",
-                            "['I     soʎisi'taɾ   'a      kaɾ'tejɾa    'dʒI      xe'ʒiʃtɾʊ     nasjo'naw   'dʒI    mi'gɾãtʃI] ",
-                            "[ 'ɛsIʃ         doku'mẽtʊʃ       'tu     pɔdɛ'ɾajʃ      xese'beɾ    'na     po'ʎisja   fɛdɛ'ɾaw]  ",
-                            "[i'rẽmʊʃ       tã'bẽj        soʎisi'taɾ   'ʊ    'se 'pe 'ɛfI   –     'kI      'ɛ   'ʊ     ka'daʃtɾʊ    'dʒI      pe'soa     'fizika] ",
-                            "['esI       'ɛ      'ũ        doku'mẽtʊ       obɾiga'tɔɾjʊ      'nʊ    bɾa'ziw] ",
-                            "['kI,     kwaw'kɛɾ      pe'soa      'pɔdʒI    tʃi'ɾaɾ,ĩdɛpẽdẽtʃI'mẽtʃI  'dʒI     'swa     nasjonaʎi'dadʒI]",
-                            "['tu     i'ɾajʃ        ɾese'belʊ      'na      xe'sejta     fɛdɛ'ɾaw]",]}
+                        phoneme={["foɾne'sida     'pela    mateɾɲi'dadʒI] ",
+                            "['ẽj     'kI       oʃpi'taw    'twa    'fiʎa     na'sew?] "]}
                     />
-                    <Escrituario
-                        text={["O   único   documento   que   conseguimos   te   entregar   ainda   hoje   é   a   Carteira   de   Trabalho   Digital. ",
-                            "Esse   é   um   documento   que   te   dará   permissão   para   trabalhar   legalmente   em   nosso   país.",
-                            "Qual    é   a    tua     profissão ? "]}
 
+                    <Juan>
+                        En Santa Casa.
+                    </Juan>
+
+
+                    <Escrituario
+                        text={["Preciso   do      CPF;     Carteira   de  Registro   Nacional   Ide    Migrate    ou   Protocolo   de  Refúgio; ",
+                            "comprovante   de   residência.   Todos   esses   documentos   tem   que   ser   teu   e   da   tua   esposa.",
+                        ]}
+                        phoneme={["[ pɾe'sizʊ    'dʊ   'se 'pe 'ɛfI;    kaɾ'tejɾa   'dʒI    xe'ʒiʃtɾʊ      nasjo'naw   'dʒI      mi'gɾãtʃI     'ow    pɾɔtɔ'kɔlʊ    'dʒI   xe'fuʒiʊ]  ",
+                            "[   kõpɾɔ'vãtʃI      'dʒI     ɾesi'dẽsja.         'todʊʃ       'esIʃ         doku'mẽtʊʃ        'tẽj      'kI      'seɾ   'tew   'I    'da   'twa     eʃ'poza]"
+                        ]}
+                    />
+
+                    <Juan>
+                        Aquí están todos los documentos.
+                    </Juan>
+
+
+                    <Escrituario
+                        text={["Quanto   tempo   estão    no   Brasil?"]}
+                        phoneme={["[ 'kãtʊ        'tẽpʊ       Iʃ'tãw      'nʊ   bɾa'ziw?]"]}
+                    />
+
+                    <Juan>
+                        Siete meses.
+                    </Juan>
+
+                    <Escrituario
+                        text={[" Como   fica   a   questão   dos   sobrenomes   na   Venezuela? ",
+                            "Pergunto,   porque   aqui   no   Brasil,   primeiro   vem   o   sobrenome   da   mãe   e   depois   o   do   pai."
+                        ]}
                         phoneme={
-                            ["['ʊ   'ũɲikʊ       doku'mẽtʊ       'kI         kõse'gimʊʃ       'tʃI      ẽtɾɛ'gaɾ        a'ĩda     'oʒI     'ɛ    'a     kaɾ'tejɾa    'dʒI      tɾaba'ʎʊ     dʒiʒi'taw] ",
-                            "['esI      'ɛ     'ũ       doku'mẽtʊ       'kI     'tʃI    da'ɾa      peɾmi'sãw      'paɾa tɾaba'ʎaɾ        lɛgaw'mẽtʃI     'ẽj      'nɔsʊ      pa'iʃ]   ",
-                            "['Kwaw    'ɛ   'a     'twa      pɾofi'sãw?] ",]}
-
+                            ["['kõmʊ    'fika   'a      keʃ'tãw     'dʊʃ       sobɾI'nõmIʃ      'na     vẽne'zwela?]", "[peɾ'gũtʊ,       poɾ'ke      a'ki     'nʊ    bɾa'ziw,    pɾi'mejɾʊ     'vẽj     'ʊ     sobɾI'nõmI     'da     'mãI    'I     de'pojʃ    'ʊ   'dʊ   'paj]"
+                            ]}
                     />
 
                     <Juan>
-                        Soy profesor.
+                        En mi país viene primero del padre y después de la madre.
                     </Juan>
 
+
                     <Escrituario
-                        text={["Que   legal!   Tu   és    professor   de   quê?"]}
-                        phoneme={["[ 'kI    lɛ'gaw!    'tu   'ɛjʃ       pɾofe'soɾ     'dʒI    'ke?] "]}
+                        text={["Qual   é   o   nome  da   tua   filha?"]}
+                        phoneme={
+                            ["[ 'kwaw    'ɛ   'ʊ    'nõmI   'da    'twa   'fiʎa?] "]}
                     />
+
 
                     <Juan>
-                        Inglés. ¿Es difícil dar clase de inglés aquí en Belém?
-                    </Juan>
-                    <Escrituario
-                        text={["É   difícil     dar   aula   de   qualquer   disciplina   neste   país.   Infelizmente   os   professores    não   são   valorizados   aqui "]}
-                        phoneme={["['ɛ   dʒi'fisiw    'daɾ    'awla  'dʒI     kwaw'kɛɾ     dʒisi'plina     'nejʃtʃI    pa'iʃ.       ĩfeʎiʃ'mẽtʃI       'ʊʃ       pɾofe'soɾIʃ       'nãw    'sãw      valoɾi'zadʊʃ      a'ki] "]}
-                    />
-
-                    <Juan>
-                        Tampoco en Venezuela.
+                        Ámbar Isabella.
                     </Juan>
 
-                    <Escrituario
-                        text={["Aqui   está   a    tua    carteira    de   trabalho. "]}
-                        phoneme={["[a 'ki      Iʃ'ta    'a    'twa      kaɾ'tejɾa     'dʒI     tɾa'baʎʊ]  "]}
-                    />
-
-                    <Juan>
-                        Muchas gracias. ¿Cuál es la dirección de los lugares donde tengo que ir?
-                    </Juan>
 
                     <Escrituario
-                        text={["A    Polícia    Federal   fica    no   Aeroporto   Internacional    de    Belém ",
-                            "e   a   Receita   Federal    fica   na      Av.      Governador    José    Malcher,      nº        2803.",]}
-
-                        phoneme={["['a     po'ʎisja      fɛdɛ'ɾaw    'fika     'nʊ     aɛɾo'poɾtʊ       ĩtɛɾnasjo'naw      'dʒI      bɛ'lẽj]",
-                            "['I     'a      xe'sejta     fɛdɛ'ɾaw     'fika    'na   avẽ'ɲida       govɛɾna'doɾ       ʒo'zɛ       maw'ʃɛɾ,   'nũmeɾʊ   'vĩtʃI   'ojtʊ  'zɛɾʊ  'tɾejʃ]"]}
+                        text={["    Ok!   Então,   vamos   registrar   a   Ámbar,   utilizando   dessa   forma   como   é   na   Venezuela. ", "Agora   é   só   aguardar.", "Daqui   a   pouco   entrego   a   Certidão   de   Nascimento   de   Ámbar   Gómez   Huérfano."
+                        ]}
+                        phoneme={["[o'kej!      ẽ'tãw,      'vãmʊʃ      xeʒiʃ'tɾaɾ   'a      'ãbaɾ,     utiʎi'zãdʊ       'dɛsa      'fɔɾma    'kõmʊ    'ɛ   'na     vẽne'zwela] ", "[a'gɔɾa   'ɛ   'sɔ    agwaɾ'daɾ] ", "['daki     'a   'powkʊ     ẽ'tɾɛgʊ     'a     seɾtʃi'dãw   'dʒI       nasi'mẽtʊ       'dʒI     'ãbaɾ        'gomIʃ      'weɾfanʊ]"]}
                     />
-
-                    <Escrituario
-                        text={["Juan,     tu    tens   onde   ficar   aqui   em   Belém? "]}
-                        phoneme={["[ xa'vjeɾ,      'tu     'tẽjʃ      'õdʒI    fi'kaɾ     a'ki      'ẽj     bɛ'lẽj?] "]}
-                    />
-
-                    <Juan>
-                        Sí, voy a quedarme en la casa de una amiga brasileña. Ya la conozco hace mucho tiempo, por eso comprendo muy bien el portugués. Gracias por todo. Usted es muy amable.
-                    </Juan>
-
-                    <Escrituario
-                        text={["Que   bom,   Juan! ",
-                            "Eu    também   tenho   muitos   amigos   venezuelanos,   por isso   consigo   te   compreender   bem.",
-                            "Então,     mas    uma    vez      seja     bem-vindo     ao    nosso     país,    à    nossa    cidade.",]}
-
-                        phoneme={["['kI      'bõ,      xa'vjeɾ! ",
-                            "'ew        tã'bẽj         'tẽɲʊ      'muĩtʊʃ      a'migʊʃ       vẽnezwɛ'lãnʊʃ", "po'ɾisʊ        cõ'sigʊ     'tʃI         kõpɾẽ'deɾ         'bẽj]", "[ẽ'tãw,       'majʃ      'ũma     'vejʃ       'seʒabẽj'vĩdʊ         'aw      'nɔsʊ         pa'iʃ", "     'a       'nɔsa       si'dadʒI]"]}
-                    />
-
-                    <Juan>
-                        ¡Hasta luego!
-                    </Juan>
-
-                    <Escrituario
-                        text={["Até     logo!	"]}
-                        phoneme={["[a'tɛ     'lɔgʊ]"]}
-                    />
-
-
-
-
-
-
 
 
                 </TextDiv>

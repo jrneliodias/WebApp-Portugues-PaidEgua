@@ -37,7 +37,7 @@ body {
   }
 }
 .title-text-format {
-  @apply flex flex-col flex-wrap gap-1 p-3 m-3 rounded-[50px] items-center border-2;
+  @apply flex flex-col flex-wrap gap-1 p-4 m-3 rounded-[50px] items-center border-2;
   @apply bg-[#8055bd] text-xl text-center leading-tight;
   @apply lg:mx-0 w-full max-w-3xl;
 }

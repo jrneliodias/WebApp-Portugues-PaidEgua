@@ -265,4 +265,9 @@ export const routeData: RouteData[] = [
     route: "/tcompreleitora2",
     page: "Reforço - Compreensão de Leitora 2",
   },
+  {
+    id: 57,
+    route: "/tcompreleitora3",
+    page: "Reforço - Compreensão de Leitora 3",
+  },
 ];
