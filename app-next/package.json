@@ -29,7 +29,8 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "eslint-config-next": "^13.4.8"
+    "eslint-config-next": "^13.4.8",
+    "prisma": "^5.1.0"
   },
   "overrides": {
     "semver": "^7.5.3"
