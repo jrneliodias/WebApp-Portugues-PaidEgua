@@ -1,6 +1,9 @@
+"use client"
+
 import Image from "next/image";
 import PersonagensPg0 from './images/personagens-pag0.png'
 import NavBar from './components/navigation/NavBar';
+import { signIn } from "next-auth/react";
 
 export default function Home() {
     const currentRoute = "/"; // Set the current route dynamically based on your page
@@ -9,6 +12,9 @@ export default function Home() {
 
 
         <div className="flex flex-col gap-5  justify-center items-center h-full p-2 ">
+            <div>
+                <button onClick={() => signIn()}>Login</button>
+            </div>
 
             <div className="mt-3 relative w-full flex items-center min-h-[450px] moto-g4:min-h-[600px]">
                 <Image

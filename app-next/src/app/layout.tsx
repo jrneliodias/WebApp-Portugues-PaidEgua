@@ -1,3 +1,4 @@
+import { NextAuthProvider } from '@/providers/auth'
 import './styles/globals.css'
 import { Inter } from 'next/font/google'
 
@@ -14,12 +15,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
- 
+
   return (
     <html lang="pt-br" className='flex flex-col items-center min-h-screen'>
-          <body className={`inter.className min-h-screen`}>
+      <body className={`inter.className min-h-screen`}>
+        <NextAuthProvider>
           {children}
-        </body>
+        </NextAuthProvider>
+      </body>
 
     </html>
   )
