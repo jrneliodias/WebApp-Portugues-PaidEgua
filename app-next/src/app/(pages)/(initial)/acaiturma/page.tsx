@@ -6,6 +6,7 @@ import acaibook from "@/app/images/acaibook.png"
 import NavBar from "@/app/components/navigation/NavBar";
 import { IconKeyboard,IconBook, IconVolume, IconRefresh} from "@tabler/icons-react"
 import SecondaryCharacters from "@/app/components/characters/SecondaryCharacters"
+import { AcaiLayout } from "@/app/components/layout/acailayout";
 
 const imageSize = 150;
 
@@ -28,7 +29,7 @@ export default function AcaiTurma() {
 
 
     return (
-        <div className="grid grid-cols-2 grid-rows-2 h-full gap-5 gap-y-8 m-5">
+        <div className="grid grid-cols-2 grid-rows-2 h-full gap-5 gap-y-8 m-5 my-16">
 
             <SecondaryCharacters addPadding={false} imgSource={acaiphone} speech = {speech.pablito} icon={refresh}  />
             <SecondaryCharacters addPadding={true} imgSource={acaihear}  speech = {speech.abelita} icon={volume}  />
