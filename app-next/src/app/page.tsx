@@ -10,7 +10,7 @@ export default function Home() {
     return (
 
 
-        <div className="flex flex-col gap-5  justify-center items-center h-full p-2 mb-20">
+        <div className="flex flex-col gap-5  justify-center items-center h-full p-2 my-20">
            
 
             <div className="mt-3 relative w-full flex items-center min-h-[450px] moto-g4:min-h-[600px]">
