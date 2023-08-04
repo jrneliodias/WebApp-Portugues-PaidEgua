@@ -1,6 +1,7 @@
 import { NextAuthProvider } from '@/providers/auth'
 import './styles/globals.css'
 import { Inter } from 'next/font/google'
+import Header from './components/basics/Header'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,9 +18,12 @@ export default function RootLayout({
 }) {
 
   return (
-    <html lang="pt-br" className='flex flex-col items-center min-h-screen'>
-      <body className={`inter.className min-h-screen`}>
+    <html lang="pt-br" className='flex flex-col justify-start items-center min-h-screen'>
+      <body className={`inter.className min-h-screen flex flex-col 
+      justify-start items-center bg-[--background-app] w-full
+      text-white `}>
         <NextAuthProvider>
+          <Header />
           {children}
         </NextAuthProvider>
       </body>
