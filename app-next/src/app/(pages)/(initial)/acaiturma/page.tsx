@@ -29,7 +29,7 @@ export default function AcaiTurma() {
 
 
     return (
-        <div className="grid grid-cols-2 grid-rows-2 h-full gap-5 gap-y-8 m-5 my-16">
+        <div className="grid grid-cols-2 grid-rows-2 h-full gap-5 gap-y-8 m-5 my-20">
 
             <SecondaryCharacters addPadding={false} imgSource={acaiphone} speech = {speech.pablito} icon={refresh}  />
             <SecondaryCharacters addPadding={true} imgSource={acaihear}  speech = {speech.abelita} icon={volume}  />

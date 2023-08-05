@@ -16,8 +16,8 @@ export default function Header() {
 
     return (
        
-            <div className="fixed p-2 px-4 flex justify-between z-30 bg-cardcolor w-full shadow-sm rounded-b-lg">
-                <div className="relative h-12 w-[110px]">
+            <div className="max-w-5xl fixed p-2 px-6 flex justify-between z-30 bg-cardcolor w-full shadow-sm rounded-b-lg">
+                <div className="relative h-12 w-[89px]">
                     <Image
                         src={title}
                         fill
