@@ -1,7 +1,7 @@
 
 import Image from "next/image";
-import PersonagensPg0 from './images/personagens-pag0.png'
-import NavBar from './components/navigation/NavBar';
+import Personagens from '@/app/images/acai_character/personagens.svg'
+import Link from "next/link";
 
 
 export default function Home() {
@@ -9,13 +9,10 @@ export default function Home() {
 
     return (
 
-
-        <div className="flex flex-col gap-5  justify-center items-center h-full p-2 my-20">
-           
-
-            <div className="mt-3 relative w-full flex items-center min-h-[450px] moto-g4:min-h-[600px]">
+        <div className='items-center px-4 py-2 max-w-5xl w-full h-screen justify-center flex flex-col gap-5'>
+            <div className="relative h-[270px] w-3/4">
                 <Image
-                    src={PersonagensPg0}
+                    src={Personagens}
                     alt="personagens"
                     fill
                     className="object-contain"
@@ -24,14 +21,32 @@ export default function Home() {
 
                 />
             </div>
-            <div className="w-1/2 text-center text-xs sm:text-base max-w-lg">
-                <p>
-                    Desenvolvido pelo Laboratório de
-                    Pesquisa e Experimentação em Multimídia do
-                    NITAE² - UFPA
-                </p>
-            </div>
-            <NavBar currentRoute={currentRoute} />
+
+            <Link href={"/"} className="border-2 w-full max-w-xs p-2 text-center rounded-full bg-cardcolor font-bold"> Login</Link>
+            <Link href={"/"} className="border-2 w-full max-w-xs p-2 text-center rounded-full bg-cardcolor font-bold"> Cadastro</Link>
+
+
+            <form className='flex flex-col gap-4 w-full max-w-xs'>
+                <div className="flex flex-col gap-1">
+                    <label>E-mail</label>
+                    <input
+                        type='email'
+                        name='email'
+                        className='border border-zinc-200 shadow-sm rounded h-10 px-3 text-black' />
+                </div>
+                <div className="flex flex-col gap-1">
+                    <label>Senha</label>
+                    <input
+                        type='password'
+                        name='password'
+                        className='border border-zinc-200 shadow-sm rounded h-10 px-3 text-black' />
+                </div>
+
+                <button type='submit'
+                    className='bg-emerald-500 rounded font-semibold h-10 hover:bg-emerald-600'>
+                    Salvar
+                </button>
+            </form>
         </div>
 
 
