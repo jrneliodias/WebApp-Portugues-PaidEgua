@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import PersonagensPg0 from './images/personagens-pag0.png'
+import PersonagensPg0 from '@/app/images/personagens-pag0.png'
 import NavBar from '@/app/components/navigation/NavBar';
 
 
