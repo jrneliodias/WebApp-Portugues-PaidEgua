@@ -1,7 +1,8 @@
-
+'use client'
 import Image from "next/image";
 import Personagens from '@/app/images/acai_character/personagens.svg'
 import Link from "next/link";
+import { motion } from "framer-motion"
 
 
 export default function Home() {
@@ -21,32 +22,32 @@ export default function Home() {
 
                 />
             </div>
+           
+            <div className="w-full flex flex-col gap-10">
+                <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.9 }}
+                    
 
-            <Link href={"/"} className="border-2 w-full max-w-xs p-2 text-center rounded-full bg-cardcolor font-bold"> Login</Link>
-            <Link href={"/"} className="border-2 w-full max-w-xs p-2 text-center rounded-full bg-cardcolor font-bold"> Cadastro</Link>
+                >
+                    <Link className="border-2 px-24 p-2 text-center rounded-full bg-cardcolor font-bold" href={`/login`} passHref
+                    >
+                        Login                            {/* <BtnVoltar /> */}
+                    </Link>
+                </motion.button>
+                <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.9 }}
+                >
+                    <Link className="border-2 px-20 p-2 text-center rounded-full bg-cardcolor font-bold " href={`/register`} passHref>
+                        Cadastro                            {/* <BtnVoltar /> */}
+                    </Link>
+                </motion.button>
+
+            </div>
 
 
-            <form className='flex flex-col gap-4 w-full max-w-xs'>
-                <div className="flex flex-col gap-1">
-                    <label>E-mail</label>
-                    <input
-                        type='email'
-                        name='email'
-                        className='border border-zinc-200 shadow-sm rounded h-10 px-3 text-black' />
-                </div>
-                <div className="flex flex-col gap-1">
-                    <label>Senha</label>
-                    <input
-                        type='password'
-                        name='password'
-                        className='border border-zinc-200 shadow-sm rounded h-10 px-3 text-black' />
-                </div>
-
-                <button type='submit'
-                    className='bg-emerald-500 rounded font-semibold h-10 hover:bg-emerald-600'>
-                    Salvar
-                </button>
-            </form>
+            
         </div>
 
 
