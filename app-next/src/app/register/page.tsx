@@ -9,7 +9,7 @@ import SpanishText from "../components/basics/spanishtext";
 export default function Register() {
 
     return (
-        <div className="container flex flex-col justify-center items-center gap-5 my-auto">
+        <div className="container flex flex-col justify-center items-center gap-5 my-5">
 
             <h1 className="text-xl font-black ">CADASTRO</h1>
 
@@ -22,7 +22,7 @@ export default function Register() {
                     <input
                         type='text'
                         name='name'
-                        className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5  focus:outline-none'
+                        className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5  focus:outline-none '
                         placeholder="Juan" />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -33,8 +33,8 @@ export default function Register() {
                     <input
                         type='text'
                         name='name'
-                        className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none'
-                        placeholder="" />
+                        className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none '
+                        placeholder=" 01/01/1990s" />
                 </div>
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
@@ -44,7 +44,7 @@ export default function Register() {
                     <input
                         type='text'
                         name='name'
-                        className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none'
+                        className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none '
                         placeholder="" />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -52,7 +52,7 @@ export default function Register() {
                         <label className="leading-none">Escolaridade</label>
                         <label className="text-gray-400 italic">¿Cuál es tu nivel de estudio?</label>
                     </div>
-                    <select className="block focus:shadow-outline border w-full bg-cardcolor shadow-sm rounded-full h-10 p-5 focus:outline-none text-white  focus:border-gray-500"
+                    <select className="block focus:shadow-outline border w-full bg-cardcolor shadow-sm rounded-full h-10 p-5 focus:outline-none  text-white  focus:border-gray-500"
                         id="grid-state"
                     >
                         <option>Ensino Médio Incompleto</option>
@@ -67,7 +67,7 @@ export default function Register() {
                     <input
                         type='email'
                         name='email'
-                        className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none'
+                        className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none '
                         placeholder="Correo eletrônico" />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -76,9 +76,46 @@ export default function Register() {
                     <input
                         type='password'
                         name='password'
-                        className='border-2 bg-cardcolor rounded-full shadow-sm h-10 p-5 placeholder:italic focus:outline-none'
+                        className='border-2 bg-cardcolor rounded-full shadow-sm h-10 p-5 placeholder:italic focus:outline-none '
                         placeholder="Senha" />
                 </div>
+
+                <div className="flex flex-col gap-1">
+                    <div className="flex flex-col">
+                        <label className="leading-none">Situação</label>
+                        <label className="text-gray-400 italic">Situacion</label>
+                    </div>
+                    <select className="block focus:shadow-outline border w-full bg-cardcolor shadow-sm rounded-full h-10 p-5 focus:outline-none  text-white  focus:border-gray-500"
+                        id="grid-state"
+                    >
+
+                        <option>Imigrante</option>
+                        <option>Refugiado(a)</option>
+                    </select>
+                </div>
+                <div className="flex flex-col gap-1">
+                    <div className="flex flex-col">
+                        <label className="leading-none">Quanto tempo moras no Brasil?</label>
+                        <label className="text-gray-400 italic">¿Desde cuándo vives en Brasil?</label>
+                    </div>
+                    <input
+                        type='text'
+                        name='time'
+                        className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none '
+                        placeholder="" />
+                </div>
+                <div className="flex flex-col gap-1">
+                    <div className="flex flex-col">
+                        <label className="leading-none">Quanto tempo moras em Belém (RMB)?</label>
+                        <label className="text-gray-400 italic">¿Desde cuándo vives en Belém (RMB)?</label>
+                    </div>
+                    <input
+                        type='text'
+                        name='time'
+                        className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none '
+                        placeholder="" />
+                </div>
+
 
                 <button
                     type='submit'
