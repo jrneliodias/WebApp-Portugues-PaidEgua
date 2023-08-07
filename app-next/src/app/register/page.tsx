@@ -1,83 +1,121 @@
 'use client'
-import Link from "next/link";
-import acailogo from '@/app/images/assets/acaiandlogo.svg'
-import Image from "next/image";
-import SpanishText from "../components/basics/spanishtext";
 
+import React, { useState } from 'react';
+import type { DatePickerProps } from 'antd';
+import { DatePicker, Select } from 'antd';
+import 'dayjs/locale/pt-br'
+import locale from 'antd/es/date-picker/locale/pt_BR';
+import { Button, Form, Input, Radio } from 'antd';
 
+import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
+
+const dateFormat = 'DD/MM/YYYY';
+const customFormat: DatePickerProps['format'] = (value) =>
+    `custom format: ${value.format(dateFormat)}`;
+
+const onChange: DatePickerProps['onChange'] = (date, dateString) => {
+    console.log(date, dateString);
+};
+
+const handleChange = (value: string) => {
+    console.log(`selected ${value}`);
+};
 
 export default function Register() {
+    const [passwordVisible, setPasswordVisible] = useState(false);
+
 
     return (
-        <div className="container flex flex-col justify-center items-center gap-5 my-5">
+        <div className="container flex flex-col justify-center items-center gap-5 my-5 ">
 
-            <h1 className="text-xl font-black ">CADASTRO</h1>
 
-            <form className='flex flex-col gap-4 w-full max-w-xs'>
+
+            <form className='flex flex-col gap-4 w-full max-w-3xl '>
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
                         <label className="leading-none">Nome</label>
                         <label className="text-gray-400 italic ">Nombre</label>
                     </div>
-                    <input
+                    <Input placeholder="Juan" />
+                    {/* <input
                         type='text'
                         name='name'
                         className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5  focus:outline-none '
-                        placeholder="Juan" />
+                        placeholder="Juan" /> */}
                 </div>
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
                         <label className="leading-none">Data de Nascimento</label>
                         <label className="text-gray-400 italic">Fecha de nascimento</label>
                     </div>
-                    <input
-                        type='text'
-                        name='name'
-                        className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none '
-                        placeholder=" 01/01/1990s" />
+                    <DatePicker onChange={onChange} locale={locale} format={dateFormat}
+
+                    />
+
                 </div>
+
+
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
                         <label className="leading-none">Profissão</label>
                         <label className="text-gray-400 italic">¿Cuál es tu profesión?</label>
                     </div>
-                    <input
+                    <Input placeholder="Profesión" />
+                    {/* <input
                         type='text'
                         name='name'
                         className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none '
-                        placeholder="" />
+                        placeholder="" /> */}
                 </div>
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
                         <label className="leading-none">Escolaridade</label>
                         <label className="text-gray-400 italic">¿Cuál es tu nivel de estudio?</label>
                     </div>
-                    <select className="block focus:shadow-outline border w-full bg-cardcolor shadow-sm rounded-full h-10 p-5 focus:outline-none  text-white  focus:border-gray-500"
-                        id="grid-state"
-                    >
-                        <option>Ensino Médio Incompleto</option>
-                        <option>Ensino Médio Completo</option>
-                        <option>Ensino Superior Incompleto</option>
-                        <option>Ensino Superior Completo</option>
 
-                    </select>
+                    <Select
+                        defaultValue=""
+                        onChange={handleChange}
+                        options={[
+                            { value: 'Ensino Médio Incompleto', label: 'Ensino Médio Incompleto' },
+                            { value: 'Ensino Médio Completo', label: 'Ensino Médio Completo' },
+                            { value: 'Ensino Superior Incompleto', label: 'Ensino Superior Incompleto' },
+                            { value: 'Ensino Superior Completo', label: 'Ensino Superior Completo' },
+
+                        ]}
+                    />
                 </div>
                 <div className="flex flex-col gap-1">
-                    <label>E-mail</label>
-                    <input
+                    <div className="flex flex-col">
+
+                        <label className="leading-none">E-mail</label>
+                        <label className="text-gray-400 italic">Correo Eletrônico</label>
+                    </div>
+                    <Input placeholder="Correo eletrônico" />
+                    {/* <input
                         type='email'
                         name='email'
                         className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none '
-                        placeholder="Correo eletrônico" />
+                        placeholder="Correo eletrônico" /> */}
                 </div>
                 <div className="flex flex-col gap-1">
-                    <label>Senha</label>
+                    <div className="flex flex-col">
+                        <label className="leading-none">Senha</label>
+                        <label className="text-gray-400 italic">Clave</label>
+                    </div>
 
+                    
+                    <Input.Password
+                        placeholder="password"
+                        visibilityToggle={{ visible: passwordVisible, onVisibleChange: setPasswordVisible }}
+                    />
+                 
+                    {/* 
                     <input
                         type='password'
                         name='password'
                         className='border-2 bg-cardcolor rounded-full shadow-sm h-10 p-5 placeholder:italic focus:outline-none '
-                        placeholder="Senha" />
+                        placeholder="Senha" /> */}
                 </div>
 
                 <div className="flex flex-col gap-1">
@@ -85,35 +123,48 @@ export default function Register() {
                         <label className="leading-none">Situação</label>
                         <label className="text-gray-400 italic">Situacion</label>
                     </div>
-                    <select className="block focus:shadow-outline border w-full bg-cardcolor shadow-sm rounded-full h-10 p-5 focus:outline-none  text-white  focus:border-gray-500"
+                    <Select
+                        defaultValue=""
+                        onChange={handleChange}
+                        options={[
+                            { value: 'Imigrante', label: 'Imigrante' },
+                            { value: 'Refugiado', label: 'Refugiado(a)' },
+                            { value: 'Brasileiro', label: 'Brasileiro' },
+
+                        ]}
+                    />
+                    {/* <select className="block focus:shadow-outline border w-full bg-cardcolor shadow-sm rounded-full h-10 p-5 focus:outline-none  text-white  focus:border-gray-500"
                         id="grid-state"
                     >
 
                         <option>Imigrante</option>
                         <option>Refugiado(a)</option>
-                    </select>
+                    </select> */}
                 </div>
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
                         <label className="leading-none">Quanto tempo moras no Brasil?</label>
                         <label className="text-gray-400 italic">¿Desde cuándo vives en Brasil?</label>
                     </div>
-                    <input
+                    <Input placeholder="dos años y cuatro meses" />
+                    {/* <input
                         type='text'
                         name='time'
                         className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none '
-                        placeholder="" />
+                        placeholder="" /> */}
                 </div>
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
                         <label className="leading-none">Quanto tempo moras em Belém (RMB)?</label>
                         <label className="text-gray-400 italic">¿Desde cuándo vives en Belém (RMB)?</label>
                     </div>
-                    <input
+                    <Input placeholder="dos años y cuatro meses" />
+
+                    {/* <input
                         type='text'
                         name='time'
                         className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none '
-                        placeholder="" />
+                        placeholder="" /> */}
                 </div>
 
 
@@ -123,6 +174,8 @@ export default function Register() {
                 >
                     Cadastro
                 </button>
+
+
             </form>
         </div>
 

@@ -1,3 +1,4 @@
+import StyledComponentsRegistry from '@/lib/ant-design/AntRegistry'
 import './styles/globals.css'
 import { Inter } from 'next/font/google'
 
@@ -16,12 +17,13 @@ export default function RootLayout({
 }) {
 
   return (
-    <html lang="pt-br" className='flex flex-col justify-start items-center min-h-screen'>
+    <html lang="pt-BR" className='flex flex-col justify-start items-center min-h-screen'>
       <body className={`inter.className min-h-screen flex flex-col 
       justify-start items-center bg-[--background-app] w-full
       text-white `}>
-
+        <StyledComponentsRegistry>
           {children}
+        </StyledComponentsRegistry>
       </body>
 
     </html>
