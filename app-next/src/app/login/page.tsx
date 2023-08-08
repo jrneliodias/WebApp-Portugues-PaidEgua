@@ -26,7 +26,7 @@ export default function Login() {
 
             <form className='flex flex-col gap-4 w-full max-w-xs'>
                 <div className="flex flex-col gap-1">
-                <Input placeholder="E-mail" prefix={<UserOutlined />} />
+                <Input placeholder="E-mail" prefix={<UserOutlined />} size="large" />
                     {/* <input
                         type='email'
                         name='email'
@@ -38,6 +38,7 @@ export default function Login() {
                 prefix={<LockOutlined />}
                         placeholder="password"
                         visibilityToggle={{ visible: passwordVisible, onVisibleChange: setPasswordVisible }}
+                        size="large"
                     />
                  
                     {/* <input
