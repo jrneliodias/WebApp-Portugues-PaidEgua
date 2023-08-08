@@ -28,7 +28,7 @@ export default function Register() {
     return (
         <div className="container flex flex-col justify-center items-center gap-5 my-5 ">
 
-
+            <h1 className='text-xl font-black'> CADASTRO</h1>
 
             <form className='flex flex-col gap-4 w-full max-w-3xl '>
                 <div className="flex flex-col gap-1">
@@ -36,7 +36,7 @@ export default function Register() {
                         <label className="leading-none">Nome</label>
                         <label className="text-gray-400 italic ">Nombre</label>
                     </div>
-                    <Input placeholder="Juan" />
+                    <Input size='large' placeholder="Juan"  autoComplete='name' />
                     {/* <input
                         type='text'
                         name='name'
@@ -48,8 +48,8 @@ export default function Register() {
                         <label className="leading-none">Data de Nascimento</label>
                         <label className="text-gray-400 italic">Fecha de nascimento</label>
                     </div>
-                    <DatePicker onChange={onChange} locale={locale} format={dateFormat}
-
+                    <DatePicker size='large' onChange={onChange} locale={locale}
+                        format={dateFormat}
                     />
 
                 </div>
@@ -60,7 +60,7 @@ export default function Register() {
                         <label className="leading-none">Profissão</label>
                         <label className="text-gray-400 italic">¿Cuál es tu profesión?</label>
                     </div>
-                    <Input placeholder="Profesión" />
+                    <Input size='large' placeholder="Profesión" />
                     {/* <input
                         type='text'
                         name='name'
@@ -74,6 +74,7 @@ export default function Register() {
                     </div>
 
                     <Select
+                        size='large'
                         defaultValue=""
                         onChange={handleChange}
                         options={[
@@ -91,7 +92,7 @@ export default function Register() {
                         <label className="leading-none">E-mail</label>
                         <label className="text-gray-400 italic">Correo Eletrônico</label>
                     </div>
-                    <Input placeholder="Correo eletrônico" />
+                    <Input size='large' placeholder="Correo eletrônico" />
                     {/* <input
                         type='email'
                         name='email'
@@ -104,12 +105,13 @@ export default function Register() {
                         <label className="text-gray-400 italic">Clave</label>
                     </div>
 
-                    
+
                     <Input.Password
+                        size='large'
                         placeholder="password"
                         visibilityToggle={{ visible: passwordVisible, onVisibleChange: setPasswordVisible }}
                     />
-                 
+
                     {/* 
                     <input
                         type='password'
@@ -124,6 +126,7 @@ export default function Register() {
                         <label className="text-gray-400 italic">Situacion</label>
                     </div>
                     <Select
+                        size='large'
                         defaultValue=""
                         onChange={handleChange}
                         options={[
@@ -146,7 +149,7 @@ export default function Register() {
                         <label className="leading-none">Quanto tempo moras no Brasil?</label>
                         <label className="text-gray-400 italic">¿Desde cuándo vives en Brasil?</label>
                     </div>
-                    <Input placeholder="dos años y cuatro meses" />
+                    <Input size='large' placeholder="dos años y cuatro meses" />
                     {/* <input
                         type='text'
                         name='time'
@@ -158,7 +161,7 @@ export default function Register() {
                         <label className="leading-none">Quanto tempo moras em Belém (RMB)?</label>
                         <label className="text-gray-400 italic">¿Desde cuándo vives en Belém (RMB)?</label>
                     </div>
-                    <Input placeholder="dos años y cuatro meses" />
+                    <Input size='large' placeholder="dos años y cuatro meses" />
 
                     {/* <input
                         type='text'
