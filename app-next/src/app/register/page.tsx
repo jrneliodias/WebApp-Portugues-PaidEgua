@@ -2,13 +2,13 @@
 
 import React, { useState } from 'react';
 import type { DatePickerProps } from 'antd';
-import { DatePicker, Select } from 'antd';
+import { DatePicker, InputNumber, Select, Space } from 'antd';
 import 'dayjs/locale/pt-br'
 import locale from 'antd/es/date-picker/locale/pt_BR';
 import { Button, Form, Input, Radio } from 'antd';
-import { z } from 'zod';
-import { useForm } from 'react-hook-form';
 
+import { FormInputLabel } from '../components/forms/inputs';
+import { Option } from 'antd/es/mentions';
 const dateFormat = 'DD/MM/YYYY';
 const customFormat: DatePickerProps['format'] = (value) =>
     `custom format: ${value.format(dateFormat)}`;
@@ -17,17 +17,25 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) => {
     console.log(date, dateString);
 };
 
-const handleChange = (value: string) => {
-    console.log(`selected ${value}`);
-};
 
-const validationScheme = z.object({
-    name: z.string().min(1, { message: "O seu nome é obrigatório." }),
-    email: z.string().email({ message: "O seu e-mail é obrigatório." }),
-    profession: z.string().min(1, { message: "A sua profissão é importante para gente." }),
-})
+
 
 export default function RegisterPage() {
+
+    const onFill = () => {
+        form.setFieldsValue({
+            nome: 'Nélio',
+            profissao: 'Estudante',
+            email: 'jrneliodias@gmail.com',
+            password: '123123',
+
+
+        });
+    };
+    const [situation, setSituation] = useState('Imigrante');
+    const renderFields = situation !== 'Brasileiro'
+
+
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [form] = Form.useForm();
 
@@ -35,165 +43,184 @@ export default function RegisterPage() {
     const [output, setOutput] = useState('')
 
     function createUser(data: any) {
+        data.nome = data.nome.trim()
+        data.profissao = data.profissao.trim()
+        if (data.situacao === 'Brasileiro') {
+            data.tempoNoBrasil = 'Já nasceu no Brasil'
+            data.tempoEmBelem = 'Já mora no Brasil'
+        }
         setOutput(JSON.stringify(data, null, 2))
     }
 
 
     return (
-        <div className="container flex flex-col justify-center items-center gap-5 my-5 ">
+        <div className=" flex flex-col justify-center container moto-g4:w-[90%] items-center gap-5 my-5">
 
-            <h1 className='text-xl font-black'> CADASTRO</h1>
+            <h1 className='text-xl font-black'>CADASTRO</h1>
 
             <Form
                 form={form}
                 onFinish={createUser}
                 autoComplete='on'
-                className='flex flex-col gap-4 w-full max-w-3xl '>
+                className='flex flex-col w-full max-w-3xl gap-4'>
+
                 <div className="flex flex-col gap-1">
-                    <div className="flex flex-col">
-                        <label className=" text-white">Nome</label>
-                        <label className="text-gray-400 italic ">Nombre</label>
-                    </div>
-                    <Form.Item   name="Nome" rules={[{ required: true, message: 'Missing area'}]}>
-                    <Input size='large' placeholder="Juan" autoComplete='name' />
+                    <FormInputLabel label='Nome' spanishLabel='Nombre' />
+                    <Form.Item name="nome"
+                        rules={[
+                            { required: true, message: 'Insira seu nome completo.' },
+                            { type: 'string', min: 1, message: 'Insira seu nome corretamente.' },
+                            { whitespace: true, message: "Nome não pode estar em branco." },
+                            
+
+                        ]}>
+                        <Input size='large' placeholder="Juan" autoComplete='name' />
                     </Form.Item>
-                    {/* <input
-                        type='text'
-                        className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5  focus:outline-none '
-                        placeholder="Juan" /> */}
-                </div>
-                <div className="flex flex-col gap-1">
-                    <div className="flex flex-col">
-                        <label className=" text-white">Data de Nascimento</label>
-                        <label className="text-gray-400 italic">Fecha de nascimento</label>
-                    </div>
-                    
-                    <DatePicker size='large' onChange={onChange} locale={locale}
-                        format={dateFormat}
-                    />
-
                 </div>
 
+                <div className="flex flex-col gap-1">
+                    <FormInputLabel label='Data de Nascimento' spanishLabel='Fecha de Nascimento' />
+                    <Form.Item
+                        name="nascimento"
+                        rules={[{ required: true, message: 'Insira sua data de nascimento.' }]}>
+
+                        <DatePicker size='large' locale={locale}
+                            format={dateFormat}
+                        />
+                    </Form.Item>
+                </div>
 
                 <div className="flex flex-col gap-1">
-                    <div className="flex flex-col">
-                        <label className=" text-white">Profissão</label>
-                        <label className="text-gray-400 italic">¿Cuál es tu profesión?</label>
-                    </div>
-                    <Input size='large' placeholder="Profesión" />
-                    {/* <input
-                        type='text'
-                        name='name'
-                        className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none '
-                        placeholder="" /> */}
+                    <FormInputLabel label='Profissão' spanishLabel='¿Cuál es tu profesión?' />
+                    <Form.Item
+                        name="profissao"
+                        rules={[{ required: true, message: 'Missing area' }]}>
+                        <Input size='large' placeholder="Profesión" />
+                    </Form.Item>
+                </div>
+
+                <div className="flex flex-col gap-1">
+
+                    <FormInputLabel label='Escolaridade' spanishLabel='¿Cuál es tu nivel de estudio?' />
+                    <Form.Item
+                        name="escolaridade"
+                        rules={[{ required: true, message: 'Escolha uma opção' }]}>
+                        <Select
+                            size='large'
+
+                            options={[
+                                { value: 'Ensino Médio Incompleto', label: 'Ensino Médio Incompleto' },
+                                { value: 'Ensino Médio Completo', label: 'Ensino Médio Completo' },
+                                { value: 'Ensino Superior Incompleto', label: 'Ensino Superior Incompleto' },
+                                { value: 'Ensino Superior Completo', label: 'Ensino Superior Completo' },
+
+                            ]}
+                        />
+                    </Form.Item>
                 </div>
                 <div className="flex flex-col gap-1">
-                    <div className="flex flex-col">
-                        <label className=" text-white">Escolaridade</label>
-                        <label className="text-gray-400 italic">¿Cuál es tu nivel de estudio?</label>
-                    </div>
 
-                    <Select
-                        size='large'
-                        defaultValue=""
-                        onChange={handleChange}
-                        options={[
-                            { value: 'Ensino Médio Incompleto', label: 'Ensino Médio Incompleto' },
-                            { value: 'Ensino Médio Completo', label: 'Ensino Médio Completo' },
-                            { value: 'Ensino Superior Incompleto', label: 'Ensino Superior Incompleto' },
-                            { value: 'Ensino Superior Completo', label: 'Ensino Superior Completo' },
+                    <FormInputLabel label='E-mail' spanishLabel='Correo Eletrônico' />
+                    <Form.Item
+                        name="email"
+                        rules={[{ required: true, message: 'Insira um e-mail.' }, { type: 'email', message: 'Esse email não é valido.' }]}>
+                        <Input size='large' placeholder="juan@email.com" />
+                    </Form.Item>
 
+                </div>
+                <div className="flex flex-col gap-1">
+                    <FormInputLabel label='Senha' spanishLabel='Clave' />
+                    <Form.Item
+                        name="password"
+                        rules={[{ required: true, message: 'Insira uma senha.' }, { type: 'string', min: 6, message: 'A senha deve ter no mínimo 6 caracteres' }]}>
+                        <Input.Password
+                            size='large'
+                            placeholder="Clave"
+                            visibilityToggle={{ visible: passwordVisible, onVisibleChange: setPasswordVisible }}
+                        />
+                    </Form.Item>
+                    <Form.Item
+                        name="confirm"
+                        className='text-white'
+                        dependencies={['password']}
+                        hasFeedback
+                        rules={[
+                            {
+                                required: true,
+                                message: 'Por favor, confime sua senha',
+                            },
+                            ({ getFieldValue }) => ({
+                                validator(_, value) {
+                                    if (!value || getFieldValue('password') === value) {
+                                        return Promise.resolve();
+                                    }
+                                    return Promise.reject(new Error('As senha não são as mesmas.'));
+                                },
+                            }),
                         ]}
-                    />
-                </div>
-                <div className="flex flex-col gap-1">
-                    <div className="flex flex-col">
-
-                        <label className=" text-white">E-mail</label>
-                        <label className="text-gray-400 italic">Correo Eletrônico</label>
-                    </div>
-                    <Input size='large' placeholder="Correo eletrônico" />
-                    {/* <input
-                        type='email'
-                        name='email'
-                        className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none '
-                        placeholder="Correo eletrônico" /> */}
-                </div>
-                <div className="flex flex-col gap-1">
-                    <div className="flex flex-col">
-                        <label className=" text-white">Senha</label>
-                        <label className="text-gray-400 italic">Clave</label>
-                    </div>
-
-
-                    <Input.Password
-                        size='large'
-                        placeholder="password"
-                        visibilityToggle={{ visible: passwordVisible, onVisibleChange: setPasswordVisible }}
-                    />
-
-                    {/* 
-                    <input
-                        type='password'
-                        name='password'
-                        className='border-2 bg-cardcolor rounded-full shadow-sm h-10 p-5 placeholder:italic focus:outline-none '
-                        placeholder="Senha" /> */}
-                </div>
-
-                <div className="flex flex-col gap-1">
-                    <div className="flex flex-col">
-                        <label className=" text-white">Situação</label>
-                        <label className="text-gray-400 italic">Situacion</label>
-                    </div>
-                    <Select
-                        size='large'
-                        defaultValue=""
-                        onChange={handleChange}
-                        options={[
-                            { value: 'Imigrante', label: 'Imigrante' },
-                            { value: 'Refugiado', label: 'Refugiado(a)' },
-                            { value: 'Brasileiro', label: 'Brasileiro' },
-
-                        ]}
-                    />
-                    {/* <select className="block focus:shadow-outline border w-full bg-cardcolor shadow-sm rounded-full h-10 p-5 focus:outline-none  text-white  focus:border-gray-500"
-                        id="grid-state"
                     >
+                        <Input.Password
+                            placeholder='Confirme sua senha'
+                            size='large' />
+                    </Form.Item>
 
-                        <option>Imigrante</option>
-                        <option>Refugiado(a)</option>
-                    </select> */}
                 </div>
+
                 <div className="flex flex-col gap-1">
-                    <div className="flex flex-col">
-                        <label className=" text-white">Quanto tempo moras no Brasil?</label>
-                        <label className="text-gray-400 italic">¿Desde cuándo vives en Brasil?</label>
-                    </div>
-                    <Input size='large' placeholder="dos años y cuatro meses" />
-                    {/* <input
-                        type='text'
-                        name='time'
-                        className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none '
-                        placeholder="" /> */}
-                </div>
-                <div className="flex flex-col gap-1">
-                    <div className="flex flex-col">
-                        <label className=" text-white">Quanto tempo moras em Belém (RMB)?</label>
-                        <label className="text-gray-400 italic">¿Desde cuándo vives en Belém (RMB)?</label>
-                    </div>
-                    <Input size='large' placeholder="dos años y cuatro meses" />
+                    <FormInputLabel label='Situação' spanishLabel='Situacion' />
+                    <Form.Item name="situacao" rules={[{ required: true, message: 'Escolha uma das opções.' }]}>
 
-                    {/* <input
-                        type='text'
-                        name='time'
-                        className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5 placeholder:italic focus:outline-none '
-                        placeholder="" /> */}
+                        <Select
+                            size='large'
+                            onChange={(value) => setSituation(value)}
+
+                            options={[
+                                { value: 'Imigrante', label: 'Imigrante' },
+                                { value: 'Refugiado', label: 'Refugiado(a)' },
+                                { value: 'Brasileiro', label: 'Brasileiro' },
+
+                            ]}
+                        />
+                    </Form.Item>
+
                 </div>
 
+
+
+                {renderFields ?
+                    (
+                        <>
+                            <div className="flex flex-col gap-1">
+                                <FormInputLabel label='Quanto tempo moras no Brasil?' spanishLabel='¿Desde cuándo vives en Brasil?' />
+                                <Form.Item
+                                    name="tempoNoBrasil" rules={[{ required: true, message: 'Por favor, responda essa pergunta.' },]}>
+                                    <Input size='large' placeholder="dos años y cuatro meses" />
+                                </Form.Item>
+
+
+                            </div>
+                            <div className="flex flex-col gap-1">
+
+                                <FormInputLabel label='Quanto tempo moras em Belém (RMB)?'
+                                    spanishLabel='¿Desde cuándo vives en Belém (RMB)?' />
+                                <Form.Item name="tempoEmBelem" rules={[{ required: true, message: 'Por favor, responda essa pergunta.' },]}>
+                                    <Input size='large' placeholder="dos años y cuatro meses" />
+                                </Form.Item>
+
+                            </div>
+                        </>
+                    ) : (null)}
+
+
+
+
+                <Button htmlType="button" onClick={onFill}>
+                    Fill
+                </Button>
 
                 <Button
-                     htmlType="submit"
-                    className='bg-cardcolor  shadow-lg rounded font-bold h-10 hover:bg-[--background-nav-app] mt-4'
+                    htmlType="submit"
+                    className='bg-cardcolor text-white  shadow-lg rounded font-bold h-10 hover:bg-[--background-nav-app] mt-4'
                 >
                     Cadastro
                 </Button>
