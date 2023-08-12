@@ -7,7 +7,7 @@ export default function PagesLayout({
     children: React.ReactNode
   }) {
     return (
-      <section>
+      <section className="flex justify-center">
          <NextAuthProvider>
           <Header />
    
