@@ -24,7 +24,7 @@ export default function AcaiTema30App() {
                 textStyle="text-xl font-black  italic text-center"
             />
 
-            <div className="border-2 m-5 p-4 rounded-3xl">
+            <div className="border-2 m-5 p-4 rounded-3xl max-w-3xl">
                 *São palavras e/ou frases cujo significado ultrapassa o sentido literal das suas partes. Elas apresentam características culturais.
                 <SpanishText>
                     Son palabras y/o frases cuyo significado ultrapasa el sentido literal de sus partes. Ellas presentan características culturales.

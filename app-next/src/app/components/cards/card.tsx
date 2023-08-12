@@ -10,7 +10,7 @@ export default function LightColorCard(props:any) {
 
 export function WordCard({children,className=""}:any) {
     return (
-        <div className={`bg-[#8e7fbb] px-3 py-2 flex rounded-[1.5rem] ${className}`}>
+        <div className={`bg-[#8e7fbb] p-4 px-5 flex rounded-[1.5rem] ${className}`}>
             {children}
         </div>
     );

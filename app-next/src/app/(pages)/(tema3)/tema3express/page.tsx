@@ -62,19 +62,19 @@ export default function Tema3Expressions() {
                         return (
                             <Fragment key={index}>
                                 <TableCell key={`express-${index}`}
-                                    className={`text-xs border-l-2 ${isLastItem ? 'border-b-2 rounded-bl-lg' : ''}`}>
+                                    className={`text-xs sm:text-base sm:leading-none border-l-2 ${isLastItem ? 'border-b-2 rounded-bl-lg' : ''}`}>
                                     {item.expressIdiom}
                                 </TableCell>
                                 <TableCell key={`fonet-${index}`}
-                                    className={`text-xs ${isLastItem ? 'border-b-2' : ''}`}>
+                                    className={`text-xs sm:text-base sm:leading-none ${isLastItem ? 'border-b-2' : ''}`}>
                                     {item.transFonetic}
                                 </TableCell>
                                 <TableCell key={`sentpor-${index}`}
-                                className={`text-xs ${isLastItem ? 'border-b-2' : ''}`}>
+                                className={`text-xs sm:text-base sm:leading-none ${isLastItem ? 'border-b-2' : ''}`}>
                                     {item.sentPort}
                                 </TableCell>
                                 <TableCell key={`sentspa-${index}`}
-                                    className={`text-xs border-r-2 ${isLastItem ? 'rounded-br-lg border-b-2' : ''}`}>
+                                    className={`text-xs sm:text-base sm:leading-none border-r-2 ${isLastItem ? 'rounded-br-lg border-b-2' : ''}`}>
                                     {item.sentSpanish}
                                 </TableCell>
                             </Fragment>

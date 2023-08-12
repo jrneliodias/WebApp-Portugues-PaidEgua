@@ -18,7 +18,7 @@ export default function AcaiIntroApp() {
     return (
         <AcaiLayout>
             
-            <PrimaryCharacter   speech={typedText}/>
+            <PrimaryCharacter   speech={typedText} textStyle="font-black"/>
 
             <NavBar currentRoute={currentRoute} />
 

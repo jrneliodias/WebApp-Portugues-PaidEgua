@@ -18,9 +18,7 @@ module.exports = {
         'alternativeColor':'#3D348B',
         'alternativeSecColor':'#7678ED',
       },
-      customClass: {
-        color: 'blue',
-      },
+      
     },
   },
   plugins: [],

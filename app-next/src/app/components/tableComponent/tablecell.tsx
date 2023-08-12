@@ -67,7 +67,7 @@ export function TableCell({children,className=""}:any) {
 };
 
 export function TableHead({children,className =""}:any) {
-    return <div className={`p-2 font-black border  text-center text-sm border-t-2 bg-cardcolor ${className}`}>
+    return <div className={`p-2 font-black border  text-center text-sm sm:text-lg border-t-2 bg-cardcolor ${className}`}>
         {children}
     </div>;
 };

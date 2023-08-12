@@ -6,8 +6,8 @@ import { DatePicker, Select } from 'antd';
 import 'dayjs/locale/pt-br'
 import locale from 'antd/es/date-picker/locale/pt_BR';
 import { Button, Form, Input, Radio } from 'antd';
-
-import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
+import { z } from 'zod';
+import { useForm } from 'react-hook-form';
 
 const dateFormat = 'DD/MM/YYYY';
 const customFormat: DatePickerProps['format'] = (value) =>
@@ -21,8 +21,22 @@ const handleChange = (value: string) => {
     console.log(`selected ${value}`);
 };
 
-export default function Register() {
+const validationScheme = z.object({
+    name: z.string().min(1, { message: "O seu nome é obrigatório." }),
+    email: z.string().email({ message: "O seu e-mail é obrigatório." }),
+    profession: z.string().min(1, { message: "A sua profissão é importante para gente." }),
+})
+
+export default function RegisterPage() {
     const [passwordVisible, setPasswordVisible] = useState(false);
+    const [form] = Form.useForm();
+
+
+    const [output, setOutput] = useState('')
+
+    function createUser(data: any) {
+        setOutput(JSON.stringify(data, null, 2))
+    }
 
 
     return (
@@ -30,24 +44,30 @@ export default function Register() {
 
             <h1 className='text-xl font-black'> CADASTRO</h1>
 
-            <form className='flex flex-col gap-4 w-full max-w-3xl '>
+            <Form
+                form={form}
+                onFinish={createUser}
+                autoComplete='on'
+                className='flex flex-col gap-4 w-full max-w-3xl '>
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
-                        <label className="leading-none">Nome</label>
+                        <label className=" text-white">Nome</label>
                         <label className="text-gray-400 italic ">Nombre</label>
                     </div>
-                    <Input size='large' placeholder="Juan"  autoComplete='name' />
+                    <Form.Item   name="Nome" rules={[{ required: true, message: 'Missing area'}]}>
+                    <Input size='large' placeholder="Juan" autoComplete='name' />
+                    </Form.Item>
                     {/* <input
                         type='text'
-                        name='name'
                         className='border-2 bg-cardcolor shadow-sm rounded-full h-10 p-5  focus:outline-none '
                         placeholder="Juan" /> */}
                 </div>
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
-                        <label className="leading-none">Data de Nascimento</label>
+                        <label className=" text-white">Data de Nascimento</label>
                         <label className="text-gray-400 italic">Fecha de nascimento</label>
                     </div>
+                    
                     <DatePicker size='large' onChange={onChange} locale={locale}
                         format={dateFormat}
                     />
@@ -57,7 +77,7 @@ export default function Register() {
 
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
-                        <label className="leading-none">Profissão</label>
+                        <label className=" text-white">Profissão</label>
                         <label className="text-gray-400 italic">¿Cuál es tu profesión?</label>
                     </div>
                     <Input size='large' placeholder="Profesión" />
@@ -69,7 +89,7 @@ export default function Register() {
                 </div>
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
-                        <label className="leading-none">Escolaridade</label>
+                        <label className=" text-white">Escolaridade</label>
                         <label className="text-gray-400 italic">¿Cuál es tu nivel de estudio?</label>
                     </div>
 
@@ -89,7 +109,7 @@ export default function Register() {
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
 
-                        <label className="leading-none">E-mail</label>
+                        <label className=" text-white">E-mail</label>
                         <label className="text-gray-400 italic">Correo Eletrônico</label>
                     </div>
                     <Input size='large' placeholder="Correo eletrônico" />
@@ -101,7 +121,7 @@ export default function Register() {
                 </div>
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
-                        <label className="leading-none">Senha</label>
+                        <label className=" text-white">Senha</label>
                         <label className="text-gray-400 italic">Clave</label>
                     </div>
 
@@ -122,7 +142,7 @@ export default function Register() {
 
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
-                        <label className="leading-none">Situação</label>
+                        <label className=" text-white">Situação</label>
                         <label className="text-gray-400 italic">Situacion</label>
                     </div>
                     <Select
@@ -146,7 +166,7 @@ export default function Register() {
                 </div>
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
-                        <label className="leading-none">Quanto tempo moras no Brasil?</label>
+                        <label className=" text-white">Quanto tempo moras no Brasil?</label>
                         <label className="text-gray-400 italic">¿Desde cuándo vives en Brasil?</label>
                     </div>
                     <Input size='large' placeholder="dos años y cuatro meses" />
@@ -158,7 +178,7 @@ export default function Register() {
                 </div>
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-col">
-                        <label className="leading-none">Quanto tempo moras em Belém (RMB)?</label>
+                        <label className=" text-white">Quanto tempo moras em Belém (RMB)?</label>
                         <label className="text-gray-400 italic">¿Desde cuándo vives en Belém (RMB)?</label>
                     </div>
                     <Input size='large' placeholder="dos años y cuatro meses" />
@@ -171,15 +191,16 @@ export default function Register() {
                 </div>
 
 
-                <button
-                    type='submit'
+                <Button
+                     htmlType="submit"
                     className='bg-cardcolor  shadow-lg rounded font-bold h-10 hover:bg-[--background-nav-app] mt-4'
                 >
                     Cadastro
-                </button>
+                </Button>
 
 
-            </form>
+            </Form>
+            <pre> {output}</pre>
         </div>
 
 

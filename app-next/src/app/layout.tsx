@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="pt-BR" className='flex flex-col justify-start items-center min-h-screen'>
       <body className={`inter.className min-h-screen flex flex-col 
       justify-start items-center bg-[--background-app] w-full
-      text-white `}>
+      text-white text-lg `}>
         <StyledComponentsRegistry>
           {children}
         </StyledComponentsRegistry>
