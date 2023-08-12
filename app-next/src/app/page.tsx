@@ -23,26 +23,22 @@ export default function Home() {
                 />
             </div>
            
-            <div className="w-full flex flex-col gap-10">
-                <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.9 }}
-                    
-
-                >
-                    <Link className="border-2 px-24 p-2 text-center rounded-full bg-cardcolor font-bold" href={`/login`} passHref
+            <div className="w-1/2 flex flex-col gap-10">
+                
+                    <Link className="border-2 px-24 p-2 text-center rounded-full bg-cardcolor font-bold hover:bg-[--background-nav] hover:scale-105 duration-75"  href={`/login`} passHref
                     >
                         Login                            {/* <BtnVoltar /> */}
                     </Link>
-                </motion.button>
-                <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.9 }}
-                >
-                    <Link className="border-2 px-20 p-2 text-center rounded-full bg-cardcolor font-bold " href={`/register`} passHref>
+               
+               
+                    <Link className="border-2 px-20 p-2 text-center rounded-full bg-cardcolor font-bold hover:bg-[--background-nav] hover:scale-105 duration-75" href={`/register`} passHref>
                         Cadastro                            {/* <BtnVoltar /> */}
                     </Link>
-                </motion.button>
+               
+                    <Link className="border-2 px-20 p-2 text-center rounded-full bg-cardcolor font-bold hover:bg-[--background-nav] hover:scale-105 duration-75" href={`/menuroutes`} passHref>
+                        Menu de Páginas                           {/* <BtnVoltar /> */}
+                    </Link>
+                
 
             </div>
 
