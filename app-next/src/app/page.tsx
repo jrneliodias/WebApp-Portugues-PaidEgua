@@ -3,6 +3,7 @@ import Image from "next/image";
 import Personagens from '@/app/images/acai_character/personagens.svg'
 import Link from "next/link";
 import { motion } from "framer-motion"
+import MainButton from "./components/basics/buttons";
 
 
 export default function Home() {
@@ -23,22 +24,19 @@ export default function Home() {
                 />
             </div>
            
-            <div className="w-1/2 flex flex-col gap-10">
+            <div className="w-full flex flex-col gap-10">
                 
-                    <Link className="border-2 px-24 p-2 text-center rounded-full bg-cardcolor font-bold hover:bg-[--background-nav] hover:scale-105 duration-75"  href={`/login`} passHref
-                    >
-                        Login                            {/* <BtnVoltar /> */}
-                    </Link>
+                    <MainButton link = "/login">
+                        Login
+                    </MainButton>
+                    <MainButton link = "/register">
+                        Cadastro
+                    </MainButton>
+                    <MainButton link = "/menuroutes">
+                    Menu de Páginas 
+                    </MainButton>
                
                
-                    <Link className="border-2 px-20 p-2 text-center rounded-full bg-cardcolor font-bold hover:bg-[--background-nav] hover:scale-105 duration-75" href={`/register`} passHref>
-                        Cadastro                            {/* <BtnVoltar /> */}
-                    </Link>
-               
-                    <Link className="border-2 px-20 p-2 text-center rounded-full bg-cardcolor font-bold hover:bg-[--background-nav] hover:scale-105 duration-75" href={`/menuroutes`} passHref>
-                        Menu de Páginas                           {/* <BtnVoltar /> */}
-                    </Link>
-                
 
             </div>
 
