@@ -24,7 +24,7 @@ export default function Home() {
                 />
             </div>
            
-            <div className="w-full flex flex-col gap-10">
+            <div className="w-full flex flex-col items-center gap-5">
                 
                     <MainButton link = "/login">
                         Login

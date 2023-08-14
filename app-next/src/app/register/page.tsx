@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState } from 'react';
-import type { DatePickerProps } from 'antd';
-import { DatePicker, InputNumber, Select, Space } from 'antd';
+import type { DatePickerProps, SelectProps } from 'antd';
+import { DatePicker, InputNumber, Select, Space, Typography } from 'antd';
 import 'dayjs/locale/pt-br'
 import locale from 'antd/es/date-picker/locale/pt_BR';
 import { Button, Form, Input, Radio } from 'antd';
@@ -17,6 +17,9 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) => {
     console.log(date, dateString);
 };
 
+const options: SelectProps['options'] = [{ value: 0, label: '0 ano' }, { value: 1, label: '1 ano' }, ...Array.from({ length: 100 }, (_, i) => ({ value: i + 2, label: `${i + 2} anos` }))];
+const optionsMonth: SelectProps['options'] = [{ value: 0, label: '0 mês' }, { value: 1, label: '1 mês' }, ...Array.from({ length: 11 }, (_, i) => ({ value: i + 2, label: `${i + 2} meses` }))];
+const optionsDays: SelectProps['options'] = [{ value: 0, label: '0 dia' }, { value: 1, label: '1 dia' }, ...Array.from({ length: 30 }, (_, i) => ({ value: i + 2, label: `${i + 2} dias` }))];
 
 
 
@@ -71,7 +74,7 @@ export default function RegisterPage() {
                             { required: true, message: 'Insira seu nome completo.' },
                             { type: 'string', min: 1, message: 'Insira seu nome corretamente.' },
                             { whitespace: true, message: "Nome não pode estar em branco." },
-                            
+
 
                         ]}>
                         <Input size='large' placeholder="Juan" autoComplete='name' />
@@ -178,7 +181,6 @@ export default function RegisterPage() {
                                 { value: 'Imigrante', label: 'Imigrante' },
                                 { value: 'Refugiado', label: 'Refugiado(a)' },
                                 { value: 'Brasileiro', label: 'Brasileiro' },
-
                             ]}
                         />
                     </Form.Item>
@@ -192,9 +194,47 @@ export default function RegisterPage() {
                         <>
                             <div className="flex flex-col gap-1">
                                 <FormInputLabel label='Quanto tempo moras no Brasil?' spanishLabel='¿Desde cuándo vives en Brasil?' />
-                                <Form.Item
-                                    name="tempoNoBrasil" rules={[{ required: true, message: 'Por favor, responda essa pergunta.' },]}>
-                                    <Input size='large' placeholder="dos años y cuatro meses" />
+                                <Form.Item>
+                                    <Space size={'large'}>
+
+                                        <Form.Item
+
+                                            name={['tempoNoBrasil', "anos"]}
+                                            rules={[{ required: true, message: 'Por favor, quanto tempo está no Brasil.' },]}
+                                            style={{ display: 'flex', gap: '5px' }}
+                                        >
+
+                                            <Select
+                                            size='large'
+                                                placeholder="Ano(s)  "
+                                                options={options}
+                                            />
+                                        </Form.Item>
+                                        <Form.Item
+                                            style={{}}
+                                            name={['tempoNoBrasil', "meses"]}
+                                            rules={[{ required: true, message: 'Por favor, quanto tempo está no Brasil.' },]}
+                                        >
+
+                                            <Select
+                                                size='large'
+                                                placeholder="Mes(es)  "
+                                                options={optionsMonth}
+                                            />
+                                        </Form.Item>
+                                        <Form.Item
+                                            style={{}}
+                                            name={['tempoNoBrasil', "dias"]}
+                                            rules={[{ required: true, message: 'Por favor, quanto tempo está no Brasil.' },]}
+                                        >
+                                            <Select
+                                                size='large'
+
+                                                placeholder="Dia(s)  "
+                                                options={optionsDays}
+                                            />
+                                        </Form.Item>
+                                    </Space>
                                 </Form.Item>
 
 
@@ -203,8 +243,48 @@ export default function RegisterPage() {
 
                                 <FormInputLabel label='Quanto tempo moras em Belém (RMB)?'
                                     spanishLabel='¿Desde cuándo vives en Belém (RMB)?' />
-                                <Form.Item name="tempoEmBelem" rules={[{ required: true, message: 'Por favor, responda essa pergunta.' },]}>
-                                    <Input size='large' placeholder="dos años y cuatro meses" />
+                                <Form.Item>
+                                    <Space size={'large'}>
+
+                                        <Form.Item
+
+                                            name={['tempoEmBelem', "anos"]}
+                                            rules={[{ required: true, message: 'Por favor, quanto tempo está no Brasil.' },]}
+                                            style={{}}
+                                        >
+
+                                            <Select
+                                                size='large'
+
+                                                placeholder="Ano(s)  "
+                                                options={options}
+                                            />
+                                        </Form.Item>
+                                        <Form.Item
+                                            style={{}}
+                                            name={['tempoEmBelem', "meses"]}
+                                            rules={[{ required: true, message: 'Por favor, quanto tempo está no Brasil.' },]}
+                                        >
+
+                                            <Select
+                                                size='large'
+                                                placeholder="Mes(es)  "
+                                                options={optionsMonth}
+                                            />
+                                        </Form.Item>
+                                        <Form.Item
+                                            style={{}}
+                                            name={['tempoEmBelem', "dias"]}
+                                            rules={[{ required: true, message: 'Por favor, quanto tempo está no Brasil.' },]}
+                                        >
+                                            <Select
+                                                size='large'
+
+                                                placeholder="Dia(s)  "
+                                                options={optionsDays}
+                                            />
+                                        </Form.Item>
+                                    </Space>
                                 </Form.Item>
 
                             </div>
@@ -214,9 +294,9 @@ export default function RegisterPage() {
 
 
 
-                <Button htmlType="button" onClick={onFill}>
+                {/* <Button htmlType="button" onClick={onFill}>
                     Fill
-                </Button>
+                </Button> */}
 
                 <Button
                     htmlType="submit"
@@ -228,7 +308,7 @@ export default function RegisterPage() {
 
             </Form>
             <pre> {output}</pre>
-        </div>
+        </div >
 
 
     )
