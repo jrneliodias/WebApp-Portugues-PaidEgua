@@ -6,9 +6,9 @@ import { DatePicker, InputNumber, Select, Space, Typography } from 'antd';
 import 'dayjs/locale/pt-br'
 import locale from 'antd/es/date-picker/locale/pt_BR';
 import { Button, Form, Input, Radio } from 'antd';
-
 import { FormInputLabel } from '../components/forms/inputs';
-import { Option } from 'antd/es/mentions';
+import { useRouter } from 'next/navigation';
+
 const dateFormat = 'DD/MM/YYYY';
 const customFormat: DatePickerProps['format'] = (value) =>
     `custom format: ${value.format(dateFormat)}`;
@@ -25,6 +25,8 @@ const optionsDays: SelectProps['options'] = [{ value: 0, label: '0 dia' }, { val
 
 export default function RegisterPage() {
 
+    const router = useRouter()
+
     const onFill = () => {
         form.setFieldsValue({
             nome: 'Nélio',
@@ -35,25 +37,62 @@ export default function RegisterPage() {
 
         });
     };
+
     const [situation, setSituation] = useState('Imigrante');
     const renderFields = situation !== 'Brasileiro'
 
 
+    function changeTimeToDays(data: any, label: string) {
+
+        const years = data[label].anos
+        const month = data[label].meses
+        const days = data[label].dias
+        data[label] = `${365 * years + 30 * month + days}`
+        return data
+
+    }
+
+    function formatDataInput(data: any) {
+        data.username = data.username.trim()
+        data.profession = data.profession.trim()
+       
+        delete data.confirm
+        if (data.situation === 'Brasileiro') {
+            data.timeInBrazil = 'Já nasceu no Brasil'
+            data.timeInBelem = 'Já mora no Brasil'
+            setOutput(JSON.stringify(data, null, 2))
+            return data
+        }
+        const dataTimeinBrazil = changeTimeToDays(data, "timeInBrazil")
+        const dataTimeinBelemAndBrazil = changeTimeToDays(dataTimeinBrazil, "timeInBelem")
+        setOutput(JSON.stringify(dataTimeinBelemAndBrazil, null, 2))
+        return dataTimeinBelemAndBrazil
+
+    }
+
+    async function createUser(data: any) {
+        const dataFomatted = formatDataInput(data)
+        const response = await fetch('/api/user', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dataFomatted)
+        })
+
+        if (response.ok) {
+            router.push('/')
+        } else {
+            console.error('Registration failed.')
+        }
+
+
+    }
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [form] = Form.useForm();
 
 
     const [output, setOutput] = useState('')
-
-    function createUser(data: any) {
-        data.nome = data.nome.trim()
-        data.profissao = data.profissao.trim()
-        if (data.situacao === 'Brasileiro') {
-            data.tempoNoBrasil = 'Já nasceu no Brasil'
-            data.tempoEmBelem = 'Já mora no Brasil'
-        }
-        setOutput(JSON.stringify(data, null, 2))
-    }
 
 
     return (
@@ -69,7 +108,7 @@ export default function RegisterPage() {
 
                 <div className="flex flex-col gap-1">
                     <FormInputLabel label='Nome' spanishLabel='Nombre' />
-                    <Form.Item name="nome"
+                    <Form.Item name="username"
                         rules={[
                             { required: true, message: 'Insira seu nome completo.' },
                             { type: 'string', min: 1, message: 'Insira seu nome corretamente.' },
@@ -84,7 +123,7 @@ export default function RegisterPage() {
                 <div className="flex flex-col gap-1">
                     <FormInputLabel label='Data de Nascimento' spanishLabel='Fecha de Nascimento' />
                     <Form.Item
-                        name="nascimento"
+                        name="birthdate"
                         rules={[{ required: true, message: 'Insira sua data de nascimento.' }]}>
 
                         <DatePicker size='large' locale={locale}
@@ -96,7 +135,7 @@ export default function RegisterPage() {
                 <div className="flex flex-col gap-1">
                     <FormInputLabel label='Profissão' spanishLabel='¿Cuál es tu profesión?' />
                     <Form.Item
-                        name="profissao"
+                        name="profession"
                         rules={[{ required: true, message: 'Missing area' }]}>
                         <Input size='large' placeholder="Profesión" />
                     </Form.Item>
@@ -106,7 +145,7 @@ export default function RegisterPage() {
 
                     <FormInputLabel label='Escolaridade' spanishLabel='¿Cuál es tu nivel de estudio?' />
                     <Form.Item
-                        name="escolaridade"
+                        name="schooling"
                         rules={[{ required: true, message: 'Escolha uma opção' }]}>
                         <Select
                             size='large'
@@ -171,7 +210,7 @@ export default function RegisterPage() {
 
                 <div className="flex flex-col gap-1">
                     <FormInputLabel label='Situação' spanishLabel='Situacion' />
-                    <Form.Item name="situacao" rules={[{ required: true, message: 'Escolha uma das opções.' }]}>
+                    <Form.Item name="situation" rules={[{ required: true, message: 'Escolha uma das opções.' }]}>
 
                         <Select
                             size='large'
@@ -199,20 +238,20 @@ export default function RegisterPage() {
 
                                         <Form.Item
 
-                                            name={['tempoNoBrasil', "anos"]}
+                                            name={['timeInBrazil', "anos"]}
                                             rules={[{ required: true, message: 'Por favor, quanto tempo está no Brasil.' },]}
                                             style={{ display: 'flex', gap: '5px' }}
                                         >
 
                                             <Select
-                                            size='large'
+                                                size='large'
                                                 placeholder="Ano(s)  "
                                                 options={options}
                                             />
                                         </Form.Item>
                                         <Form.Item
                                             style={{}}
-                                            name={['tempoNoBrasil', "meses"]}
+                                            name={['timeInBrazil', "meses"]}
                                             rules={[{ required: true, message: 'Por favor, quanto tempo está no Brasil.' },]}
                                         >
 
@@ -224,7 +263,7 @@ export default function RegisterPage() {
                                         </Form.Item>
                                         <Form.Item
                                             style={{}}
-                                            name={['tempoNoBrasil', "dias"]}
+                                            name={['timeInBrazil', "dias"]}
                                             rules={[{ required: true, message: 'Por favor, quanto tempo está no Brasil.' },]}
                                         >
                                             <Select
@@ -248,7 +287,7 @@ export default function RegisterPage() {
 
                                         <Form.Item
 
-                                            name={['tempoEmBelem', "anos"]}
+                                            name={['timeInBelem', "anos"]}
                                             rules={[{ required: true, message: 'Por favor, quanto tempo está no Brasil.' },]}
                                             style={{}}
                                         >
@@ -262,7 +301,7 @@ export default function RegisterPage() {
                                         </Form.Item>
                                         <Form.Item
                                             style={{}}
-                                            name={['tempoEmBelem', "meses"]}
+                                            name={['timeInBelem', "meses"]}
                                             rules={[{ required: true, message: 'Por favor, quanto tempo está no Brasil.' },]}
                                         >
 
@@ -274,7 +313,7 @@ export default function RegisterPage() {
                                         </Form.Item>
                                         <Form.Item
                                             style={{}}
-                                            name={['tempoEmBelem', "dias"]}
+                                            name={['timeInBelem', "dias"]}
                                             rules={[{ required: true, message: 'Por favor, quanto tempo está no Brasil.' },]}
                                         >
                                             <Select
