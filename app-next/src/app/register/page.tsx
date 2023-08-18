@@ -27,17 +27,6 @@ export default function RegisterPage() {
 
     const router = useRouter()
 
-    const onFill = () => {
-        form.setFieldsValue({
-            nome: 'Nélio',
-            profissao: 'Estudante',
-            email: 'jrneliodias@gmail.com',
-            password: '123123',
-
-
-        });
-    };
-
     const [situation, setSituation] = useState('Imigrante');
     const renderFields = situation !== 'Brasileiro'
 
@@ -60,12 +49,12 @@ export default function RegisterPage() {
         if (data.situation === 'Brasileiro') {
             data.timeInBrazil = 'Já nasceu no Brasil'
             data.timeInBelem = 'Já mora no Brasil'
-            setOutput(JSON.stringify(data, null, 2))
+            //setOutput(JSON.stringify(data, null, 2))
             return data
         }
         const dataTimeinBrazil = changeTimeToDays(data, "timeInBrazil")
         const dataTimeinBelemAndBrazil = changeTimeToDays(dataTimeinBrazil, "timeInBelem")
-        setOutput(JSON.stringify(dataTimeinBelemAndBrazil, null, 2))
+        //setOutput(JSON.stringify(dataTimeinBelemAndBrazil, null, 2))
         return dataTimeinBelemAndBrazil
 
     }
@@ -329,10 +318,6 @@ export default function RegisterPage() {
                             </div>
                         </>
                     ) : (null)}
-
-
-
-
                 {/* <Button htmlType="button" onClick={onFill}>
                     Fill
                 </Button> */}
