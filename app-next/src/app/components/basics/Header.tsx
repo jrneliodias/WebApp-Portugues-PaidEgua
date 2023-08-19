@@ -21,7 +21,6 @@ export default function Header() {
                     <Image
                         src={title}
                         fill
-    
                         alt="App Title"
                     />
                 </div>
