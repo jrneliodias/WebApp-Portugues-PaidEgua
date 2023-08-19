@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(components.css);
+
+:root {
+  --background-nav-app: #8055bd;
+  --background-app: #51338b;
+  --bg-card-color: #6548a0;
+  --span-text-color: #cacaca;
+}
+
+
+
+.title-text-format {
+  @apply flex flex-col flex-wrap gap-1 p-4 m-3 rounded-[50px] items-center border-2;
+  @apply bg-[#8055bd] text-xl text-center leading-tight;
+  @apply lg:mx-0 w-full;
+}
+
+.normal-text-font {
+  @apply text-lg leading-tight;
+}
+
+.main-layout {
+  @apply flex flex-col items-center px-4  max-w-5xl my-20 w-full ;
+}
+.body-text-layout {
+  @apply flex flex-col gap-5 pb-[6rem]  sm:px-5 w-full max-w-5xl;
+}
+
+.span-text-font {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  color: var(--span-text-color);
+  text-align: left;
+  font-style: italic;
+  line-height: 1.25;
+}
+.phoneme-text-font {
+  font-family: "Times New Roman", Arial, sans-serif;
+  color: var(--span-text-color);
+  text-align: left;
+  line-height: 1.25;
+}
+
+.blinking-cursor:after {
+  content: "|";
+  color: var(--span-text-color);
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
