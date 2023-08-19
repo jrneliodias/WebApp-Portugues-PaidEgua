@@ -36,7 +36,7 @@ export default function Login() {
 
     return (
 
-        <div className="container flex flex-col gap-10 justify-center items-center my-auto">
+        <div className="container flex flex-col gap-10 justify-center items-center my-auto sm:max-w-lg">
             <div className="relative w-full h-60">
                 <Image
                     src={acailogo}

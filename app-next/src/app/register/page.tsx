@@ -44,7 +44,7 @@ export default function RegisterPage() {
     function formatDataInput(data: any) {
         data.username = data.username.trim()
         data.profession = data.profession.trim()
-       
+
         delete data.confirm
         if (data.situation === 'Brasileiro') {
             data.timeInBrazil = 'Já nasceu no Brasil'
